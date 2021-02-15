@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <title>Button Filter</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/css/halfmoon.min.css"
+    integrity="sha512-Kaju/JzlErKhC47smofkXAdSkvILovmvh2nnok6rgN79oB3Co/T7Pm7Ns8dcpNEN3VTVZDw2ilrUDByzInEabg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="page-wrapper with-navbar" ng-controller="PlebController" ng-init="start">
+
+    <nav class="navbar">
+
+      <form class="form-inline" role="search">
+        <input type="text" class="form-control" placeholder="Filter" ng-model="filterPhrase"
+          ng-model-options="{debounce: 300}" ng-change="randomPick()" />
+      </form>
+
+      <p class="navbar-text">Showing {{filteredButtons.length}} / {{buttons.length}} buttons.</p>
+
+      <div class="navbar-content">
+        <button class="btn btn-info" ng-click="randomPick()">Random</button>
+      </div>
+
+      <p class="navbar-text" ng-init="randomPick()">
+        <b>{{random.buttonName}}</b> {{random.recipe}}
+      </p>
+
+      <div class="navbar-content ml-auto">
+        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+          <i class="far fa-moon" aria-hidden="true"></i>
+          <span class="sr-only">Toggle dark mode</span>
+        </button>
+      </div>
+
+    </nav>
+
+    <div class="content-wrapper">
+
+      <div class="container">
+
+        <div class="row"
+          ng-repeat="b in filteredButtons = (buttons | multiWordFilter:filterPhrase:'AND' | orderBy:'buttonName') ">
+          <div class="col-lg-2">
+            <img class="img-fluid" src="http://www.buttonweavers.com/ui/images/button/{{b.artFilename}}"
+              alt="{{b.artFilename}}" />
+          </div>
+          <div class="col-lg-5">
+            <div class=content>
+              <h2 class=content-title>{{b.buttonName}}</h2>
+              <p>{{b.buttonSet}} Set<br />
+                {{b.recipe}}</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="content">
+              <span class="badge badge-default">#{{b.buttonId}}</span>
+              <span class="badge badge-success" ng-show="b.isTournamentLegal">Tournament Legal</span>
+              <span class="badge badge-danger" ng-show="b.hasUnimplementedSkill">Unimplemented Skill</span>
+              <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
+              <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
+              <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
+              <span class="badge badge-secondary" ng-repeat="event in b.events">{{event}}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card">  {{buttonTimestamp}}      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/js/halfmoon.min.js"
+    integrity="sha512-8fN/MQrHBCMmkx2t4QwGODGHwQf8VxCeNwNkJz0gjt5JrlUfJ5zNlMr9lrzhnl7DSN+5E16YmMHnfomnQmvSoA=="
+    crossorigin="anonymous"></script>
+  <script>
+    angular.module('myApp', [])
+      .service('buttonData',
+        function() {  
+              // reminder to future self: data observed from "Create game" page
+          this.getData = function(cb) {
+            fetch("/buttondata.json").then(function(response){response.json().then(cb)})
+          }
+          
+        }
+      )
+      .filter('multiWordFilter', function ($filter) {
+        return function (inputArray, searchText) {
+          var wordArray = searchText ? searchText.toLowerCase().split(/\s+/) : [];
+          var wordCount = wordArray.length;
+          // each word filters over the results of the last
+          for (var i in wordArray) {
+            inputArray = $filter('filter')(inputArray, wordArray[i]);
+          }
+          return inputArray;
+        }
+      })
+      .controller('PlebController', function ($scope, buttonData, $filter, $timeout) {
+        buttonData.getData(function(body){
+          $scope.buttonTimestamp = body.message;
+          $scope.buttons = body.data;
+        
+          for (var b in $scope.buttons) {
+            var button = $scope.buttons[b];
+            // get isTournamentLegal and other bools into .attributes so they are searchable
+            button.attributes = _(button).pickBy(function (x) { return x === true }).keys().value();
+            button.events=[]
+            // add a special flag to some buttons 
+            if(["Balticon 34","Polycon","Demicon the 13th","SydCon 10","Geekz"].includes(button.buttonSet)) {
+              button.attributes.push("TLOpen")
+              button.events.push("TLOpen")
+            }
+            if(["Free Radicals","Metamorphers","Chicago Crew"].includes(button.buttonSet)) {
+              button.attributes.push("HitListFeb'21")
+              button.events.push("HitListFeb'21")
+            }
+            for (var t in button.dieTypes) {
+              button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
+            }
+
+          }
+
+          randInt = function (min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+          }
+
+          $scope.randomPick = function () {
+            $timeout(function () {
+              $scope.random = $scope.filteredButtons[randInt(0, $scope.filteredButtons.length)]
+            }, 10)
+          }
+
+          $scope.$apply();
+
+        })
+
+
+      })
+  </script>
+</body>
+
+</html>
