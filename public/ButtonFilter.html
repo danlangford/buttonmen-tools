@@ -38,7 +38,7 @@
       </div>
 
       <p class="navbar-text" ng-init="randomPick()">
-        <b>{{random.buttonName}}</b> {{random.recipe}}
+        <b>{{random.buttonName}}</b>&nbsp;{{random.recipe}}
       </p>
 
       <div class="navbar-content ml-auto">
@@ -72,18 +72,19 @@
               <span class="badge badge-default">#{{b.buttonId}}</span>
               <span class="badge badge-success" ng-show="b.isTournamentLegal">Tournament Legal</span>
               <span class="badge badge-danger" ng-show="b.hasUnimplementedSkill">Unimplemented Skill</span>
+              <span class="badge badge-danger" ng-show="b.isStagingOnly">Staging Only</span>
               <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
               <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
               <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
               <span class="badge badge-secondary" ng-repeat="event in b.events">{{event}}</span>
-              <p><span class=".font-size-12">winrate={{b.rate}}% games={{b.count}}</span></p>
+              <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span></p>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="card">  {{buttonDataDate}} {{buttonStatsDate}}      </div>
+      <div class="card">  {{buttonDataDate}} {{buttonUnimplDate}} {{buttonStatsDate}}      </div>
     </div>
   </div>
 
@@ -106,12 +107,21 @@
       )
       .service('buttonStats',
         function() {  
-              // reminder to future self: data observed from "Create game" page
+              // reminder to future self: this is from http://stats.dev.buttonweavers.com/ui/stats/
           this.getData = function(cb) {
             fetch("/buttonstats.json").then(function(response){response.json().then(cb)})
           }
           
         }
+      )
+      .service('buttonUnimpl',
+          function() {
+            // reminder to future self: data observed from "Create game" page ON STAGING
+            this.getData = function(cb) {
+              fetch("/buttonunimpl.json").then(function(response){response.json().then(cb)})
+            }
+
+          }
       )
       .filter('multiWordFilter', function ($filter) {
         return function (inputArray, searchText) {
@@ -124,51 +134,71 @@
           return inputArray;
         }
       })
-      .controller('PlebController', function ($scope, buttonData, buttonStats, $filter, $timeout) {
+      .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
         buttonData.getData(function(body){
           buttonStats.getData(function(stats){
+            buttonUnimpl.getData(function(unimpl){
 
-            $scope.buttonStatsDate = stats.message;
-            $scope.buttonDataDate = body.message;
-            $scope.buttons = body.data;
+              $scope.buttonStatsDate = stats.message;
+              $scope.buttonUnimplDate = unimpl.message;
+              $scope.buttonDataDate = body.message;
+              $scope.buttonsImpl = body.data;
+              $scope.buttonsUnimpl = unimpl.data;
+              $scope.buttons = _.unionWith($scope.buttonsImpl, $scope.buttonsUnimpl, _.isEqual);
 
-            for (var b in $scope.buttons) {
-              var button = $scope.buttons[b];
-              // get isTournamentLegal and other bools into .attributes so they are searchable
-              button.attributes = _(button).pickBy(function (x) { return x === true }).keys().value();
-              button.events=[]
-              // add a special flag to some buttons
-              if(["Balticon 34","Polycon","Demicon the 13th","SydCon 10","Geekz"].includes(button.buttonSet)) {
-                button.attributes.push("TLOpen")
-                button.events.push("TLOpen")
+              implName = $scope.buttonsImpl.map(bimpl=>bimpl.buttonName)
+              unimplName = $scope.buttonsUnimpl.map(bunimpl=>bunimpl.buttonName)
+
+              for (var b in $scope.buttons) {
+                var button = $scope.buttons[b];
+
+                // get isTournamentLegal and other bools into .attributes so they are searchable
+                button.attributes = _(button).pickBy(function (x) {
+                  return x === true
+                }).keys().value();
+                button.events = []
+                // add a special flag to some buttons
+                if (["Balticon 34", "Polycon", "Demicon the 13th", "SydCon 10", "Geekz"].includes(
+                    button.buttonSet)) {
+                  button.attributes.push("TLOpen")
+                  button.events.push("TLOpen")
+                }
+                if (["Free Radicals", "Metamorphers", "Chicago Crew"].includes(button.buttonSet)) {
+                  button.attributes.push("HitListFeb'21")
+                  button.events.push("HitListFeb'21")
+                }
+                if (!implName.includes(button.buttonName)) {
+                  button.attributes.push("isStagingOnly")
+                  button.isStagingOnly = function () {
+                    return true
+                  }
+                }
+                for (var t in button.dieTypes) {
+                  button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
+                }
+                if (stats.data[button.buttonName]) {
+                  button.rate = stats.data[button.buttonName].rate
+                  button.attributes.push("winrate=" + button.rate)
+                  button.count = stats.data[button.buttonName].count
+                  button.attributes.push("games=" + button.count)
+                }
+
               }
-              if(["Free Radicals","Metamorphers","Chicago Crew"].includes(button.buttonSet)) {
-                button.attributes.push("HitListFeb'21")
-                button.events.push("HitListFeb'21")
-              }
-              for (var t in button.dieTypes) {
-                button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
-              }
-              if(stats.data[button.buttonName]){
-                button.rate=stats.data[button.buttonName].rate
-                button.attributes.push("winrate="+button.rate)
-                button.count=stats.data[button.buttonName].count
-                button.attributes.push("games="+button.count)
+
+              randInt = function (min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
               }
 
-            }
+              $scope.randomPick = function () {
+                $timeout(function () {
+                  $scope.random = $scope.filteredButtons[randInt(0, $scope.filteredButtons.length)]
+                }, 10)
+              }
 
-            randInt = function (min, max) {
-              return Math.floor(Math.random() * (max - min)) + min;
-            }
+              $scope.$apply();
 
-            $scope.randomPick = function () {
-              $timeout(function () {
-                $scope.random = $scope.filteredButtons[randInt(0, $scope.filteredButtons.length)]
-              }, 10)
-            }
 
-            $scope.$apply();
+            })
           })
         })
 
