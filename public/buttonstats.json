@@ -1,0 +1,4814 @@
+{
+    "data": {
+        "Gordo (Fightball)": {
+            "bset": "Fightball",
+            "count": 1,
+            "name": "Gordo (Fightball)",
+            "rate": 100.0,
+            "tl": true
+        },
+        "Skinny": {
+            "bset": "Fightball",
+            "count": 1,
+            "name": "Skinny",
+            "rate": 100.0,
+            "tl": true
+        },
+        "mgatten": {
+            "bset": "Classic Fanatics",
+            "count": 111,
+            "name": "mgatten",
+            "rate": 95.5,
+            "tl": false
+        },
+        "Snuff": {
+            "bset": "Classic Fanatics",
+            "count": 90,
+            "name": "Snuff",
+            "rate": 92.22,
+            "tl": false
+        },
+        "Discordia": {
+            "bset": "Classic Fanatics",
+            "count": 169,
+            "name": "Discordia",
+            "rate": 85.8,
+            "tl": false
+        },
+        "jl8e": {
+            "bset": "2020 Fanatics",
+            "count": 501,
+            "name": "jl8e",
+            "rate": 84.23,
+            "tl": false
+        },
+        "nelde": {
+            "bset": "Classic Fanatics",
+            "count": 146,
+            "name": "nelde",
+            "rate": 83.56,
+            "tl": false
+        },
+        "skapheles": {
+            "bset": "Classic Fanatics",
+            "count": 146,
+            "name": "skapheles",
+            "rate": 81.51,
+            "tl": false
+        },
+        "gslamm": {
+            "bset": "Classic Fanatics",
+            "count": 159,
+            "name": "gslamm",
+            "rate": 79.87,
+            "tl": false
+        },
+        "IIconfused": {
+            "bset": "Classic Fanatics",
+            "count": 179,
+            "name": "IIconfused",
+            "rate": 77.09,
+            "tl": false
+        },
+        "Zotmeister": {
+            "bset": "Classic Fanatics",
+            "count": 187,
+            "name": "Zotmeister",
+            "rate": 76.47,
+            "tl": false
+        },
+        "relsqui": {
+            "bset": "Classic Fanatics",
+            "count": 126,
+            "name": "relsqui",
+            "rate": 75.4,
+            "tl": false
+        },
+        "spindisc": {
+            "bset": "Classic Fanatics",
+            "count": 112,
+            "name": "spindisc",
+            "rate": 75.0,
+            "tl": false
+        },
+        "icarus": {
+            "bset": "Classic Fanatics",
+            "count": 113,
+            "name": "icarus",
+            "rate": 74.34,
+            "tl": false
+        },
+        "bobby 5150": {
+            "bset": "Classic Fanatics",
+            "count": 128,
+            "name": "bobby 5150",
+            "rate": 74.22,
+            "tl": false
+        },
+        "kestrel": {
+            "bset": "Classic Fanatics",
+            "count": 97,
+            "name": "kestrel",
+            "rate": 73.2,
+            "tl": false
+        },
+        "Nonce Equitaur": {
+            "bset": "2020 Fanatics",
+            "count": 351,
+            "name": "Nonce Equitaur",
+            "rate": 72.93,
+            "tl": false
+        },
+        "fendrin": {
+            "bset": "Classic Fanatics",
+            "count": 189,
+            "name": "fendrin",
+            "rate": 72.49,
+            "tl": false
+        },
+        "Zegota": {
+            "bset": "Classic Fanatics",
+            "count": 195,
+            "name": "Zegota",
+            "rate": 72.31,
+            "tl": false
+        },
+        "Cristofore": {
+            "bset": "Classic Fanatics",
+            "count": 100,
+            "name": "Cristofore",
+            "rate": 72.0,
+            "tl": false
+        },
+        "Weylan": {
+            "bset": "Classic Fanatics",
+            "count": 148,
+            "name": "Weylan",
+            "rate": 71.62,
+            "tl": false
+        },
+        "Squiddhartha": {
+            "bset": "Classic Fanatics",
+            "count": 122,
+            "name": "Squiddhartha",
+            "rate": 71.31,
+            "tl": false
+        },
+        "RavenBlack": {
+            "bset": "Classic Fanatics",
+            "count": 94,
+            "name": "RavenBlack",
+            "rate": 70.21,
+            "tl": false
+        },
+        "BrashTech": {
+            "bset": "Classic Fanatics",
+            "count": 131,
+            "name": "BrashTech",
+            "rate": 69.47,
+            "tl": false
+        },
+        "tavella": {
+            "bset": "2020 Fanatics",
+            "count": 101,
+            "name": "tavella",
+            "rate": 69.31,
+            "tl": false
+        },
+        "maga": {
+            "bset": "Classic Fanatics",
+            "count": 87,
+            "name": "maga",
+            "rate": 68.97,
+            "tl": false
+        },
+        "trifecta": {
+            "bset": "Classic Fanatics",
+            "count": 77,
+            "name": "trifecta",
+            "rate": 68.83,
+            "tl": false
+        },
+        "Blargh": {
+            "bset": "2020 Fanatics",
+            "count": 144,
+            "name": "Blargh",
+            "rate": 68.75,
+            "tl": false
+        },
+        "Heath": {
+            "bset": "Classic Fanatics",
+            "count": 51,
+            "name": "Heath",
+            "rate": 68.63,
+            "tl": false
+        },
+        "Rose Quartz": {
+            "bset": "Steven Universe",
+            "count": 137,
+            "name": "Rose Quartz",
+            "rate": 68.61,
+            "tl": false
+        },
+        "Darth Maul": {
+            "bset": "Hodge Podge",
+            "count": 184,
+            "name": "Darth Maul",
+            "rate": 68.48,
+            "tl": false
+        },
+        "Torch": {
+            "bset": "Classic Fanatics",
+            "count": 60,
+            "name": "Torch",
+            "rate": 68.33,
+            "tl": false
+        },
+        "Heather": {
+            "bset": "Classic Fanatics",
+            "count": 179,
+            "name": "Heather",
+            "rate": 68.16,
+            "tl": false
+        },
+        "Chantal": {
+            "bset": "Blademasters: Third Attack",
+            "count": 237,
+            "name": "Chantal",
+            "rate": 67.93,
+            "tl": false
+        },
+        "Kurosuke": {
+            "bset": "Classic Fanatics",
+            "count": 159,
+            "name": "Kurosuke",
+            "rate": 67.92,
+            "tl": false
+        },
+        "roujin27": {
+            "bset": "Classic Fanatics",
+            "count": 106,
+            "name": "roujin27",
+            "rate": 67.92,
+            "tl": false
+        },
+        "Lion": {
+            "bset": "Legend of the Five Rings",
+            "count": 202,
+            "name": "Lion",
+            "rate": 67.82,
+            "tl": true
+        },
+        "Darkly Cute": {
+            "bset": "MegaTokyo",
+            "count": 360,
+            "name": "Darkly Cute",
+            "rate": 67.78,
+            "tl": false
+        },
+        "fernworthy": {
+            "bset": "Classic Fanatics",
+            "count": 99,
+            "name": "fernworthy",
+            "rate": 67.68,
+            "tl": false
+        },
+        "sanny": {
+            "bset": "Classic Fanatics",
+            "count": 111,
+            "name": "sanny",
+            "rate": 67.57,
+            "tl": false
+        },
+        "Qui-Gon Jinn": {
+            "bset": "Hodge Podge",
+            "count": 110,
+            "name": "Qui-Gon Jinn",
+            "rate": 67.27,
+            "tl": false
+        },
+        "bowler190": {
+            "bset": "Classic Fanatics",
+            "count": 189,
+            "name": "bowler190",
+            "rate": 67.2,
+            "tl": false
+        },
+        "GreatWolf": {
+            "bset": "Classic Fanatics",
+            "count": 161,
+            "name": "GreatWolf",
+            "rate": 67.08,
+            "tl": false
+        },
+        "Vysion": {
+            "bset": "Classic Fanatics",
+            "count": 164,
+            "name": "Vysion",
+            "rate": 67.07,
+            "tl": false
+        },
+        "Shadowkeeper": {
+            "bset": "Classic Fanatics",
+            "count": 103,
+            "name": "Shadowkeeper",
+            "rate": 66.99,
+            "tl": false
+        },
+        "Noeh": {
+            "bset": "Classic Fanatics",
+            "count": 112,
+            "name": "Noeh",
+            "rate": 66.96,
+            "tl": false
+        },
+        "Sabathia": {
+            "bset": "Classic Fanatics",
+            "count": 112,
+            "name": "Sabathia",
+            "rate": 66.96,
+            "tl": false
+        },
+        "Michigan": {
+            "bset": "50 States",
+            "count": 236,
+            "name": "Michigan",
+            "rate": 66.95,
+            "tl": false
+        },
+        "pgolo": {
+            "bset": "Classic Fanatics",
+            "count": 121,
+            "name": "pgolo",
+            "rate": 66.94,
+            "tl": false
+        },
+        "Faye": {
+            "bset": "Cowboy Bebop",
+            "count": 360,
+            "name": "Faye",
+            "rate": 66.67,
+            "tl": false
+        },
+        "Loki": {
+            "bset": "Hodge Podge",
+            "count": 180,
+            "name": "Loki",
+            "rate": 66.67,
+            "tl": false
+        },
+        "Anvil": {
+            "bset": "Classic Fanatics",
+            "count": 135,
+            "name": "Anvil",
+            "rate": 66.67,
+            "tl": false
+        },
+        "TYFTFB": {
+            "bset": "Classic Fanatics",
+            "count": 123,
+            "name": "TYFTFB",
+            "rate": 66.67,
+            "tl": false
+        },
+        "Urbanmyth": {
+            "bset": "Classic Fanatics",
+            "count": 81,
+            "name": "Urbanmyth",
+            "rate": 66.67,
+            "tl": false
+        },
+        "GripTiger": {
+            "bset": "Classic Fanatics",
+            "count": 66,
+            "name": "GripTiger",
+            "rate": 66.67,
+            "tl": false
+        },
+        "Prentice": {
+            "bset": "West Side",
+            "count": 128,
+            "name": "Prentice",
+            "rate": 66.41,
+            "tl": true
+        },
+        "juelki": {
+            "bset": "Classic Fanatics",
+            "count": 107,
+            "name": "juelki",
+            "rate": 66.36,
+            "tl": false
+        },
+        "Coyote": {
+            "bset": "Classic Fanatics",
+            "count": 101,
+            "name": "Coyote",
+            "rate": 66.34,
+            "tl": false
+        },
+        "myxozoa": {
+            "bset": "Classic Fanatics",
+            "count": 98,
+            "name": "myxozoa",
+            "rate": 66.33,
+            "tl": false
+        },
+        "chase": {
+            "bset": "Classic Fanatics",
+            "count": 95,
+            "name": "chase",
+            "rate": 66.32,
+            "tl": false
+        },
+        "Mantis": {
+            "bset": "Legend of the Five Rings",
+            "count": 273,
+            "name": "Mantis",
+            "rate": 66.3,
+            "tl": true
+        },
+        "GoldenOtter": {
+            "bset": "Classic Fanatics",
+            "count": 139,
+            "name": "GoldenOtter",
+            "rate": 66.19,
+            "tl": false
+        },
+        "jimmosk": {
+            "bset": "2020 Fanatics",
+            "count": 68,
+            "name": "jimmosk",
+            "rate": 66.18,
+            "tl": false
+        },
+        "Sagittarius": {
+            "bset": "Zodiac",
+            "count": 263,
+            "name": "Sagittarius",
+            "rate": 66.16,
+            "tl": false
+        },
+        "CestWhat": {
+            "bset": "Classic Fanatics",
+            "count": 65,
+            "name": "CestWhat",
+            "rate": 66.15,
+            "tl": false
+        },
+        "Caligari": {
+            "bset": "Classic Fanatics",
+            "count": 106,
+            "name": "Caligari",
+            "rate": 66.04,
+            "tl": false
+        },
+        "Totoro": {
+            "bset": "Classic Fanatics",
+            "count": 106,
+            "name": "Totoro",
+            "rate": 66.04,
+            "tl": false
+        },
+        "Delaware": {
+            "bset": "50 States",
+            "count": 185,
+            "name": "Delaware",
+            "rate": 65.95,
+            "tl": false
+        },
+        "Downen": {
+            "bset": "Classic Fanatics",
+            "count": 91,
+            "name": "Downen",
+            "rate": 65.93,
+            "tl": false
+        },
+        "Jordan": {
+            "bset": "Classic Fanatics",
+            "count": 91,
+            "name": "Jordan",
+            "rate": 65.93,
+            "tl": false
+        },
+        "wembley-fraggle": {
+            "bset": "Classic Fanatics",
+            "count": 158,
+            "name": "wembley-fraggle",
+            "rate": 65.82,
+            "tl": false
+        },
+        "Lascivia": {
+            "bset": "Renaissance",
+            "count": 262,
+            "name": "Lascivia",
+            "rate": 65.65,
+            "tl": false
+        },
+        "DocBlue": {
+            "bset": "Classic Fanatics",
+            "count": 96,
+            "name": "DocBlue",
+            "rate": 65.62,
+            "tl": false
+        },
+        "schwa": {
+            "bset": "Classic Fanatics",
+            "count": 122,
+            "name": "schwa",
+            "rate": 65.57,
+            "tl": false
+        },
+        "Ringmaster": {
+            "bset": "Big Top",
+            "count": 510,
+            "name": "Ringmaster",
+            "rate": 65.49,
+            "tl": false
+        },
+        "ABCGi": {
+            "bset": "Classic Fanatics",
+            "count": 55,
+            "name": "ABCGi",
+            "rate": 65.45,
+            "tl": false
+        },
+        "Grivan": {
+            "bset": "Classic Fanatics",
+            "count": 55,
+            "name": "Grivan",
+            "rate": 65.45,
+            "tl": false
+        },
+        "Zomulgustar": {
+            "bset": "Classic Fanatics",
+            "count": 55,
+            "name": "Zomulgustar",
+            "rate": 65.45,
+            "tl": false
+        },
+        "Finngall": {
+            "bset": "Classic Fanatics",
+            "count": 98,
+            "name": "Finngall",
+            "rate": 65.31,
+            "tl": false
+        },
+        "Texas": {
+            "bset": "50 States",
+            "count": 226,
+            "name": "Texas",
+            "rate": 65.04,
+            "tl": false
+        },
+        "jrbrown78": {
+            "bset": "Classic Fanatics",
+            "count": 94,
+            "name": "jrbrown78",
+            "rate": 64.89,
+            "tl": false
+        },
+        "Moodster": {
+            "bset": "Classic Fanatics",
+            "count": 131,
+            "name": "Moodster",
+            "rate": 64.89,
+            "tl": false
+        },
+        "Missouri": {
+            "bset": "50 States",
+            "count": 349,
+            "name": "Missouri",
+            "rate": 64.76,
+            "tl": false
+        },
+        "Hooloovoo": {
+            "bset": "Classic Fanatics",
+            "count": 82,
+            "name": "Hooloovoo",
+            "rate": 64.63,
+            "tl": false
+        },
+        "hansolav": {
+            "bset": "Classic Fanatics",
+            "count": 48,
+            "name": "hansolav",
+            "rate": 64.58,
+            "tl": false
+        },
+        "Julia": {
+            "bset": "Peloton",
+            "count": 127,
+            "name": "Julia",
+            "rate": 64.57,
+            "tl": false
+        },
+        "Miser": {
+            "bset": "Hodge Podge",
+            "count": 335,
+            "name": "Miser",
+            "rate": 64.48,
+            "tl": false
+        },
+        "mneme": {
+            "bset": "Classic Fanatics",
+            "count": 89,
+            "name": "mneme",
+            "rate": 64.04,
+            "tl": false
+        },
+        "moekon": {
+            "bset": "Classic Fanatics",
+            "count": 114,
+            "name": "moekon",
+            "rate": 64.04,
+            "tl": false
+        },
+        "Pisces": {
+            "bset": "Zodiac",
+            "count": 208,
+            "name": "Pisces",
+            "rate": 63.94,
+            "tl": false
+        },
+        "Mickael": {
+            "bset": "West Side",
+            "count": 122,
+            "name": "Mickael",
+            "rate": 63.93,
+            "tl": true
+        },
+        "TwistedRich": {
+            "bset": "Classic Fanatics",
+            "count": 108,
+            "name": "TwistedRich",
+            "rate": 63.89,
+            "tl": false
+        },
+        "devious": {
+            "bset": "2020 Fanatics",
+            "count": 91,
+            "name": "devious",
+            "rate": 63.74,
+            "tl": false
+        },
+        "Doyle": {
+            "bset": "Peloton",
+            "count": 124,
+            "name": "Doyle",
+            "rate": 63.71,
+            "tl": false
+        },
+        "Z-Don": {
+            "bset": "Diceland",
+            "count": 228,
+            "name": "Z-Don",
+            "rate": 63.6,
+            "tl": false
+        },
+        "Yagharek": {
+            "bset": "Classic Fanatics",
+            "count": 118,
+            "name": "Yagharek",
+            "rate": 63.56,
+            "tl": false
+        },
+        "Billy Shakespeare": {
+            "bset": "2004 Origins",
+            "count": 255,
+            "name": "Billy Shakespeare",
+            "rate": 63.53,
+            "tl": false
+        },
+        "Fanaka66": {
+            "bset": "Classic Fanatics",
+            "count": 112,
+            "name": "Fanaka66",
+            "rate": 63.39,
+            "tl": false
+        },
+        "Mirumoto": {
+            "bset": "Legend of the Five Rings",
+            "count": 232,
+            "name": "Mirumoto",
+            "rate": 63.36,
+            "tl": true
+        },
+        "Pearl (SU)": {
+            "bset": "Steven Universe",
+            "count": 199,
+            "name": "Pearl (SU)",
+            "rate": 63.32,
+            "tl": false
+        },
+        "Aysez": {
+            "bset": "Classic Fanatics",
+            "count": 109,
+            "name": "Aysez",
+            "rate": 63.3,
+            "tl": false
+        },
+        "New Mexico": {
+            "bset": "50 States",
+            "count": 204,
+            "name": "New Mexico",
+            "rate": 63.24,
+            "tl": false
+        },
+        "Alice": {
+            "bset": "Wonderland",
+            "count": 427,
+            "name": "Alice",
+            "rate": 63.23,
+            "tl": false
+        },
+        "Zophiel": {
+            "bset": "Classic Fanatics",
+            "count": 152,
+            "name": "Zophiel",
+            "rate": 63.16,
+            "tl": false
+        },
+        "Sally": {
+            "bset": "West Side",
+            "count": 403,
+            "name": "Sally",
+            "rate": 63.03,
+            "tl": true
+        },
+        "Kakita": {
+            "bset": "Legend of the Five Rings",
+            "count": 173,
+            "name": "Kakita",
+            "rate": 63.01,
+            "tl": true
+        },
+        "lunatic": {
+            "bset": "Classic Fanatics",
+            "count": 100,
+            "name": "lunatic",
+            "rate": 63.0,
+            "tl": false
+        },
+        "fxdirect": {
+            "bset": "Classic Fanatics",
+            "count": 51,
+            "name": "fxdirect",
+            "rate": 62.75,
+            "tl": false
+        },
+        "Rhode Island": {
+            "bset": "50 States",
+            "count": 166,
+            "name": "Rhode Island",
+            "rate": 62.65,
+            "tl": false
+        },
+        "ConMan": {
+            "bset": "2000 ShoreCon",
+            "count": 278,
+            "name": "ConMan",
+            "rate": 62.59,
+            "tl": false
+        },
+        "barswanian": {
+            "bset": "Classic Fanatics",
+            "count": 48,
+            "name": "barswanian",
+            "rate": 62.5,
+            "tl": false
+        },
+        "Notorious": {
+            "bset": "Classic Fanatics",
+            "count": 48,
+            "name": "Notorious",
+            "rate": 62.5,
+            "tl": false
+        },
+        "professorbooty": {
+            "bset": "Classic Fanatics",
+            "count": 157,
+            "name": "professorbooty",
+            "rate": 62.42,
+            "tl": false
+        },
+        "Holiday": {
+            "bset": "Hodge Podge",
+            "count": 170,
+            "name": "Holiday",
+            "rate": 62.35,
+            "tl": false
+        },
+        "Bane": {
+            "bset": "BROM",
+            "count": 390,
+            "name": "Bane",
+            "rate": 62.31,
+            "tl": true
+        },
+        "TheMachine": {
+            "bset": "Classic Fanatics",
+            "count": 53,
+            "name": "TheMachine",
+            "rate": 62.26,
+            "tl": false
+        },
+        "Ed": {
+            "bset": "Cowboy Bebop",
+            "count": 317,
+            "name": "Ed",
+            "rate": 62.15,
+            "tl": false
+        },
+        "North Carolina": {
+            "bset": "50 States",
+            "count": 116,
+            "name": "North Carolina",
+            "rate": 62.07,
+            "tl": false
+        },
+        "Bar Mitzvah Boy": {
+            "bset": "Bar Mitzvah",
+            "count": 195,
+            "name": "Bar Mitzvah Boy",
+            "rate": 62.05,
+            "tl": false
+        },
+        "Spite": {
+            "bset": "2004 Origins",
+            "count": 295,
+            "name": "Spite",
+            "rate": 62.03,
+            "tl": false
+        },
+        "Dietrich": {
+            "bset": "West Side",
+            "count": 126,
+            "name": "Dietrich",
+            "rate": 61.9,
+            "tl": true
+        },
+        "Foxlady": {
+            "bset": "Classic Fanatics",
+            "count": 102,
+            "name": "Foxlady",
+            "rate": 61.76,
+            "tl": false
+        },
+        "Bennett": {
+            "bset": "BRAWL",
+            "count": 468,
+            "name": "Bennett",
+            "rate": 61.75,
+            "tl": true
+        },
+        "Maine": {
+            "bset": "50 States",
+            "count": 172,
+            "name": "Maine",
+            "rate": 61.63,
+            "tl": false
+        },
+        "Jose": {
+            "bset": "Hodge Podge",
+            "count": 151,
+            "name": "Jose",
+            "rate": 61.59,
+            "tl": false
+        },
+        "Gordo": {
+            "bset": "2000 Rare / Promo",
+            "count": 174,
+            "name": "Gordo",
+            "rate": 61.49,
+            "tl": false
+        },
+        "Kasper": {
+            "bset": "Unexploded Cow",
+            "count": 181,
+            "name": "Kasper",
+            "rate": 61.33,
+            "tl": true
+        },
+        "Illinois": {
+            "bset": "50 States",
+            "count": 222,
+            "name": "Illinois",
+            "rate": 61.26,
+            "tl": false
+        },
+        "Unicorn": {
+            "bset": "Legend of the Five Rings",
+            "count": 201,
+            "name": "Unicorn",
+            "rate": 61.19,
+            "tl": true
+        },
+        "Konami": {
+            "bset": "Samurai",
+            "count": 357,
+            "name": "Konami",
+            "rate": 61.06,
+            "tl": true
+        },
+        "BlackOmega": {
+            "bset": "Classic Fanatics",
+            "count": 59,
+            "name": "BlackOmega",
+            "rate": 61.02,
+            "tl": false
+        },
+        "NoopMan": {
+            "bset": "Classic Fanatics",
+            "count": 46,
+            "name": "NoopMan",
+            "rate": 60.87,
+            "tl": false
+        },
+        "Crosswords": {
+            "bset": "Hodge Podge",
+            "count": 176,
+            "name": "Crosswords",
+            "rate": 60.8,
+            "tl": false
+        },
+        "santiago": {
+            "bset": "Classic Fanatics",
+            "count": 51,
+            "name": "santiago",
+            "rate": 60.78,
+            "tl": false
+        },
+        "Ohio": {
+            "bset": "50 States",
+            "count": 152,
+            "name": "Ohio",
+            "rate": 60.53,
+            "tl": false
+        },
+        "braincraft": {
+            "bset": "Classic Fanatics",
+            "count": 76,
+            "name": "braincraft",
+            "rate": 60.53,
+            "tl": false
+        },
+        "SailorMur": {
+            "bset": "Classic Fanatics",
+            "count": 38,
+            "name": "SailorMur",
+            "rate": 60.53,
+            "tl": false
+        },
+        "Sadakuro": {
+            "bset": "Samurai",
+            "count": 237,
+            "name": "Sadakuro",
+            "rate": 60.34,
+            "tl": true
+        },
+        "BugRoger": {
+            "bset": "Classic Fanatics",
+            "count": 136,
+            "name": "BugRoger",
+            "rate": 60.29,
+            "tl": false
+        },
+        "perlmunkee": {
+            "bset": "Classic Fanatics",
+            "count": 73,
+            "name": "perlmunkee",
+            "rate": 60.27,
+            "tl": false
+        },
+        "Darthcliff": {
+            "bset": "Classic Fanatics",
+            "count": 50,
+            "name": "Darthcliff",
+            "rate": 60.0,
+            "tl": false
+        },
+        "Coil": {
+            "bset": "BROM",
+            "count": 274,
+            "name": "Coil",
+            "rate": 59.85,
+            "tl": true
+        },
+        "Durak666": {
+            "bset": "Classic Fanatics",
+            "count": 154,
+            "name": "Durak666",
+            "rate": 59.74,
+            "tl": false
+        },
+        "Stacie": {
+            "bset": "West Side",
+            "count": 119,
+            "name": "Stacie",
+            "rate": 59.66,
+            "tl": true
+        },
+        "Dr. Clay": {
+            "bset": "Tenchi Muyo!",
+            "count": 109,
+            "name": "Dr. Clay",
+            "rate": 59.63,
+            "tl": false
+        },
+        "GorgorBey": {
+            "bset": "Classic Fanatics",
+            "count": 47,
+            "name": "GorgorBey",
+            "rate": 59.57,
+            "tl": false
+        },
+        "New Hampshire": {
+            "bset": "50 States",
+            "count": 210,
+            "name": "New Hampshire",
+            "rate": 59.52,
+            "tl": false
+        },
+        "Soja's Guardians": {
+            "bset": "Tenchi Muyo!",
+            "count": 121,
+            "name": "Soja's Guardians",
+            "rate": 59.5,
+            "tl": false
+        },
+        "Leo": {
+            "bset": "Zodiac",
+            "count": 224,
+            "name": "Leo",
+            "rate": 59.38,
+            "tl": false
+        },
+        "Raupe": {
+            "bset": "Classic Fanatics",
+            "count": 59,
+            "name": "Raupe",
+            "rate": 59.32,
+            "tl": false
+        },
+        "Grym": {
+            "bset": "Classic Fanatics",
+            "count": 81,
+            "name": "Grym",
+            "rate": 59.26,
+            "tl": false
+        },
+        "George": {
+            "bset": "Unexploded Cow",
+            "count": 294,
+            "name": "George",
+            "rate": 59.18,
+            "tl": true
+        },
+        "Steven Universe": {
+            "bset": "Steven Universe",
+            "count": 194,
+            "name": "Steven Universe",
+            "rate": 58.76,
+            "tl": false
+        },
+        "jgenzano": {
+            "bset": "Classic Fanatics",
+            "count": 92,
+            "name": "jgenzano",
+            "rate": 58.7,
+            "tl": false
+        },
+        "Macky": {
+            "bset": "Blademasters",
+            "count": 193,
+            "name": "Macky",
+            "rate": 58.55,
+            "tl": false
+        },
+        "Floriano": {
+            "bset": "Peloton",
+            "count": 123,
+            "name": "Floriano",
+            "rate": 58.54,
+            "tl": false
+        },
+        "Arashi": {
+            "bset": "Blademasters",
+            "count": 159,
+            "name": "Arashi",
+            "rate": 58.49,
+            "tl": false
+        },
+        "llippen5": {
+            "bset": "Classic Fanatics",
+            "count": 106,
+            "name": "llippen5",
+            "rate": 58.49,
+            "tl": false
+        },
+        "Dragon": {
+            "bset": "Legend of the Five Rings",
+            "count": 187,
+            "name": "Dragon",
+            "rate": 58.29,
+            "tl": true
+        },
+        "Horde O Ninjas": {
+            "bset": "Hodge Podge",
+            "count": 362,
+            "name": "Horde O Ninjas",
+            "rate": 58.29,
+            "tl": false
+        },
+        "Oni": {
+            "bset": "2004 Origins",
+            "count": 263,
+            "name": "Oni",
+            "rate": 58.17,
+            "tl": false
+        },
+        "bluebec": {
+            "bset": "Classic Fanatics",
+            "count": 98,
+            "name": "bluebec",
+            "rate": 58.16,
+            "tl": false
+        },
+        "Alabama": {
+            "bset": "50 States",
+            "count": 186,
+            "name": "Alabama",
+            "rate": 58.06,
+            "tl": false
+        },
+        "zaph": {
+            "bset": "Classic Fanatics",
+            "count": 93,
+            "name": "zaph",
+            "rate": 58.06,
+            "tl": false
+        },
+        "Beatrice": {
+            "bset": "West Side",
+            "count": 169,
+            "name": "Beatrice",
+            "rate": 57.99,
+            "tl": true
+        },
+        "Renee": {
+            "bset": "Blademasters",
+            "count": 107,
+            "name": "Renee",
+            "rate": 57.94,
+            "tl": false
+        },
+        "malarson": {
+            "bset": "Classic Fanatics",
+            "count": 133,
+            "name": "malarson",
+            "rate": 57.89,
+            "tl": false
+        },
+        "bonefish": {
+            "bset": "Classic Fanatics",
+            "count": 123,
+            "name": "bonefish",
+            "rate": 57.72,
+            "tl": false
+        },
+        "Washu": {
+            "bset": "Tenchi Muyo!",
+            "count": 123,
+            "name": "Washu",
+            "rate": 57.72,
+            "tl": false
+        },
+        "RandomBMFixed": {
+            "bset": "RandomBM",
+            "count": 59,
+            "name": "RandomBMFixed",
+            "rate": 57.63,
+            "tl": false
+        },
+        "Beatnik Turtle": {
+            "bset": "2004 Origins",
+            "count": 184,
+            "name": "Beatnik Turtle",
+            "rate": 57.61,
+            "tl": false
+        },
+        "Rini": {
+            "bset": "Sailor Moon 2",
+            "count": 125,
+            "name": "Rini",
+            "rate": 57.6,
+            "tl": true
+        },
+        "The Assassin": {
+            "bset": "ZOECon",
+            "count": 158,
+            "name": "The Assassin",
+            "rate": 57.59,
+            "tl": true
+        },
+        "Montague": {
+            "bset": "Unexploded Cow",
+            "count": 267,
+            "name": "Montague",
+            "rate": 57.3,
+            "tl": true
+        },
+        "Ein": {
+            "bset": "Cowboy Bebop",
+            "count": 262,
+            "name": "Ein",
+            "rate": 57.25,
+            "tl": false
+        },
+        "Evil Robot Luke": {
+            "bset": "Hodge Podge",
+            "count": 107,
+            "name": "Evil Robot Luke",
+            "rate": 57.01,
+            "tl": false
+        },
+        "Scorpion": {
+            "bset": "Legend of the Five Rings",
+            "count": 216,
+            "name": "Scorpion",
+            "rate": 56.94,
+            "tl": true
+        },
+        "Jackie": {
+            "bset": "West Side",
+            "count": 137,
+            "name": "Jackie",
+            "rate": 56.93,
+            "tl": true
+        },
+        "Honzo": {
+            "bset": "Samurai",
+            "count": 225,
+            "name": "Honzo",
+            "rate": 56.89,
+            "tl": true
+        },
+        "ghost walker": {
+            "bset": "Classic Fanatics",
+            "count": 118,
+            "name": "ghost walker",
+            "rate": 56.78,
+            "tl": false
+        },
+        "Ace": {
+            "bset": "Blademasters: Third Attack",
+            "count": 192,
+            "name": "Ace",
+            "rate": 56.77,
+            "tl": false
+        },
+        "Regina": {
+            "bset": "Blademasters: The Second Shot",
+            "count": 222,
+            "name": "Regina",
+            "rate": 56.76,
+            "tl": false
+        },
+        "Ronin": {
+            "bset": "Legend of the Five Rings",
+            "count": 148,
+            "name": "Ronin",
+            "rate": 56.76,
+            "tl": true
+        },
+        "Ulthar": {
+            "bset": "Yoyodyne",
+            "count": 180,
+            "name": "Ulthar",
+            "rate": 56.67,
+            "tl": false
+        },
+        "Vicious": {
+            "bset": "Cowboy Bebop",
+            "count": 166,
+            "name": "Vicious",
+            "rate": 56.63,
+            "tl": false
+        },
+        "Neville": {
+            "bset": "Unexploded Cow",
+            "count": 152,
+            "name": "Neville",
+            "rate": 56.58,
+            "tl": true
+        },
+        "Marta": {
+            "bset": "West Side",
+            "count": 99,
+            "name": "Marta",
+            "rate": 56.57,
+            "tl": true
+        },
+        "Sonia": {
+            "bset": "BRAWL",
+            "count": 253,
+            "name": "Sonia",
+            "rate": 56.52,
+            "tl": true
+        },
+        "amica": {
+            "bset": "Classic Fanatics",
+            "count": 115,
+            "name": "amica",
+            "rate": 56.52,
+            "tl": false
+        },
+        "Naga": {
+            "bset": "Legend of the Five Rings",
+            "count": 209,
+            "name": "Naga",
+            "rate": 56.46,
+            "tl": true
+        },
+        "Yeti": {
+            "bset": "Majesty",
+            "count": 211,
+            "name": "Yeti",
+            "rate": 56.4,
+            "tl": true
+        },
+        "lackey": {
+            "bset": "Classic Fanatics",
+            "count": 110,
+            "name": "lackey",
+            "rate": 56.36,
+            "tl": false
+        },
+        "Tsusuko": {
+            "bset": "Samurai",
+            "count": 222,
+            "name": "Tsusuko",
+            "rate": 56.31,
+            "tl": true
+        },
+        "Judah Maccabee": {
+            "bset": "Bar Mitzvah",
+            "count": 151,
+            "name": "Judah Maccabee",
+            "rate": 56.29,
+            "tl": false
+        },
+        "Luna & Artemis": {
+            "bset": "Sailor Moon 2",
+            "count": 151,
+            "name": "Luna & Artemis",
+            "rate": 56.29,
+            "tl": true
+        },
+        "Guillermo": {
+            "bset": "Renaissance",
+            "count": 183,
+            "name": "Guillermo",
+            "rate": 56.28,
+            "tl": true
+        },
+        "Ogi": {
+            "bset": "Sanctum",
+            "count": 185,
+            "name": "Ogi",
+            "rate": 56.22,
+            "tl": true
+        },
+        "King Endymion": {
+            "bset": "Sailor Moon 2",
+            "count": 82,
+            "name": "King Endymion",
+            "rate": 56.1,
+            "tl": true
+        },
+        "Nala": {
+            "bset": "2020 Fanatics",
+            "count": 66,
+            "name": "Nala",
+            "rate": 56.06,
+            "tl": false
+        },
+        "Pestilence": {
+            "bset": "Four Horsemen",
+            "count": 268,
+            "name": "Pestilence",
+            "rate": 55.97,
+            "tl": false
+        },
+        "Green Apple": {
+            "bset": "Chicagoland Gamers Conclave",
+            "count": 134,
+            "name": "Green Apple",
+            "rate": 55.97,
+            "tl": false
+        },
+        "War": {
+            "bset": "Four Horsemen",
+            "count": 109,
+            "name": "War",
+            "rate": 55.96,
+            "tl": false
+        },
+        "Jorgi": {
+            "bset": "Studio Foglio",
+            "count": 168,
+            "name": "Jorgi",
+            "rate": 55.95,
+            "tl": true
+        },
+        "Jesse": {
+            "bset": "Uptown",
+            "count": 195,
+            "name": "Jesse",
+            "rate": 55.9,
+            "tl": true
+        },
+        "RandomBMPentaskill": {
+            "bset": "RandomBM",
+            "count": 170,
+            "name": "RandomBMPentaskill",
+            "rate": 55.88,
+            "tl": false
+        },
+        "Dracha": {
+            "bset": "Sanctum",
+            "count": 179,
+            "name": "Dracha",
+            "rate": 55.87,
+            "tl": true
+        },
+        "Reaver": {
+            "bset": "BROM",
+            "count": 260,
+            "name": "Reaver",
+            "rate": 55.77,
+            "tl": true
+        },
+        "Massachusetts": {
+            "bset": "50 States",
+            "count": 140,
+            "name": "Massachusetts",
+            "rate": 55.71,
+            "tl": false
+        },
+        "Yuranosuke": {
+            "bset": "Samurai",
+            "count": 194,
+            "name": "Yuranosuke",
+            "rate": 55.67,
+            "tl": true
+        },
+        "Hale": {
+            "bset": "BRAWL",
+            "count": 180,
+            "name": "Hale",
+            "rate": 55.56,
+            "tl": true
+        },
+        "Bluff": {
+            "bset": "BROM",
+            "count": 339,
+            "name": "Bluff",
+            "rate": 55.46,
+            "tl": true
+        },
+        "ifni": {
+            "bset": "Classic Fanatics",
+            "count": 175,
+            "name": "ifni",
+            "rate": 55.43,
+            "tl": false
+        },
+        "Lorrie": {
+            "bset": "Free Radicals",
+            "count": 121,
+            "name": "Lorrie",
+            "rate": 55.37,
+            "tl": false
+        },
+        "Frankie": {
+            "bset": "Las Vegas",
+            "count": 76,
+            "name": "Frankie",
+            "rate": 55.26,
+            "tl": false
+        },
+        "Nikolai": {
+            "bset": "Fantasy",
+            "count": 183,
+            "name": "Nikolai",
+            "rate": 55.19,
+            "tl": true
+        },
+        "Changeling": {
+            "bset": "Soldiers",
+            "count": 270,
+            "name": "Changeling",
+            "rate": 55.19,
+            "tl": false
+        },
+        "AnnoDomini": {
+            "bset": "2020 Fanatics",
+            "count": 87,
+            "name": "AnnoDomini",
+            "rate": 55.17,
+            "tl": false
+        },
+        "Anti-Llama": {
+            "bset": "Classic Fanatics",
+            "count": 223,
+            "name": "Anti-Llama",
+            "rate": 55.16,
+            "tl": false
+        },
+        "Elsie": {
+            "bset": "Unexploded Cow",
+            "count": 223,
+            "name": "Elsie",
+            "rate": 55.16,
+            "tl": true
+        },
+        "Spider": {
+            "bset": "Blademasters: The Second Shot",
+            "count": 214,
+            "name": "Spider",
+            "rate": 55.14,
+            "tl": false
+        },
+        "Shore": {
+            "bset": "Soldiers",
+            "count": 283,
+            "name": "Shore",
+            "rate": 55.12,
+            "tl": true
+        },
+        "Yseulte": {
+            "bset": "Fairies",
+            "count": 394,
+            "name": "Yseulte",
+            "rate": 55.08,
+            "tl": true
+        },
+        "Mondo": {
+            "bset": "West Side",
+            "count": 109,
+            "name": "Mondo",
+            "rate": 55.05,
+            "tl": true
+        },
+        "Piro": {
+            "bset": "MegaTokyo",
+            "count": 202,
+            "name": "Piro",
+            "rate": 54.95,
+            "tl": false
+        },
+        "Virgo": {
+            "bset": "Zodiac",
+            "count": 206,
+            "name": "Virgo",
+            "rate": 54.85,
+            "tl": false
+        },
+        "Jasper": {
+            "bset": "Steven Universe",
+            "count": 126,
+            "name": "Jasper",
+            "rate": 54.76,
+            "tl": false
+        },
+        "Aquarius": {
+            "bset": "Zodiac",
+            "count": 221,
+            "name": "Aquarius",
+            "rate": 54.75,
+            "tl": false
+        },
+        "haruspex": {
+            "bset": "Classic Fanatics",
+            "count": 170,
+            "name": "haruspex",
+            "rate": 54.71,
+            "tl": false
+        },
+        "Crab": {
+            "bset": "Legend of the Five Rings",
+            "count": 238,
+            "name": "Crab",
+            "rate": 54.62,
+            "tl": true
+        },
+        "Stubbs": {
+            "bset": "Uptown",
+            "count": 185,
+            "name": "Stubbs",
+            "rate": 54.59,
+            "tl": true
+        },
+        "Rider": {
+            "bset": "West Side",
+            "count": 110,
+            "name": "Rider",
+            "rate": 54.55,
+            "tl": true
+        },
+        "KaijuGamer": {
+            "bset": "Classic Fanatics",
+            "count": 123,
+            "name": "KaijuGamer",
+            "rate": 54.47,
+            "tl": false
+        },
+        "EDG": {
+            "bset": "Gaming Guardians",
+            "count": 123,
+            "name": "EDG",
+            "rate": 54.47,
+            "tl": false
+        },
+        "Wu Lan": {
+            "bset": "1999 Rare / Promo",
+            "count": 305,
+            "name": "Wu Lan",
+            "rate": 54.43,
+            "tl": true
+        },
+        "Cancer": {
+            "bset": "Zodiac",
+            "count": 215,
+            "name": "Cancer",
+            "rate": 54.42,
+            "tl": false
+        },
+        "Crane": {
+            "bset": "Legend of the Five Rings",
+            "count": 164,
+            "name": "Crane",
+            "rate": 54.27,
+            "tl": true
+        },
+        "Phoenix": {
+            "bset": "Legend of the Five Rings",
+            "count": 188,
+            "name": "Phoenix",
+            "rate": 54.26,
+            "tl": true
+        },
+        "Wolfman": {
+            "bset": "Victorian Horror",
+            "count": 153,
+            "name": "Wolfman",
+            "rate": 54.25,
+            "tl": false
+        },
+        "wtrollkin": {
+            "bset": "Classic Fanatics",
+            "count": 48,
+            "name": "wtrollkin",
+            "rate": 54.17,
+            "tl": false
+        },
+        "Kentucky": {
+            "bset": "50 States",
+            "count": 181,
+            "name": "Kentucky",
+            "rate": 54.14,
+            "tl": false
+        },
+        "Gideon": {
+            "bset": "Blademasters: The Second Shot",
+            "count": 133,
+            "name": "Gideon",
+            "rate": 54.14,
+            "tl": false
+        },
+        "grayhawk": {
+            "bset": "Classic Fanatics",
+            "count": 98,
+            "name": "grayhawk",
+            "rate": 54.08,
+            "tl": false
+        },
+        "Ferrer": {
+            "bset": "The Core",
+            "count": 172,
+            "name": "Ferrer",
+            "rate": 54.07,
+            "tl": true
+        },
+        "Jedite": {
+            "bset": "Sailor Moon 1",
+            "count": 124,
+            "name": "Jedite",
+            "rate": 54.03,
+            "tl": true
+        },
+        "Sailor Man": {
+            "bset": "Geekz",
+            "count": 174,
+            "name": "Sailor Man",
+            "rate": 54.02,
+            "tl": true
+        },
+        "Pearl": {
+            "bset": "BRAWL",
+            "count": 306,
+            "name": "Pearl",
+            "rate": 53.92,
+            "tl": true
+        },
+        "Violette": {
+            "bset": "Unexploded Cow",
+            "count": 156,
+            "name": "Violette",
+            "rate": 53.85,
+            "tl": true
+        },
+        "dexx": {
+            "bset": "Classic Fanatics",
+            "count": 39,
+            "name": "dexx",
+            "rate": 53.85,
+            "tl": false
+        },
+        "Hammer": {
+            "bset": "Soldiers",
+            "count": 465,
+            "name": "Hammer",
+            "rate": 53.76,
+            "tl": true
+        },
+        "Kansas": {
+            "bset": "50 States",
+            "count": 121,
+            "name": "Kansas",
+            "rate": 53.72,
+            "tl": false
+        },
+        "Prudence": {
+            "bset": "Lunch Money",
+            "count": 190,
+            "name": "Prudence",
+            "rate": 53.68,
+            "tl": true
+        },
+        "Stick": {
+            "bset": "Classic Fanatics",
+            "count": 95,
+            "name": "Stick",
+            "rate": 53.68,
+            "tl": false
+        },
+        "mlvanbie": {
+            "bset": "Classic Fanatics",
+            "count": 125,
+            "name": "mlvanbie",
+            "rate": 53.6,
+            "tl": false
+        },
+        "Grist": {
+            "bset": "BROM",
+            "count": 168,
+            "name": "Grist",
+            "rate": 53.57,
+            "tl": true
+        },
+        "Wallace": {
+            "bset": "The Core",
+            "count": 140,
+            "name": "Wallace",
+            "rate": 53.57,
+            "tl": true
+        },
+        "Aylee": {
+            "bset": "Sluggy Freelance",
+            "count": 112,
+            "name": "Aylee",
+            "rate": 53.57,
+            "tl": true
+        },
+        "The Tick": {
+            "bset": "Hodge Podge",
+            "count": 226,
+            "name": "The Tick",
+            "rate": 53.54,
+            "tl": false
+        },
+        "Angora": {
+            "bset": "BRAWL",
+            "count": 413,
+            "name": "Angora",
+            "rate": 53.51,
+            "tl": false
+        },
+        "New York": {
+            "bset": "50 States",
+            "count": 157,
+            "name": "New York",
+            "rate": 53.5,
+            "tl": false
+        },
+        "Tonase": {
+            "bset": "Samurai",
+            "count": 230,
+            "name": "Tonase",
+            "rate": 53.48,
+            "tl": true
+        },
+        "Bunnies": {
+            "bset": "The Big Cheese",
+            "count": 614,
+            "name": "Bunnies",
+            "rate": 53.42,
+            "tl": false
+        },
+        "Peridot": {
+            "bset": "Steven Universe",
+            "count": 90,
+            "name": "Peridot",
+            "rate": 53.33,
+            "tl": false
+        },
+        "Clyde": {
+            "bset": "Uptown",
+            "count": 186,
+            "name": "Clyde",
+            "rate": 53.23,
+            "tl": true
+        },
+        "Vincent": {
+            "bset": "Fantasy",
+            "count": 1622,
+            "name": "Vincent",
+            "rate": 53.21,
+            "tl": true
+        },
+        "Strik": {
+            "bset": "BROM",
+            "count": 269,
+            "name": "Strik",
+            "rate": 53.16,
+            "tl": true
+        },
+        "Ken": {
+            "bset": "Dork Victory",
+            "count": 179,
+            "name": "Ken",
+            "rate": 53.07,
+            "tl": true
+        },
+        "Tamiya": {
+            "bset": "BRAWL",
+            "count": 343,
+            "name": "Tamiya",
+            "rate": 53.06,
+            "tl": true
+        },
+        "Anders": {
+            "bset": "Classic Fanatics",
+            "count": 147,
+            "name": "Anders",
+            "rate": 53.06,
+            "tl": false
+        },
+        "Phil": {
+            "bset": "Studio Foglio",
+            "count": 132,
+            "name": "Phil",
+            "rate": 53.03,
+            "tl": true
+        },
+        "The Jabberwock": {
+            "bset": "Wonderland",
+            "count": 187,
+            "name": "The Jabberwock",
+            "rate": 52.94,
+            "tl": false
+        },
+        "Gripen": {
+            "bset": "SydCon 10",
+            "count": 170,
+            "name": "Gripen",
+            "rate": 52.94,
+            "tl": true
+        },
+        "Kagato": {
+            "bset": "Tenchi Muyo!",
+            "count": 102,
+            "name": "Kagato",
+            "rate": 52.94,
+            "tl": false
+        },
+        "Sal": {
+            "bset": "West Side",
+            "count": 102,
+            "name": "Sal",
+            "rate": 52.94,
+            "tl": true
+        },
+        "Uncle Scratchy": {
+            "bset": "Bridge and Tunnel",
+            "count": 121,
+            "name": "Uncle Scratchy",
+            "rate": 52.89,
+            "tl": false
+        },
+        "Zero": {
+            "bset": "Tenchi Muyo!",
+            "count": 104,
+            "name": "Zero",
+            "rate": 52.88,
+            "tl": false
+        },
+        "The Fog": {
+            "bset": "Bridge and Tunnel",
+            "count": 197,
+            "name": "The Fog",
+            "rate": 52.79,
+            "tl": false
+        },
+        "Colorado": {
+            "bset": "50 States",
+            "count": 201,
+            "name": "Colorado",
+            "rate": 52.74,
+            "tl": false
+        },
+        "Randarch": {
+            "bset": "Gaming Guardians",
+            "count": 165,
+            "name": "Randarch",
+            "rate": 52.73,
+            "tl": false
+        },
+        "Bodie": {
+            "bset": "Classic Fanatics",
+            "count": 203,
+            "name": "Bodie",
+            "rate": 52.71,
+            "tl": false
+        },
+        "Seiji": {
+            "bset": "Blademasters: Third Attack",
+            "count": 118,
+            "name": "Seiji",
+            "rate": 52.54,
+            "tl": false
+        },
+        "Alljazzedup80": {
+            "bset": "Classic Fanatics",
+            "count": 120,
+            "name": "Alljazzedup80",
+            "rate": 52.5,
+            "tl": false
+        },
+        "Rubeus": {
+            "bset": "Sailor Moon 2",
+            "count": 122,
+            "name": "Rubeus",
+            "rate": 52.46,
+            "tl": true
+        },
+        "Gluttony": {
+            "bset": "7 deadly sins",
+            "count": 143,
+            "name": "Gluttony",
+            "rate": 52.45,
+            "tl": false
+        },
+        "Pain": {
+            "bset": "Classic Fanatics",
+            "count": 105,
+            "name": "Pain",
+            "rate": 52.38,
+            "tl": false
+        },
+        "Igor": {
+            "bset": "Dork Victory",
+            "count": 195,
+            "name": "Igor",
+            "rate": 52.31,
+            "tl": true
+        },
+        "Me am ORK!": {
+            "bset": "2000 Rare / Promo",
+            "count": 241,
+            "name": "Me am ORK!",
+            "rate": 52.28,
+            "tl": true
+        },
+        "Pride": {
+            "bset": "7 deadly sins",
+            "count": 132,
+            "name": "Pride",
+            "rate": 52.27,
+            "tl": false
+        },
+        "Count Dracula": {
+            "bset": "Victorian Horror",
+            "count": 199,
+            "name": "Count Dracula",
+            "rate": 52.26,
+            "tl": false
+        },
+        "Abe Caine": {
+            "bset": "2003 Rare / Promo",
+            "count": 297,
+            "name": "Abe Caine",
+            "rate": 52.19,
+            "tl": true
+        },
+        "Mutton Ben": {
+            "bset": "2017 Rare / Promo",
+            "count": 69,
+            "name": "Mutton Ben",
+            "rate": 52.17,
+            "tl": false
+        },
+        "Horace": {
+            "bset": "Blademasters",
+            "count": 186,
+            "name": "Horace",
+            "rate": 52.15,
+            "tl": false
+        },
+        "Talus": {
+            "bset": "Metamorphers",
+            "count": 117,
+            "name": "Talus",
+            "rate": 52.14,
+            "tl": false
+        },
+        "Greg Universe": {
+            "bset": "Steven Universe",
+            "count": 142,
+            "name": "Greg Universe",
+            "rate": 52.11,
+            "tl": false
+        },
+        "Assailer": {
+            "bset": "SFR",
+            "count": 123,
+            "name": "Assailer",
+            "rate": 52.03,
+            "tl": false
+        },
+        "Chris": {
+            "bset": "BRAWL",
+            "count": 335,
+            "name": "Chris",
+            "rate": 51.94,
+            "tl": true
+        },
+        "wranklepig": {
+            "bset": "Classic Fanatics",
+            "count": 255,
+            "name": "wranklepig",
+            "rate": 51.76,
+            "tl": false
+        },
+        "Malachite": {
+            "bset": "Sailor Moon 1",
+            "count": 149,
+            "name": "Malachite",
+            "rate": 51.68,
+            "tl": true
+        },
+        "Patience": {
+            "bset": "Lunch Money",
+            "count": 213,
+            "name": "Patience",
+            "rate": 51.64,
+            "tl": true
+        },
+        "Monkeys": {
+            "bset": "Big Top",
+            "count": 369,
+            "name": "Monkeys",
+            "rate": 51.49,
+            "tl": false
+        },
+        "Werner": {
+            "bset": "Freaks",
+            "count": 136,
+            "name": "Werner",
+            "rate": 51.47,
+            "tl": true
+        },
+        "Shadow Warriors": {
+            "bset": "Sailor Moon 1",
+            "count": 206,
+            "name": "Shadow Warriors",
+            "rate": 51.46,
+            "tl": true
+        },
+        "Hazel": {
+            "bset": "West Side",
+            "count": 105,
+            "name": "Hazel",
+            "rate": 51.43,
+            "tl": true
+        },
+        "Lady B": {
+            "bset": "The Core",
+            "count": 111,
+            "name": "Lady B",
+            "rate": 51.35,
+            "tl": true
+        },
+        "Paris": {
+            "bset": "Blademasters: The Second Shot",
+            "count": 78,
+            "name": "Paris",
+            "rate": 51.28,
+            "tl": false
+        },
+        "Sloth": {
+            "bset": "7 deadly sins",
+            "count": 125,
+            "name": "Sloth",
+            "rate": 51.2,
+            "tl": false
+        },
+        "Aries": {
+            "bset": "Zodiac",
+            "count": 209,
+            "name": "Aries",
+            "rate": 51.2,
+            "tl": false
+        },
+        "Sailor Moon": {
+            "bset": "Sailor Moon 1",
+            "count": 172,
+            "name": "Sailor Moon",
+            "rate": 51.16,
+            "tl": true
+        },
+        "Iron Chef Chinese": {
+            "bset": "Iron Chef",
+            "count": 135,
+            "name": "Iron Chef Chinese",
+            "rate": 51.11,
+            "tl": false
+        },
+        "Sailor Venus": {
+            "bset": "Sailor Moon 1",
+            "count": 182,
+            "name": "Sailor Venus",
+            "rate": 51.1,
+            "tl": true
+        },
+        "Greed": {
+            "bset": "7 deadly sins",
+            "count": 143,
+            "name": "Greed",
+            "rate": 51.05,
+            "tl": false
+        },
+        "Spike": {
+            "bset": "Cowboy Bebop",
+            "count": 145,
+            "name": "Spike",
+            "rate": 51.03,
+            "tl": false
+        },
+        "The GM": {
+            "bset": "Bruno",
+            "count": 157,
+            "name": "The GM",
+            "rate": 50.96,
+            "tl": true
+        },
+        "Jellybean": {
+            "bset": "BROM",
+            "count": 320,
+            "name": "Jellybean",
+            "rate": 50.94,
+            "tl": true
+        },
+        "Sasami": {
+            "bset": "Tenchi Muyo!",
+            "count": 114,
+            "name": "Sasami",
+            "rate": 50.88,
+            "tl": false
+        },
+        "RandomBMTriskill": {
+            "bset": "RandomBM",
+            "count": 453,
+            "name": "RandomBMTriskill",
+            "rate": 50.77,
+            "tl": false
+        },
+        "Jota": {
+            "bset": "Classic Fanatics",
+            "count": 67,
+            "name": "Jota",
+            "rate": 50.75,
+            "tl": false
+        },
+        "Okaru": {
+            "bset": "Samurai",
+            "count": 221,
+            "name": "Okaru",
+            "rate": 50.68,
+            "tl": true
+        },
+        "LadyJ": {
+            "bset": "Classic Fanatics",
+            "count": 87,
+            "name": "LadyJ",
+            "rate": 50.57,
+            "tl": false
+        },
+        "Harbinger": {
+            "bset": "SFR",
+            "count": 109,
+            "name": "Harbinger",
+            "rate": 50.46,
+            "tl": false
+        },
+        "RandomBMAnime": {
+            "bset": "RandomBM",
+            "count": 353,
+            "name": "RandomBMAnime",
+            "rate": 50.42,
+            "tl": false
+        },
+        "Gore": {
+            "bset": "Presidential",
+            "count": 123,
+            "name": "Gore",
+            "rate": 50.41,
+            "tl": true
+        },
+        "Ryoko": {
+            "bset": "Tenchi Muyo!",
+            "count": 139,
+            "name": "Ryoko",
+            "rate": 50.36,
+            "tl": false
+        },
+        "Klaus": {
+            "bset": "Studio Foglio",
+            "count": 151,
+            "name": "Klaus",
+            "rate": 50.33,
+            "tl": true
+        },
+        "Cammy Neko": {
+            "bset": "Geekz",
+            "count": 221,
+            "name": "Cammy Neko",
+            "rate": 50.23,
+            "tl": true
+        },
+        "Echo": {
+            "bset": "BROM",
+            "count": 675,
+            "name": "Echo",
+            "rate": 50.07,
+            "tl": true
+        },
+        "Sailor Mars": {
+            "bset": "Sailor Moon 1",
+            "count": 454,
+            "name": "Sailor Mars",
+            "rate": 50.0,
+            "tl": true
+        },
+        "Micro": {
+            "bset": "Diceland",
+            "count": 204,
+            "name": "Micro",
+            "rate": 50.0,
+            "tl": false
+        },
+        "Bijay": {
+            "bset": "West Side",
+            "count": 122,
+            "name": "Bijay",
+            "rate": 50.0,
+            "tl": true
+        },
+        "Jasyeman": {
+            "bset": "Classic Fanatics",
+            "count": 102,
+            "name": "Jasyeman",
+            "rate": 50.0,
+            "tl": false
+        },
+        "Scorpio": {
+            "bset": "Zodiac",
+            "count": 189,
+            "name": "Scorpio",
+            "rate": 49.74,
+            "tl": false
+        },
+        "Frasquito": {
+            "bset": "Fantasy",
+            "count": 165,
+            "name": "Frasquito",
+            "rate": 49.7,
+            "tl": true
+        },
+        "Tuxedo Mask": {
+            "bset": "Sailor Moon 1",
+            "count": 149,
+            "name": "Tuxedo Mask",
+            "rate": 49.66,
+            "tl": true
+        },
+        "Nerni": {
+            "bset": "Majesty",
+            "count": 137,
+            "name": "Nerni",
+            "rate": 49.64,
+            "tl": true
+        },
+        "Hollis": {
+            "bset": "The Core",
+            "count": 129,
+            "name": "Hollis",
+            "rate": 49.61,
+            "tl": true
+        },
+        "Dixie": {
+            "bset": "Studio Foglio",
+            "count": 553,
+            "name": "Dixie",
+            "rate": 49.55,
+            "tl": true
+        },
+        "birdman": {
+            "bset": "Classic Fanatics",
+            "count": 107,
+            "name": "birdman",
+            "rate": 49.53,
+            "tl": false
+        },
+        "Reggie Rage": {
+            "bset": "2004 Origins",
+            "count": 196,
+            "name": "Reggie Rage",
+            "rate": 49.49,
+            "tl": false
+        },
+        "Stefano": {
+            "bset": "The Core",
+            "count": 91,
+            "name": "Stefano",
+            "rate": 49.45,
+            "tl": true
+        },
+        "jeffboyardy": {
+            "bset": "Classic Fanatics",
+            "count": 160,
+            "name": "jeffboyardy",
+            "rate": 49.38,
+            "tl": false
+        },
+        "O-Lass": {
+            "bset": "Studio Foglio",
+            "count": 294,
+            "name": "O-Lass",
+            "rate": 49.32,
+            "tl": true
+        },
+        "Crysis": {
+            "bset": "Diceland",
+            "count": 146,
+            "name": "Crysis",
+            "rate": 49.32,
+            "tl": false
+        },
+        "smallfrogge": {
+            "bset": "Classic Fanatics",
+            "count": 73,
+            "name": "smallfrogge",
+            "rate": 49.32,
+            "tl": false
+        },
+        "Giant": {
+            "bset": "BROM",
+            "count": 284,
+            "name": "Giant",
+            "rate": 49.3,
+            "tl": true
+        },
+        "MAX (promo)": {
+            "bset": "2002 Anime Expo",
+            "count": 282,
+            "name": "MAX (promo)",
+            "rate": 49.29,
+            "tl": true
+        },
+        "Marin": {
+            "bset": "West Side",
+            "count": 138,
+            "name": "Marin",
+            "rate": 49.28,
+            "tl": true
+        },
+        "Ryo-Ohki": {
+            "bset": "Tenchi Muyo!",
+            "count": 197,
+            "name": "Ryo-Ohki",
+            "rate": 49.24,
+            "tl": false
+        },
+        "Lapis Lazuli": {
+            "bset": "Steven Universe",
+            "count": 189,
+            "name": "Lapis Lazuli",
+            "rate": 49.21,
+            "tl": false
+        },
+        "West Virginia": {
+            "bset": "50 States",
+            "count": 124,
+            "name": "West Virginia",
+            "rate": 49.19,
+            "tl": false
+        },
+        "Temperance": {
+            "bset": "Lunch Money",
+            "count": 185,
+            "name": "Temperance",
+            "rate": 49.19,
+            "tl": true
+        },
+        "Lucky": {
+            "bset": "BROM",
+            "count": 1951,
+            "name": "Lucky",
+            "rate": 49.15,
+            "tl": true
+        },
+        "Buckley": {
+            "bset": "Unexploded Cow",
+            "count": 220,
+            "name": "Buckley",
+            "rate": 49.09,
+            "tl": true
+        },
+        "Lion (SU)": {
+            "bset": "Steven Universe",
+            "count": 204,
+            "name": "Lion (SU)",
+            "rate": 49.02,
+            "tl": false
+        },
+        "Krosp": {
+            "bset": "Studio Foglio",
+            "count": 153,
+            "name": "Krosp",
+            "rate": 49.02,
+            "tl": true
+        },
+        "bigevildan": {
+            "bset": "Classic Fanatics",
+            "count": 102,
+            "name": "bigevildan",
+            "rate": 49.02,
+            "tl": false
+        },
+        "Mariusz": {
+            "bset": "Peloton",
+            "count": 96,
+            "name": "Mariusz",
+            "rate": 48.96,
+            "tl": false
+        },
+        "Indiana": {
+            "bset": "50 States",
+            "count": 190,
+            "name": "Indiana",
+            "rate": 48.95,
+            "tl": false
+        },
+        "Sailor Jupiter": {
+            "bset": "Sailor Moon 1",
+            "count": 1463,
+            "name": "Sailor Jupiter",
+            "rate": 48.94,
+            "tl": true
+        },
+        "Nebraska": {
+            "bset": "50 States",
+            "count": 137,
+            "name": "Nebraska",
+            "rate": 48.91,
+            "tl": false
+        },
+        "Thaddeus": {
+            "bset": "Unexploded Cow",
+            "count": 176,
+            "name": "Thaddeus",
+            "rate": 48.86,
+            "tl": true
+        },
+        "Janet": {
+            "bset": "The Core",
+            "count": 123,
+            "name": "Janet",
+            "rate": 48.78,
+            "tl": true
+        },
+        "Monty Brown": {
+            "bset": "Chicago Crew",
+            "count": 121,
+            "name": "Monty Brown",
+            "rate": 48.76,
+            "tl": false
+        },
+        "Apples": {
+            "bset": "Chicagoland Gamers Conclave",
+            "count": 119,
+            "name": "Apples",
+            "rate": 48.74,
+            "tl": false
+        },
+        "Timea": {
+            "bset": "Peloton",
+            "count": 111,
+            "name": "Timea",
+            "rate": 48.65,
+            "tl": false
+        },
+        "Iron Chef French": {
+            "bset": "Iron Chef",
+            "count": 142,
+            "name": "Iron Chef French",
+            "rate": 48.59,
+            "tl": false
+        },
+        "Henry": {
+            "bset": "Uptown",
+            "count": 175,
+            "name": "Henry",
+            "rate": 48.57,
+            "tl": true
+        },
+        "Oregon": {
+            "bset": "50 States",
+            "count": 70,
+            "name": "Oregon",
+            "rate": 48.57,
+            "tl": false
+        },
+        "RandomBMVanilla": {
+            "bset": "RandomBM",
+            "count": 68,
+            "name": "RandomBMVanilla",
+            "rate": 48.53,
+            "tl": false
+        },
+        "hairlesswonder": {
+            "bset": "Classic Fanatics",
+            "count": 101,
+            "name": "hairlesswonder",
+            "rate": 48.51,
+            "tl": false
+        },
+        "Pjack": {
+            "bset": "Classic Fanatics",
+            "count": 99,
+            "name": "Pjack",
+            "rate": 48.48,
+            "tl": false
+        },
+        "Sydney": {
+            "bset": "BRAWL",
+            "count": 262,
+            "name": "Sydney",
+            "rate": 48.47,
+            "tl": false
+        },
+        "RandomBMDuoskill": {
+            "bset": "RandomBM",
+            "count": 448,
+            "name": "RandomBMDuoskill",
+            "rate": 48.44,
+            "tl": false
+        },
+        "Ken (Uptown)": {
+            "bset": "Uptown",
+            "count": 95,
+            "name": "Ken (Uptown)",
+            "rate": 48.42,
+            "tl": true
+        },
+        "Hope": {
+            "bset": "Lunch Money",
+            "count": 217,
+            "name": "Hope",
+            "rate": 48.39,
+            "tl": true
+        },
+        "MothMan": {
+            "bset": "Renaissance",
+            "count": 155,
+            "name": "MothMan",
+            "rate": 48.39,
+            "tl": false
+        },
+        "Queen Of Hearts": {
+            "bset": "Wonderland",
+            "count": 215,
+            "name": "Queen Of Hearts",
+            "rate": 48.37,
+            "tl": false
+        },
+        "Kainar": {
+            "bset": "Blademasters",
+            "count": 180,
+            "name": "Kainar",
+            "rate": 48.33,
+            "tl": false
+        },
+        "Lola": {
+            "bset": "Las Vegas",
+            "count": 120,
+            "name": "Lola",
+            "rate": 48.33,
+            "tl": false
+        },
+        "Darwin": {
+            "bset": "BRAWL",
+            "count": 207,
+            "name": "Darwin",
+            "rate": 48.31,
+            "tl": true
+        },
+        "Antonio": {
+            "bset": "Peloton",
+            "count": 118,
+            "name": "Antonio",
+            "rate": 48.31,
+            "tl": false
+        },
+        "RandomBMMonoskill": {
+            "bset": "RandomBM",
+            "count": 205,
+            "name": "RandomBMMonoskill",
+            "rate": 48.29,
+            "tl": false
+        },
+        "Lisa": {
+            "bset": "Bridge and Tunnel",
+            "count": 145,
+            "name": "Lisa",
+            "rate": 48.28,
+            "tl": false
+        },
+        "Kremlina": {
+            "bset": "Japanese Beetle (unofficial)",
+            "count": 116,
+            "name": "Kremlina",
+            "rate": 48.28,
+            "tl": false
+        },
+        "Wiseman": {
+            "bset": "Sailor Moon 2",
+            "count": 143,
+            "name": "Wiseman",
+            "rate": 48.25,
+            "tl": true
+        },
+        "Rikachu": {
+            "bset": "2000 Rare / Promo",
+            "count": 191,
+            "name": "Rikachu",
+            "rate": 48.17,
+            "tl": false
+        },
+        "Nephlite": {
+            "bset": "Sailor Moon 1",
+            "count": 108,
+            "name": "Nephlite",
+            "rate": 48.15,
+            "tl": true
+        },
+        "Twenty-One": {
+            "bset": "Las Vegas",
+            "count": 187,
+            "name": "Twenty-One",
+            "rate": 48.13,
+            "tl": false
+        },
+        "Lab Rat": {
+            "bset": "The Big Cheese",
+            "count": 183,
+            "name": "Lab Rat",
+            "rate": 48.09,
+            "tl": false
+        },
+        "McGinty": {
+            "bset": "Vampyres",
+            "count": 200,
+            "name": "McGinty",
+            "rate": 48.0,
+            "tl": true
+        },
+        "SC (The Deuce)": {
+            "bset": "Classic Fanatics",
+            "count": 50,
+            "name": "SC (The Deuce)",
+            "rate": 48.0,
+            "tl": false
+        },
+        "Lady Luck": {
+            "bset": "Las Vegas",
+            "count": 96,
+            "name": "Lady Luck",
+            "rate": 47.92,
+            "tl": false
+        },
+        "Randy": {
+            "bset": "Free Radicals",
+            "count": 140,
+            "name": "Randy",
+            "rate": 47.86,
+            "tl": false
+        },
+        "Stark": {
+            "bset": "Soldiers",
+            "count": 289,
+            "name": "Stark",
+            "rate": 47.75,
+            "tl": true
+        },
+        "Scott": {
+            "bset": "Blademasters",
+            "count": 88,
+            "name": "Scott",
+            "rate": 47.73,
+            "tl": false
+        },
+        "Shepherd": {
+            "bset": "BROM",
+            "count": 197,
+            "name": "Shepherd",
+            "rate": 47.72,
+            "tl": true
+        },
+        "Sly": {
+            "bset": "Las Vegas",
+            "count": 149,
+            "name": "Sly",
+            "rate": 47.65,
+            "tl": false
+        },
+        "Guenever": {
+            "bset": "Buttonlords",
+            "count": 145,
+            "name": "Guenever",
+            "rate": 47.59,
+            "tl": true
+        },
+        "Dr. Speculo": {
+            "bset": "Renaissance",
+            "count": 124,
+            "name": "Dr. Speculo",
+            "rate": 47.58,
+            "tl": false
+        },
+        "Glorion": {
+            "bset": "ZOECon",
+            "count": 164,
+            "name": "Glorion",
+            "rate": 47.56,
+            "tl": true
+        },
+        "Death": {
+            "bset": "Four Horsemen",
+            "count": 143,
+            "name": "Death",
+            "rate": 47.55,
+            "tl": false
+        },
+        "Mississippi (Uptown)": {
+            "bset": "Uptown",
+            "count": 204,
+            "name": "Mississippi (Uptown)",
+            "rate": 47.55,
+            "tl": true
+        },
+        "Matt": {
+            "bset": "Dork Victory",
+            "count": 263,
+            "name": "Matt",
+            "rate": 47.53,
+            "tl": true
+        },
+        "Mihoshi": {
+            "bset": "Tenchi Muyo!",
+            "count": 137,
+            "name": "Mihoshi",
+            "rate": 47.45,
+            "tl": false
+        },
+        "UncleMilo": {
+            "bset": "Classic Fanatics",
+            "count": 428,
+            "name": "UncleMilo",
+            "rate": 47.43,
+            "tl": false
+        },
+        "CactusJack": {
+            "bset": "Classic Fanatics",
+            "count": 133,
+            "name": "CactusJack",
+            "rate": 47.37,
+            "tl": false
+        },
+        "Ayeka": {
+            "bset": "Tenchi Muyo!",
+            "count": 133,
+            "name": "Ayeka",
+            "rate": 47.37,
+            "tl": false
+        },
+        "Tenchi": {
+            "bset": "Tenchi Muyo!",
+            "count": 114,
+            "name": "Tenchi",
+            "rate": 47.37,
+            "tl": false
+        },
+        "Elihu": {
+            "bset": "Fantasy",
+            "count": 150,
+            "name": "Elihu",
+            "rate": 47.33,
+            "tl": true
+        },
+        "RandomBMTetraskill": {
+            "bset": "RandomBM",
+            "count": 205,
+            "name": "RandomBMTetraskill",
+            "rate": 47.32,
+            "tl": false
+        },
+        "Tiffany": {
+            "bset": "Vampyres",
+            "count": 271,
+            "name": "Tiffany",
+            "rate": 47.23,
+            "tl": true
+        },
+        "Lady K": {
+            "bset": "The Delta",
+            "count": 764,
+            "name": "Lady K",
+            "rate": 47.12,
+            "tl": true
+        },
+        "Magician": {
+            "bset": "Las Vegas",
+            "count": 104,
+            "name": "Magician",
+            "rate": 47.12,
+            "tl": false
+        },
+        "Cerise": {
+            "bset": "The Delta",
+            "count": 104,
+            "name": "Cerise",
+            "rate": 47.12,
+            "tl": true
+        },
+        "CynCyn": {
+            "bset": "Free Radicals",
+            "count": 168,
+            "name": "CynCyn",
+            "rate": 47.02,
+            "tl": false
+        },
+        "Tony (The Core)": {
+            "bset": "The Core",
+            "count": 151,
+            "name": "Tony (The Core)",
+            "rate": 47.02,
+            "tl": true
+        },
+        "slamkrypare": {
+            "bset": "Classic Fanatics",
+            "count": 117,
+            "name": "slamkrypare",
+            "rate": 47.01,
+            "tl": false
+        },
+        "Lark": {
+            "bset": "Fantasy",
+            "count": 149,
+            "name": "Lark",
+            "rate": 46.98,
+            "tl": true
+        },
+        "Skeeve": {
+            "bset": "Classic Fanatics",
+            "count": 113,
+            "name": "Skeeve",
+            "rate": 46.9,
+            "tl": false
+        },
+        "Bush": {
+            "bset": "Presidential",
+            "count": 128,
+            "name": "Bush",
+            "rate": 46.88,
+            "tl": true
+        },
+        "Kiyone": {
+            "bset": "Tenchi Muyo!",
+            "count": 96,
+            "name": "Kiyone",
+            "rate": 46.88,
+            "tl": false
+        },
+        "Queen Serenity": {
+            "bset": "Sailor Moon 2",
+            "count": 143,
+            "name": "Queen Serenity",
+            "rate": 46.85,
+            "tl": true
+        },
+        "Pappy": {
+            "bset": "Bruno",
+            "count": 158,
+            "name": "Pappy",
+            "rate": 46.84,
+            "tl": true
+        },
+        "Hannah": {
+            "bset": "Soldiers",
+            "count": 284,
+            "name": "Hannah",
+            "rate": 46.83,
+            "tl": true
+        },
+        "Virginia": {
+            "bset": "50 States",
+            "count": 126,
+            "name": "Virginia",
+            "rate": 46.83,
+            "tl": false
+        },
+        "kleric": {
+            "bset": "Classic Fanatics",
+            "count": 126,
+            "name": "kleric",
+            "rate": 46.83,
+            "tl": false
+        },
+        "South Carolina": {
+            "bset": "50 States",
+            "count": 124,
+            "name": "South Carolina",
+            "rate": 46.77,
+            "tl": false
+        },
+        "Iron Chef Japanese": {
+            "bset": "Iron Chef",
+            "count": 107,
+            "name": "Iron Chef Japanese",
+            "rate": 46.73,
+            "tl": false
+        },
+        "Them Bones": {
+            "bset": "Las Vegas",
+            "count": 122,
+            "name": "Them Bones",
+            "rate": 46.72,
+            "tl": false
+        },
+        "Kiki": {
+            "bset": "Sluggy Freelance",
+            "count": 135,
+            "name": "Kiki",
+            "rate": 46.67,
+            "tl": true
+        },
+        "Sapphire": {
+            "bset": "Sailor Moon 2",
+            "count": 90,
+            "name": "Sapphire",
+            "rate": 46.67,
+            "tl": true
+        },
+        "Buck": {
+            "bset": "Diceland",
+            "count": 382,
+            "name": "Buck",
+            "rate": 46.6,
+            "tl": false
+        },
+        "Capricorn": {
+            "bset": "Zodiac",
+            "count": 187,
+            "name": "Capricorn",
+            "rate": 46.52,
+            "tl": false
+        },
+        "Carson (West Side)": {
+            "bset": "West Side",
+            "count": 157,
+            "name": "Carson (West Side)",
+            "rate": 46.5,
+            "tl": true
+        },
+        "Perf": {
+            "bset": "ZOECon",
+            "count": 157,
+            "name": "Perf",
+            "rate": 46.5,
+            "tl": true
+        },
+        "Roger": {
+            "bset": "Peloton",
+            "count": 84,
+            "name": "Roger",
+            "rate": 46.43,
+            "tl": false
+        },
+        "Nethershadow": {
+            "bset": "Bridge and Tunnel",
+            "count": 97,
+            "name": "Nethershadow",
+            "rate": 46.39,
+            "tl": false
+        },
+        "Nara": {
+            "bset": "ZOECon",
+            "count": 166,
+            "name": "Nara",
+            "rate": 46.39,
+            "tl": true
+        },
+        "Bun-Bun": {
+            "bset": "Sluggy Freelance",
+            "count": 207,
+            "name": "Bun-Bun",
+            "rate": 46.38,
+            "tl": true
+        },
+        "Porter": {
+            "bset": "The Core",
+            "count": 138,
+            "name": "Porter",
+            "rate": 46.38,
+            "tl": true
+        },
+        "Harry Pudding": {
+            "bset": "Renaissance",
+            "count": 123,
+            "name": "Harry Pudding",
+            "rate": 46.34,
+            "tl": false
+        },
+        "Anger": {
+            "bset": "7 deadly sins",
+            "count": 80,
+            "name": "Anger",
+            "rate": 46.25,
+            "tl": false
+        },
+        "Aldric": {
+            "bset": "Fantasy",
+            "count": 145,
+            "name": "Aldric",
+            "rate": 46.21,
+            "tl": true
+        },
+        "Cheathem": {
+            "bset": "Chicago Crew",
+            "count": 117,
+            "name": "Cheathem",
+            "rate": 46.15,
+            "tl": false
+        },
+        "Zoycite": {
+            "bset": "Sailor Moon 1",
+            "count": 117,
+            "name": "Zoycite",
+            "rate": 46.15,
+            "tl": true
+        },
+        "RandomBMSoldiers": {
+            "bset": "RandomBM",
+            "count": 78,
+            "name": "RandomBMSoldiers",
+            "rate": 46.15,
+            "tl": false
+        },
+        "Buck Godot": {
+            "bset": "Studio Foglio",
+            "count": 219,
+            "name": "Buck Godot",
+            "rate": 46.12,
+            "tl": true
+        },
+        "Pikathulhu": {
+            "bset": "Yoyodyne",
+            "count": 141,
+            "name": "Pikathulhu",
+            "rate": 46.1,
+            "tl": false
+        },
+        "Bobby": {
+            "bset": "Uptown",
+            "count": 89,
+            "name": "Bobby",
+            "rate": 46.07,
+            "tl": true
+        },
+        "Nickie": {
+            "bset": "BRAWL",
+            "count": 287,
+            "name": "Nickie",
+            "rate": 45.99,
+            "tl": true
+        },
+        "Yamaichi": {
+            "bset": "Blademasters: Third Attack",
+            "count": 87,
+            "name": "Yamaichi",
+            "rate": 45.98,
+            "tl": false
+        },
+        "Gemini": {
+            "bset": "Zodiac",
+            "count": 183,
+            "name": "Gemini",
+            "rate": 45.9,
+            "tl": false
+        },
+        "King Arthur": {
+            "bset": "Buttonlords",
+            "count": 183,
+            "name": "King Arthur",
+            "rate": 45.9,
+            "tl": true
+        },
+        "Adam Spam": {
+            "bset": "Polycon",
+            "count": 142,
+            "name": "Adam Spam",
+            "rate": 45.77,
+            "tl": true
+        },
+        "Jocasta": {
+            "bset": "The Delta",
+            "count": 129,
+            "name": "Jocasta",
+            "rate": 45.74,
+            "tl": true
+        },
+        "The Effster": {
+            "bset": "Demicon the 13th",
+            "count": 164,
+            "name": "The Effster",
+            "rate": 45.73,
+            "tl": true
+        },
+        "Conspyre": {
+            "bset": "Classic Fanatics",
+            "count": 114,
+            "name": "Conspyre",
+            "rate": 45.61,
+            "tl": false
+        },
+        "Craptacualr": {
+            "bset": "Hodge Podge",
+            "count": 158,
+            "name": "Craptacualr",
+            "rate": 45.57,
+            "tl": false
+        },
+        "Bang": {
+            "bset": "Studio Foglio",
+            "count": 169,
+            "name": "Bang",
+            "rate": 45.56,
+            "tl": true
+        },
+        "The James Beast": {
+            "bset": "Studio Foglio",
+            "count": 123,
+            "name": "The James Beast",
+            "rate": 45.53,
+            "tl": false
+        },
+        "opedog": {
+            "bset": "Classic Fanatics",
+            "count": 143,
+            "name": "opedog",
+            "rate": 45.45,
+            "tl": false
+        },
+        "Gilly": {
+            "bset": "Dork Victory",
+            "count": 302,
+            "name": "Gilly",
+            "rate": 45.36,
+            "tl": true
+        },
+        "Social Class": {
+            "bset": "Balticon 34",
+            "count": 161,
+            "name": "Social Class",
+            "rate": 45.34,
+            "tl": true
+        },
+        "Carson (promo)": {
+            "bset": "1999 Rare / Promo",
+            "count": 214,
+            "name": "Carson (promo)",
+            "rate": 45.33,
+            "tl": false
+        },
+        "Montana": {
+            "bset": "50 States",
+            "count": 117,
+            "name": "Montana",
+            "rate": 45.3,
+            "tl": false
+        },
+        "Sailor Mercury": {
+            "bset": "Sailor Moon 1",
+            "count": 157,
+            "name": "Sailor Mercury",
+            "rate": 45.22,
+            "tl": true
+        },
+        "Connie": {
+            "bset": "Steven Universe",
+            "count": 186,
+            "name": "Connie",
+            "rate": 45.16,
+            "tl": false
+        },
+        "Hrodgar": {
+            "bset": "Classic Fanatics",
+            "count": 82,
+            "name": "Hrodgar",
+            "rate": 45.12,
+            "tl": false
+        },
+        "Danielle": {
+            "bset": "Blademasters",
+            "count": 142,
+            "name": "Danielle",
+            "rate": 45.07,
+            "tl": false
+        },
+        "Wicked Lady": {
+            "bset": "Sailor Moon 2",
+            "count": 91,
+            "name": "Wicked Lady",
+            "rate": 45.05,
+            "tl": true
+        },
+        "The Frenchman": {
+            "bset": "Japanese Beetle (unofficial)",
+            "count": 131,
+            "name": "The Frenchman",
+            "rate": 45.04,
+            "tl": false
+        },
+        "Torg": {
+            "bset": "Sluggy Freelance",
+            "count": 189,
+            "name": "Torg",
+            "rate": 44.97,
+            "tl": true
+        },
+        "Nihlathak": {
+            "bset": "Classic Fanatics",
+            "count": 89,
+            "name": "Nihlathak",
+            "rate": 44.94,
+            "tl": false
+        },
+        "John Kovalic": {
+            "bset": "Yoyodyne",
+            "count": 127,
+            "name": "John Kovalic",
+            "rate": 44.88,
+            "tl": true
+        },
+        "Lancelot": {
+            "bset": "Buttonlords",
+            "count": 179,
+            "name": "Lancelot",
+            "rate": 44.69,
+            "tl": true
+        },
+        "RandomBMMixed": {
+            "bset": "RandomBM",
+            "count": 94,
+            "name": "RandomBMMixed",
+            "rate": 44.68,
+            "tl": false
+        },
+        "Crusher": {
+            "bset": "BROM",
+            "count": 224,
+            "name": "Crusher",
+            "rate": 44.64,
+            "tl": true
+        },
+        "Audrey": {
+            "bset": "Chicago Crew",
+            "count": 121,
+            "name": "Audrey",
+            "rate": 44.63,
+            "tl": false
+        },
+        "Gil": {
+            "bset": "Studio Foglio",
+            "count": 251,
+            "name": "Gil",
+            "rate": 44.62,
+            "tl": true
+        },
+        "Gawaine": {
+            "bset": "Buttonlords",
+            "count": 157,
+            "name": "Gawaine",
+            "rate": 44.59,
+            "tl": true
+        },
+        "Michie": {
+            "bset": "Blademasters",
+            "count": 92,
+            "name": "Michie",
+            "rate": 44.57,
+            "tl": false
+        },
+        "Brigid": {
+            "bset": "Studio Foglio",
+            "count": 202,
+            "name": "Brigid",
+            "rate": 44.55,
+            "tl": true
+        },
+        "Alaska": {
+            "bset": "50 States",
+            "count": 164,
+            "name": "Alaska",
+            "rate": 44.51,
+            "tl": false
+        },
+        "Sylvia Branham": {
+            "bset": "2005 Rare / Promo",
+            "count": 191,
+            "name": "Sylvia Branham",
+            "rate": 44.5,
+            "tl": false
+        },
+        "Luce": {
+            "bset": "Fantasy",
+            "count": 191,
+            "name": "Luce",
+            "rate": 44.5,
+            "tl": true
+        },
+        "Eeyore": {
+            "bset": "Hodge Podge",
+            "count": 108,
+            "name": "Eeyore",
+            "rate": 44.44,
+            "tl": false
+        },
+        "Orlando": {
+            "bset": "Peloton",
+            "count": 108,
+            "name": "Orlando",
+            "rate": 44.44,
+            "tl": false
+        },
+        "Tirade": {
+            "bset": "ButtonBroccoli",
+            "count": 106,
+            "name": "Tirade",
+            "rate": 44.34,
+            "tl": false
+        },
+        "Von Pinn": {
+            "bset": "Studio Foglio",
+            "count": 736,
+            "name": "Von Pinn",
+            "rate": 44.29,
+            "tl": true
+        },
+        "Zoe": {
+            "bset": "Sluggy Freelance",
+            "count": 140,
+            "name": "Zoe",
+            "rate": 44.29,
+            "tl": true
+        },
+        "Agatha": {
+            "bset": "Studio Foglio",
+            "count": 140,
+            "name": "Agatha",
+            "rate": 44.29,
+            "tl": true
+        },
+        "itachi": {
+            "bset": "Classic Fanatics",
+            "count": 172,
+            "name": "itachi",
+            "rate": 44.19,
+            "tl": false
+        },
+        "Bruno": {
+            "bset": "Bruno",
+            "count": 238,
+            "name": "Bruno",
+            "rate": 44.12,
+            "tl": true
+        },
+        "Growf": {
+            "bset": "Studio Foglio",
+            "count": 221,
+            "name": "Growf",
+            "rate": 43.89,
+            "tl": true
+        },
+        "Tyler Durden": {
+            "bset": "Hodge Podge",
+            "count": 98,
+            "name": "Tyler Durden",
+            "rate": 43.88,
+            "tl": false
+        },
+        "Idaho": {
+            "bset": "50 States",
+            "count": 162,
+            "name": "Idaho",
+            "rate": 43.83,
+            "tl": false
+        },
+        "Queen Beryl": {
+            "bset": "Sailor Moon 1",
+            "count": 105,
+            "name": "Queen Beryl",
+            "rate": 43.81,
+            "tl": true
+        },
+        "Princess Serena": {
+            "bset": "Sailor Moon 2",
+            "count": 105,
+            "name": "Princess Serena",
+            "rate": 43.81,
+            "tl": true
+        },
+        "Starchylde": {
+            "bset": "Vampyres",
+            "count": 224,
+            "name": "Starchylde",
+            "rate": 43.75,
+            "tl": true
+        },
+        "Farrell": {
+            "bset": "Fantasy",
+            "count": 128,
+            "name": "Farrell",
+            "rate": 43.75,
+            "tl": true
+        },
+        "Darrin": {
+            "bset": "Classic Fanatics",
+            "count": 135,
+            "name": "Darrin",
+            "rate": 43.7,
+            "tl": false
+        },
+        "Kith": {
+            "bset": "Soldiers",
+            "count": 271,
+            "name": "Kith",
+            "rate": 43.54,
+            "tl": true
+        },
+        "Poly": {
+            "bset": "Polycon",
+            "count": 147,
+            "name": "Poly",
+            "rate": 43.54,
+            "tl": true
+        },
+        "Phantom Zero": {
+            "bset": "Bridge and Tunnel",
+            "count": 108,
+            "name": "Phantom Zero",
+            "rate": 43.52,
+            "tl": false
+        },
+        "Polly": {
+            "bset": "The Core",
+            "count": 92,
+            "name": "Polly",
+            "rate": 43.48,
+            "tl": true
+        },
+        "Caine": {
+            "bset": "Geekz",
+            "count": 159,
+            "name": "Caine",
+            "rate": 43.4,
+            "tl": true
+        },
+        "Donna": {
+            "bset": "The Core",
+            "count": 166,
+            "name": "Donna",
+            "rate": 43.37,
+            "tl": true
+        },
+        "Smith": {
+            "bset": "The Core",
+            "count": 120,
+            "name": "Smith",
+            "rate": 43.33,
+            "tl": true
+        },
+        "The Japanese Beetle": {
+            "bset": "Japanese Beetle",
+            "count": 487,
+            "name": "The Japanese Beetle",
+            "rate": 43.33,
+            "tl": true
+        },
+        "Angel": {
+            "bset": "Vampyres",
+            "count": 224,
+            "name": "Angel",
+            "rate": 43.3,
+            "tl": true
+        },
+        "Jerry": {
+            "bset": "The Delta",
+            "count": 134,
+            "name": "Jerry",
+            "rate": 43.28,
+            "tl": true
+        },
+        "Georgia (US)": {
+            "bset": "50 States",
+            "count": 171,
+            "name": "Georgia (US)",
+            "rate": 43.27,
+            "tl": false
+        },
+        "Arkansas": {
+            "bset": "50 States",
+            "count": 141,
+            "name": "Arkansas",
+            "rate": 43.26,
+            "tl": false
+        },
+        "New Jersey": {
+            "bset": "50 States",
+            "count": 183,
+            "name": "New Jersey",
+            "rate": 43.17,
+            "tl": false
+        },
+        "Utah": {
+            "bset": "50 States",
+            "count": 146,
+            "name": "Utah",
+            "rate": 43.15,
+            "tl": false
+        },
+        "Tony": {
+            "bset": "Free Radicals",
+            "count": 153,
+            "name": "Tony",
+            "rate": 43.14,
+            "tl": false
+        },
+        "Charity": {
+            "bset": "Lunch Money",
+            "count": 153,
+            "name": "Charity",
+            "rate": 43.14,
+            "tl": true
+        },
+        "Doctor Fret": {
+            "bset": "The Delta",
+            "count": 144,
+            "name": "Doctor Fret",
+            "rate": 43.06,
+            "tl": true
+        },
+        "Basil": {
+            "bset": "Uptown",
+            "count": 93,
+            "name": "Basil",
+            "rate": 43.01,
+            "tl": true
+        },
+        "Hamilton": {
+            "bset": "The Core",
+            "count": 114,
+            "name": "Hamilton",
+            "rate": 42.98,
+            "tl": true
+        },
+        "Ngozi": {
+            "bset": "Sanctum",
+            "count": 184,
+            "name": "Ngozi",
+            "rate": 42.93,
+            "tl": true
+        },
+        "Riff": {
+            "bset": "Sluggy Freelance",
+            "count": 154,
+            "name": "Riff",
+            "rate": 42.86,
+            "tl": true
+        },
+        "Joe McCarthy": {
+            "bset": "Japanese Beetle (unofficial)",
+            "count": 105,
+            "name": "Joe McCarthy",
+            "rate": 42.86,
+            "tl": false
+        },
+        "Jolene": {
+            "bset": "2017 Rare / Promo",
+            "count": 63,
+            "name": "Jolene",
+            "rate": 42.86,
+            "tl": false
+        },
+        "kaufman": {
+            "bset": "Classic Fanatics",
+            "count": 103,
+            "name": "kaufman",
+            "rate": 42.72,
+            "tl": false
+        },
+        "Karl": {
+            "bset": "Soldiers",
+            "count": 335,
+            "name": "Karl",
+            "rate": 42.69,
+            "tl": true
+        },
+        "Mischa": {
+            "bset": "Fantasy",
+            "count": 190,
+            "name": "Mischa",
+            "rate": 42.63,
+            "tl": true
+        },
+        "Erika": {
+            "bset": "MegaTokyo",
+            "count": 101,
+            "name": "Erika",
+            "rate": 42.57,
+            "tl": false
+        },
+        "Taurus": {
+            "bset": "Zodiac",
+            "count": 186,
+            "name": "Taurus",
+            "rate": 42.47,
+            "tl": false
+        },
+        "Prince Diamond": {
+            "bset": "Sailor Moon 2",
+            "count": 125,
+            "name": "Prince Diamond",
+            "rate": 42.4,
+            "tl": true
+        },
+        "Dr. Jekyll": {
+            "bset": "Victorian Horror",
+            "count": 217,
+            "name": "Dr. Jekyll",
+            "rate": 42.4,
+            "tl": false
+        },
+        "Iron Chef Italian": {
+            "bset": "Iron Chef",
+            "count": 111,
+            "name": "Iron Chef Italian",
+            "rate": 42.34,
+            "tl": false
+        },
+        "Linnea": {
+            "bset": "Classic Fanatics",
+            "count": 78,
+            "name": "Linnea",
+            "rate": 42.31,
+            "tl": false
+        },
+        "White Rabbit": {
+            "bset": "Wonderland",
+            "count": 201,
+            "name": "White Rabbit",
+            "rate": 42.29,
+            "tl": false
+        },
+        "Firebreather": {
+            "bset": "Big Top",
+            "count": 343,
+            "name": "Firebreather",
+            "rate": 42.27,
+            "tl": false
+        },
+        "Steve (The Core)": {
+            "bset": "The Core",
+            "count": 97,
+            "name": "Steve (The Core)",
+            "rate": 42.27,
+            "tl": true
+        },
+        "Libra": {
+            "bset": "Zodiac",
+            "count": 159,
+            "name": "Libra",
+            "rate": 42.14,
+            "tl": false
+        },
+        "Bull": {
+            "bset": "Hodge Podge",
+            "count": 171,
+            "name": "Bull",
+            "rate": 42.11,
+            "tl": false
+        },
+        "Garnet": {
+            "bset": "Steven Universe",
+            "count": 176,
+            "name": "Garnet",
+            "rate": 42.05,
+            "tl": false
+        },
+        "Morgan Le Fay": {
+            "bset": "Buttonlords",
+            "count": 138,
+            "name": "Morgan Le Fay",
+            "rate": 42.03,
+            "tl": true
+        },
+        "Avis": {
+            "bset": "Soldiers",
+            "count": 456,
+            "name": "Avis",
+            "rate": 41.89,
+            "tl": true
+        },
+        "Magical Witch Critical Miss": {
+            "bset": "2005 Rare / Promo",
+            "count": 151,
+            "name": "Magical Witch Critical Miss",
+            "rate": 41.72,
+            "tl": false
+        },
+        "Flint": {
+            "bset": "Chicago Crew",
+            "count": 156,
+            "name": "Flint",
+            "rate": 41.67,
+            "tl": false
+        },
+        "Simon": {
+            "bset": "Freaks",
+            "count": 120,
+            "name": "Simon",
+            "rate": 41.67,
+            "tl": true
+        },
+        "Fiorina": {
+            "bset": "The Delta",
+            "count": 113,
+            "name": "Fiorina",
+            "rate": 41.59,
+            "tl": true
+        },
+        "Carl Friedrich Gauss": {
+            "bset": "Button Brains",
+            "count": 166,
+            "name": "Carl Friedrich Gauss",
+            "rate": 41.57,
+            "tl": false
+        },
+        "Dirgo": {
+            "bset": "Majesty",
+            "count": 142,
+            "name": "Dirgo",
+            "rate": 41.55,
+            "tl": true
+        },
+        "Maskin": {
+            "bset": "Free Radicals",
+            "count": 94,
+            "name": "Maskin",
+            "rate": 41.49,
+            "tl": false
+        },
+        "albertel": {
+            "bset": "Classic Fanatics",
+            "count": 109,
+            "name": "albertel",
+            "rate": 41.28,
+            "tl": false
+        },
+        "Calmon": {
+            "bset": "Classic Fanatics",
+            "count": 182,
+            "name": "Calmon",
+            "rate": 41.21,
+            "tl": false
+        },
+        "Keegan": {
+            "bset": "The Delta",
+            "count": 119,
+            "name": "Keegan",
+            "rate": 41.18,
+            "tl": true
+        },
+        "Cass": {
+            "bset": "Diceland",
+            "count": 158,
+            "name": "Cass",
+            "rate": 41.14,
+            "tl": false
+        },
+        "Montague (Blademasters)": {
+            "bset": "Blademasters: Third Attack",
+            "count": 124,
+            "name": "Montague (Blademasters)",
+            "rate": 41.13,
+            "tl": false
+        },
+        "Petey": {
+            "bset": "Uptown",
+            "count": 195,
+            "name": "Petey",
+            "rate": 41.03,
+            "tl": true
+        },
+        "Theophilus": {
+            "bset": "Fantasy",
+            "count": 161,
+            "name": "Theophilus",
+            "rate": 40.99,
+            "tl": true
+        },
+        "Amethyst": {
+            "bset": "Steven Universe",
+            "count": 181,
+            "name": "Amethyst",
+            "rate": 40.88,
+            "tl": false
+        },
+        "Ricky": {
+            "bset": "Uptown",
+            "count": 115,
+            "name": "Ricky",
+            "rate": 40.87,
+            "tl": true
+        },
+        "Niles": {
+            "bset": "Soldiers",
+            "count": 267,
+            "name": "Niles",
+            "rate": 40.82,
+            "tl": true
+        },
+        "Min-Szu": {
+            "bset": "The Delta",
+            "count": 135,
+            "name": "Min-Szu",
+            "rate": 40.74,
+            "tl": true
+        },
+        "Jingjing": {
+            "bset": "Metamorphers",
+            "count": 108,
+            "name": "Jingjing",
+            "rate": 40.74,
+            "tl": false
+        },
+        "Xylene": {
+            "bset": "Geekz",
+            "count": 145,
+            "name": "Xylene",
+            "rate": 40.69,
+            "tl": true
+        },
+        "Howling Wolf": {
+            "bset": "Howling Wolf",
+            "count": 182,
+            "name": "Howling Wolf",
+            "rate": 40.66,
+            "tl": true
+        },
+        "Tanya": {
+            "bset": "The Core",
+            "count": 116,
+            "name": "Tanya",
+            "rate": 40.52,
+            "tl": true
+        },
+        "Benvenito": {
+            "bset": "The Delta",
+            "count": 116,
+            "name": "Benvenito",
+            "rate": 40.52,
+            "tl": true
+        },
+        "Button of Loathing": {
+            "bset": "Hodge Podge",
+            "count": 89,
+            "name": "Button of Loathing",
+            "rate": 40.45,
+            "tl": false
+        },
+        "Polonius": {
+            "bset": "Classic Fanatics",
+            "count": 99,
+            "name": "Polonius",
+            "rate": 40.4,
+            "tl": false
+        },
+        "FuzzFace": {
+            "bset": "Yoyodyne",
+            "count": 176,
+            "name": "FuzzFace",
+            "rate": 40.34,
+            "tl": true
+        },
+        "Jet": {
+            "bset": "Cowboy Bebop",
+            "count": 134,
+            "name": "Jet",
+            "rate": 40.3,
+            "tl": false
+        },
+        "Chastity": {
+            "bset": "Lunch Money",
+            "count": 179,
+            "name": "Chastity",
+            "rate": 40.22,
+            "tl": true
+        },
+        "Mad Hatter": {
+            "bset": "Wonderland",
+            "count": 276,
+            "name": "Mad Hatter",
+            "rate": 40.22,
+            "tl": false
+        },
+        "Carson": {
+            "bset": "Dork Victory",
+            "count": 209,
+            "name": "Carson",
+            "rate": 40.19,
+            "tl": true
+        },
+        "Spencer": {
+            "bset": "Metamorphers",
+            "count": 112,
+            "name": "Spencer",
+            "rate": 40.18,
+            "tl": false
+        },
+        "Tasha": {
+            "bset": "Uptown",
+            "count": 234,
+            "name": "Tasha",
+            "rate": 40.17,
+            "tl": true
+        },
+        "Kublai": {
+            "bset": "Soldiers",
+            "count": 294,
+            "name": "Kublai",
+            "rate": 40.14,
+            "tl": true
+        },
+        "Paul Erdos": {
+            "bset": "Button Brains",
+            "count": 172,
+            "name": "Paul Erdos",
+            "rate": 40.12,
+            "tl": false
+        },
+        "Bill": {
+            "bset": "Dork Victory",
+            "count": 172,
+            "name": "Bill",
+            "rate": 40.12,
+            "tl": true
+        },
+        "Inez": {
+            "bset": "Blademasters",
+            "count": 170,
+            "name": "Inez",
+            "rate": 40.0,
+            "tl": false
+        },
+        "Max Factor": {
+            "bset": "Japanese Beetle (unofficial)",
+            "count": 165,
+            "name": "Max Factor",
+            "rate": 40.0,
+            "tl": false
+        },
+        "Spooky": {
+            "bset": "Chicago Crew",
+            "count": 115,
+            "name": "Spooky",
+            "rate": 40.0,
+            "tl": false
+        },
+        "Emerald": {
+            "bset": "Sailor Moon 2",
+            "count": 110,
+            "name": "Emerald",
+            "rate": 40.0,
+            "tl": true
+        },
+        "Largo": {
+            "bset": "MegaTokyo",
+            "count": 40,
+            "name": "Largo",
+            "rate": 40.0,
+            "tl": false
+        },
+        "Fingle": {
+            "bset": "Sanctum",
+            "count": 163,
+            "name": "Fingle",
+            "rate": 39.88,
+            "tl": true
+        },
+        "Phuong": {
+            "bset": "Bridge and Tunnel",
+            "count": 118,
+            "name": "Phuong",
+            "rate": 39.83,
+            "tl": false
+        },
+        "Heather (Uptown)": {
+            "bset": "Uptown",
+            "count": 78,
+            "name": "Heather (Uptown)",
+            "rate": 39.74,
+            "tl": true
+        },
+        "Bauer": {
+            "bset": "Soldiers",
+            "count": 677,
+            "name": "Bauer",
+            "rate": 39.73,
+            "tl": true
+        },
+        "Johnny": {
+            "bset": "Blademasters",
+            "count": 96,
+            "name": "Johnny",
+            "rate": 39.58,
+            "tl": false
+        },
+        "Wren": {
+            "bset": "ZOECon",
+            "count": 1549,
+            "name": "Wren",
+            "rate": 39.57,
+            "tl": true
+        },
+        "Captain Bingo": {
+            "bset": "2004 Origins",
+            "count": 152,
+            "name": "Captain Bingo",
+            "rate": 39.47,
+            "tl": false
+        },
+        "Ginzu": {
+            "bset": "Save The Ogres",
+            "count": 147,
+            "name": "Ginzu",
+            "rate": 39.46,
+            "tl": true
+        },
+        "Nimue": {
+            "bset": "Buttonlords",
+            "count": 109,
+            "name": "Nimue",
+            "rate": 39.45,
+            "tl": true
+        },
+        "Mau": {
+            "bset": "Metamorphers",
+            "count": 104,
+            "name": "Mau",
+            "rate": 39.42,
+            "tl": false
+        },
+        "Loren": {
+            "bset": "Free Radicals",
+            "count": 160,
+            "name": "Loren",
+            "rate": 39.38,
+            "tl": false
+        },
+        "Fuyuko": {
+            "bset": "Blademasters: Third Attack",
+            "count": 163,
+            "name": "Fuyuko",
+            "rate": 39.26,
+            "tl": false
+        },
+        "grend": {
+            "bset": "Classic Fanatics",
+            "count": 79,
+            "name": "grend",
+            "rate": 39.24,
+            "tl": false
+        },
+        "Delia": {
+            "bset": "The Core",
+            "count": 125,
+            "name": "Delia",
+            "rate": 39.2,
+            "tl": true
+        },
+        "Famine": {
+            "bset": "Four Horsemen",
+            "count": 133,
+            "name": "Famine",
+            "rate": 39.1,
+            "tl": false
+        },
+        "Amelia": {
+            "bset": "Uptown",
+            "count": 110,
+            "name": "Amelia",
+            "rate": 39.09,
+            "tl": true
+        },
+        "Chang": {
+            "bset": "Fantasy",
+            "count": 169,
+            "name": "Chang",
+            "rate": 39.05,
+            "tl": true
+        },
+        "Clare": {
+            "bset": "Soldiers",
+            "count": 397,
+            "name": "Clare",
+            "rate": 39.04,
+            "tl": true
+        },
+        "Envy": {
+            "bset": "7 deadly sins",
+            "count": 645,
+            "name": "Envy",
+            "rate": 38.91,
+            "tl": false
+        },
+        "Fan Chung Graham": {
+            "bset": "Button Brains",
+            "count": 144,
+            "name": "Fan Chung Graham",
+            "rate": 38.89,
+            "tl": false
+        },
+        "BabyBM": {
+            "bset": "Hodge Podge",
+            "count": 85,
+            "name": "BabyBM",
+            "rate": 38.82,
+            "tl": false
+        },
+        "Mordred": {
+            "bset": "Buttonlords",
+            "count": 183,
+            "name": "Mordred",
+            "rate": 38.8,
+            "tl": true
+        },
+        "eon": {
+            "bset": "Classic Fanatics",
+            "count": 124,
+            "name": "eon",
+            "rate": 38.71,
+            "tl": false
+        },
+        "Flaire": {
+            "bset": "Majesty",
+            "count": 176,
+            "name": "Flaire",
+            "rate": 38.64,
+            "tl": true
+        },
+        "Ron Graham": {
+            "bset": "Button Brains",
+            "count": 153,
+            "name": "Ron Graham",
+            "rate": 38.56,
+            "tl": false
+        },
+        "Buddy": {
+            "bset": "Vampyres",
+            "count": 278,
+            "name": "Buddy",
+            "rate": 38.49,
+            "tl": true
+        },
+        "Al-Khwarizmi": {
+            "bset": "Button Brains",
+            "count": 190,
+            "name": "Al-Khwarizmi",
+            "rate": 38.42,
+            "tl": false
+        },
+        "White Tiger": {
+            "bset": "Howling Wolf",
+            "count": 224,
+            "name": "White Tiger",
+            "rate": 38.39,
+            "tl": true
+        },
+        "Marilyn Monroe": {
+            "bset": "Hodge Podge",
+            "count": 172,
+            "name": "Marilyn Monroe",
+            "rate": 38.37,
+            "tl": false
+        },
+        "Kaeriol": {
+            "bset": "Classic Fanatics",
+            "count": 107,
+            "name": "Kaeriol",
+            "rate": 38.32,
+            "tl": false
+        },
+        "Szechuan": {
+            "bset": "The Delta",
+            "count": 139,
+            "name": "Szechuan",
+            "rate": 38.13,
+            "tl": true
+        },
+        "Kitty Cat Seven": {
+            "bset": "2005 Rare / Promo",
+            "count": 184,
+            "name": "Kitty Cat Seven",
+            "rate": 38.04,
+            "tl": false
+        },
+        "Cesare": {
+            "bset": "Fantasy",
+            "count": 163,
+            "name": "Cesare",
+            "rate": 38.04,
+            "tl": true
+        },
+        "Chairman Kaga": {
+            "bset": "Iron Chef",
+            "count": 129,
+            "name": "Chairman Kaga",
+            "rate": 37.98,
+            "tl": false
+        },
+        "Cheese Weasel": {
+            "bset": "2004 Origins",
+            "count": 174,
+            "name": "Cheese Weasel",
+            "rate": 37.93,
+            "tl": true
+        },
+        "Rold Rage": {
+            "bset": "2004 Origins",
+            "count": 145,
+            "name": "Rold Rage",
+            "rate": 37.93,
+            "tl": false
+        },
+        "Drew's Truck": {
+            "bset": "2004 Origins",
+            "count": 211,
+            "name": "Drew's Truck",
+            "rate": 37.91,
+            "tl": false
+        },
+        "Faith": {
+            "bset": "Lunch Money",
+            "count": 227,
+            "name": "Faith",
+            "rate": 37.89,
+            "tl": true
+        },
+        "Stumbling Clowns": {
+            "bset": "Big Top",
+            "count": 462,
+            "name": "Stumbling Clowns",
+            "rate": 37.88,
+            "tl": false
+        },
+        "Magistra": {
+            "bset": "Blademasters",
+            "count": 132,
+            "name": "Magistra",
+            "rate": 37.88,
+            "tl": false
+        },
+        "Lizzie": {
+            "bset": "Chicago Crew",
+            "count": 103,
+            "name": "Lizzie",
+            "rate": 37.86,
+            "tl": false
+        },
+        "TheFool": {
+            "bset": "Classic Fanatics",
+            "count": 90,
+            "name": "TheFool",
+            "rate": 37.78,
+            "tl": false
+        },
+        "Lust": {
+            "bset": "7 deadly sins",
+            "count": 151,
+            "name": "Lust",
+            "rate": 37.75,
+            "tl": false
+        },
+        "Amara Wintersword": {
+            "bset": "2004 Origins",
+            "count": 183,
+            "name": "Amara Wintersword",
+            "rate": 37.7,
+            "tl": false
+        },
+        "Eiko": {
+            "bset": "1999 Rare / Promo",
+            "count": 329,
+            "name": "Eiko",
+            "rate": 37.69,
+            "tl": true
+        },
+        "Minnesota": {
+            "bset": "50 States",
+            "count": 125,
+            "name": "Minnesota",
+            "rate": 37.6,
+            "tl": false
+        },
+        "Brand": {
+            "bset": "The Delta",
+            "count": 149,
+            "name": "Brand",
+            "rate": 37.58,
+            "tl": true
+        },
+        "Igor (promo)": {
+            "bset": "2004 Origins",
+            "count": 173,
+            "name": "Igor (promo)",
+            "rate": 37.57,
+            "tl": false
+        },
+        "Pythagoras": {
+            "bset": "Button Brains",
+            "count": 192,
+            "name": "Pythagoras",
+            "rate": 37.5,
+            "tl": false
+        },
+        "Oklahoma": {
+            "bset": "50 States",
+            "count": 144,
+            "name": "Oklahoma",
+            "rate": 37.5,
+            "tl": false
+        },
+        "Neo-Queen Serenity": {
+            "bset": "Sailor Moon 2",
+            "count": 144,
+            "name": "Neo-Queen Serenity",
+            "rate": 37.5,
+            "tl": true
+        },
+        "Delt Rage": {
+            "bset": "2004 Origins",
+            "count": 211,
+            "name": "Delt Rage",
+            "rate": 37.44,
+            "tl": false
+        },
+        "Dunkirk": {
+            "bset": "Vampyres",
+            "count": 406,
+            "name": "Dunkirk",
+            "rate": 37.44,
+            "tl": true
+        },
+        "Danny": {
+            "bset": "Blademasters",
+            "count": 131,
+            "name": "Danny",
+            "rate": 37.4,
+            "tl": false
+        },
+        "Ping": {
+            "bset": "MegaTokyo",
+            "count": 123,
+            "name": "Ping",
+            "rate": 37.4,
+            "tl": false
+        },
+        "Iago": {
+            "bset": "Soldiers",
+            "count": 343,
+            "name": "Iago",
+            "rate": 37.32,
+            "tl": true
+        },
+        "Zeppo": {
+            "bset": "1999 Rare / Promo",
+            "count": 223,
+            "name": "Zeppo",
+            "rate": 37.22,
+            "tl": true
+        },
+        "North Dakota": {
+            "bset": "50 States",
+            "count": 129,
+            "name": "North Dakota",
+            "rate": 37.21,
+            "tl": false
+        },
+        "Windsor": {
+            "bset": "The Delta",
+            "count": 121,
+            "name": "Windsor",
+            "rate": 37.19,
+            "tl": true
+        },
+        "Washington": {
+            "bset": "50 States",
+            "count": 183,
+            "name": "Washington",
+            "rate": 37.16,
+            "tl": false
+        },
+        "Jean-Paul": {
+            "bset": "Blademasters: Third Attack",
+            "count": 256,
+            "name": "Jean-Paul",
+            "rate": 37.11,
+            "tl": false
+        },
+        "Rumbles": {
+            "bset": "Classic Fanatics",
+            "count": 186,
+            "name": "Rumbles",
+            "rate": 37.1,
+            "tl": false
+        },
+        "Mike Young": {
+            "bset": "2004 Origins",
+            "count": 213,
+            "name": "Mike Young",
+            "rate": 37.09,
+            "tl": false
+        },
+        "Vermont": {
+            "bset": "50 States",
+            "count": 173,
+            "name": "Vermont",
+            "rate": 36.99,
+            "tl": false
+        },
+        "Theano": {
+            "bset": "Button Brains",
+            "count": 192,
+            "name": "Theano",
+            "rate": 36.98,
+            "tl": false
+        },
+        "Tweedledum+dee": {
+            "bset": "Wonderland",
+            "count": 222,
+            "name": "Tweedledum+dee",
+            "rate": 36.94,
+            "tl": false
+        },
+        "Famous": {
+            "bset": "Classic Fanatics",
+            "count": 122,
+            "name": "Famous",
+            "rate": 36.89,
+            "tl": false
+        },
+        "Pilot Joe": {
+            "bset": "The Delta",
+            "count": 160,
+            "name": "Pilot Joe",
+            "rate": 36.88,
+            "tl": true
+        },
+        "Leonard Eugene Dickson": {
+            "bset": "Button Brains",
+            "count": 179,
+            "name": "Leonard Eugene Dickson",
+            "rate": 36.87,
+            "tl": false
+        },
+        "Montserrat": {
+            "bset": "Uptown",
+            "count": 171,
+            "name": "Montserrat",
+            "rate": 36.84,
+            "tl": true
+        },
+        "Sven": {
+            "bset": "Fairies",
+            "count": 144,
+            "name": "Sven",
+            "rate": 36.81,
+            "tl": true
+        },
+        "Giuseppe": {
+            "bset": "Uptown",
+            "count": 98,
+            "name": "Giuseppe",
+            "rate": 36.73,
+            "tl": true
+        },
+        "The Flying Squirrel (unofficial)": {
+            "bset": "Japanese Beetle (unofficial)",
+            "count": 177,
+            "name": "The Flying Squirrel (unofficial)",
+            "rate": 36.72,
+            "tl": false
+        },
+        "Da Pimp": {
+            "bset": "Hodge Podge",
+            "count": 129,
+            "name": "Da Pimp",
+            "rate": 36.43,
+            "tl": false
+        },
+        "Tess": {
+            "bset": "BRAWL",
+            "count": 239,
+            "name": "Tess",
+            "rate": 36.4,
+            "tl": true
+        },
+        "Wastenott": {
+            "bset": "BROM",
+            "count": 327,
+            "name": "Wastenott",
+            "rate": 36.39,
+            "tl": true
+        },
+        "Little Sven": {
+            "bset": "Fairies",
+            "count": 132,
+            "name": "Little Sven",
+            "rate": 36.36,
+            "tl": false
+        },
+        "Gilroy": {
+            "bset": "The Delta",
+            "count": 132,
+            "name": "Gilroy",
+            "rate": 36.36,
+            "tl": true
+        },
+        "Carrow": {
+            "bset": "ZOECon",
+            "count": 201,
+            "name": "Carrow",
+            "rate": 36.32,
+            "tl": true
+        },
+        "ElihuRoot": {
+            "bset": "Classic Fanatics",
+            "count": 138,
+            "name": "ElihuRoot",
+            "rate": 36.23,
+            "tl": false
+        },
+        "Thor": {
+            "bset": "Hodge Podge",
+            "count": 310,
+            "name": "Thor",
+            "rate": 36.13,
+            "tl": false
+        },
+        "Daisy": {
+            "bset": "Metamorphers",
+            "count": 133,
+            "name": "Daisy",
+            "rate": 36.09,
+            "tl": false
+        },
+        "Synthia": {
+            "bset": "Bruno",
+            "count": 219,
+            "name": "Synthia",
+            "rate": 36.07,
+            "tl": true
+        },
+        "Merlin": {
+            "bset": "Buttonlords",
+            "count": 208,
+            "name": "Merlin",
+            "rate": 36.06,
+            "tl": true
+        },
+        "Wisconsin": {
+            "bset": "50 States",
+            "count": 253,
+            "name": "Wisconsin",
+            "rate": 35.97,
+            "tl": false
+        },
+        "The Fictitious Alan Clark": {
+            "bset": "Demicon the 13th",
+            "count": 138,
+            "name": "The Fictitious Alan Clark",
+            "rate": 35.51,
+            "tl": true
+        },
+        "Felicia": {
+            "bset": "The Delta",
+            "count": 119,
+            "name": "Felicia",
+            "rate": 35.29,
+            "tl": true
+        },
+        "Mushu": {
+            "bset": "Classic Fanatics",
+            "count": 179,
+            "name": "Mushu",
+            "rate": 35.2,
+            "tl": false
+        },
+        "Octavia": {
+            "bset": "Chicago Crew",
+            "count": 115,
+            "name": "Octavia",
+            "rate": 34.78,
+            "tl": false
+        },
+        "Gratch": {
+            "bset": "Save The Ogres",
+            "count": 170,
+            "name": "Gratch",
+            "rate": 34.71,
+            "tl": true
+        },
+        "Morgan": {
+            "bset": "BRAWL",
+            "count": 283,
+            "name": "Morgan",
+            "rate": 34.63,
+            "tl": true
+        },
+        "The Flying Squirrel": {
+            "bset": "Japanese Beetle",
+            "count": 254,
+            "name": "The Flying Squirrel",
+            "rate": 31.89,
+            "tl": true
+        },
+        "Golo": {
+            "bset": "Diceland",
+            "count": 290,
+            "name": "Golo",
+            "rate": 31.72,
+            "tl": false
+        },
+        "Montgomery": {
+            "bset": "Blademasters: Third Attack",
+            "count": 190,
+            "name": "Montgomery",
+            "rate": 30.53,
+            "tl": false
+        },
+        "Super Germ": {
+            "bset": "2004 Origins",
+            "count": 218,
+            "name": "Super Germ",
+            "rate": 29.36,
+            "tl": false
+        },
+        "Max": {
+            "bset": "Freaks",
+            "count": 210,
+            "name": "Max",
+            "rate": 29.05,
+            "tl": false
+        },
+        "Invisible Man": {
+            "bset": "Victorian Horror",
+            "count": 247,
+            "name": "Invisible Man",
+            "rate": 28.74,
+            "tl": false
+        },
+        "Skomp": {
+            "bset": "Hodge Podge",
+            "count": 266,
+            "name": "Skomp",
+            "rate": 28.2,
+            "tl": false
+        },
+        "Wyoming": {
+            "bset": "50 States",
+            "count": 183,
+            "name": "Wyoming",
+            "rate": 27.87,
+            "tl": false
+        },
+        "Binder": {
+            "bset": "Classic Fanatics",
+            "count": 158,
+            "name": "Binder",
+            "rate": 24.68,
+            "tl": false
+        },
+        "Mister Peach": {
+            "bset": "Freaks",
+            "count": 163,
+            "name": "Mister Peach",
+            "rate": 24.54,
+            "tl": true
+        },
+        "Peace": {
+            "bset": "BROM",
+            "count": 332,
+            "name": "Peace",
+            "rate": 24.4,
+            "tl": true
+        },
+        "Trogdor": {
+            "bset": "Hodge Podge",
+            "count": 197,
+            "name": "Trogdor",
+            "rate": 22.84,
+            "tl": false
+        },
+        "stoooooooo": {
+            "bset": "Classic Fanatics",
+            "count": 168,
+            "name": "stoooooooo",
+            "rate": 19.64,
+            "tl": false
+        },
+        "Limax": {
+            "bset": "Classic Fanatics",
+            "count": 197,
+            "name": "Limax",
+            "rate": 18.78,
+            "tl": false
+        },
+        "gman97216": {
+            "bset": "Classic Fanatics",
+            "count": 229,
+            "name": "gman97216",
+            "rate": 17.03,
+            "tl": false
+        },
+        "Cthulhu": {
+            "bset": "Presidential",
+            "count": 228,
+            "name": "Cthulhu",
+            "rate": 14.04,
+            "tl": true
+        },
+        "Dead Guy": {
+            "bset": "Fantasy",
+            "count": 260,
+            "name": "Dead Guy",
+            "rate": 5.0,
+            "tl": true
+        }
+    },
+    "message": "Button stats generated on 2021-01-03"
+}
