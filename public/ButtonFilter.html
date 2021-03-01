@@ -167,6 +167,10 @@
                   button.attributes.push("HitListFeb'21")
                   button.events.push("HitListFeb'21")
                 }
+                if (["amica", "bigevildan", "Downen","Hooloovoo","Jasyeman","jgenzano","juelki","lunatic","moekon","perlmunkee","roujin27","sanny","Yagharek"].includes(button.buttonName)) {
+                  button.attributes.push("HitListMar'21")
+                  button.events.push("HitListMar'21")
+                }
                 if (!implName.includes(button.buttonName)) {
                   button.attributes.push("isStagingOnly")
                   button.isStagingOnly = function () {
