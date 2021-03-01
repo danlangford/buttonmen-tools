@@ -28,7 +28,7 @@
 
       <form class="form-inline" role="search">
         <input type="text" class="form-control" placeholder="Filter" ng-model="filterPhrase"
-          ng-model-options="{debounce: 300}" ng-change="randomPick()" />
+          ng-model-options="{debounce: 300}" ng-change="randomPick()" ng-init="filterPhrase='!staging'"/>
       </form>
 
       <p class="navbar-text">Showing {{filteredButtons.length}} / {{buttons.length}} buttons.</p>
