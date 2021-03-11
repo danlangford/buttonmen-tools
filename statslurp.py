@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import json
 import jsons
 from dataclasses import dataclass
-from typing import Optional
 
 
 @dataclass
@@ -41,7 +40,9 @@ def go():
   print(retrieved_button_stats)
 
   with open('public/buttonstats.json', 'w', encoding='utf-8') as f:
-    json.dump({"data":jsons.dump(retrieved_button_stats),"message":caption}, f, ensure_ascii=False, indent=4)
+    json.dump({"data": jsons.dump(retrieved_button_stats), "message": caption},
+              f, ensure_ascii=False, indent=4)
+
 
 if __name__ == '__main__':
   go()
