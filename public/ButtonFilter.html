@@ -38,7 +38,7 @@
       </div>
 
       <p class="navbar-text" ng-init="randomPick()">
-        <b>{{random.buttonName}}</b>&nbsp;{{random.recipe}}
+        <b>{{random.buttonName}}</b>&nbsp;{{random.recipe}} <a href="http://buttonweavers.com/ui/create_game.html?playerButton={{random.buttonName}}"><i class="fas fa-dice"></i></a>
       </p>
 
       <div class="navbar-content ml-auto">
@@ -77,6 +77,7 @@
               <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
               <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
               <span class="badge badge-secondary" ng-repeat="event in b.events">{{event}}</span>
+              <a href="http://buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i class="fas fa-dice"></i></a>
               <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span></p>
             </div>
           </div>
@@ -170,6 +171,10 @@
                 if (["amica", "bigevildan", "Downen","Hooloovoo","Jasyeman","jgenzano","juelki","lunatic","moekon","perlmunkee","roujin27","sanny","Yagharek"].includes(button.buttonName)) {
                   button.attributes.push("HitListMar'21")
                   button.events.push("HitListMar'21")
+                }
+                if (["Vermont", "Washington", "Minnesota", "eon", "Famine", "Fuyuko", "Captain Bingo", "Johnny", "Phuong", "Calmon", "Bull", "Darrin", "opedog"].includes(button.buttonName)) {
+                  button.attributes.push("HitListApr'21")
+                  button.events.push("HitListApr'21")
                 }
                 if (!implName.includes(button.buttonName)) {
                   button.attributes.push("isStagingOnly")
