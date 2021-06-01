@@ -180,6 +180,10 @@
                   button.attributes.push("HitListMay'21")
                   button.events.push("HitListMay'21")
                 }
+                if (["Studio Foglio", "Wonderland"].includes(button.buttonSet)) {
+                  button.attributes.push("HitListJune'21")
+                  button.events.push("HitListJune'21")
+                }
                 if (!implName.includes(button.buttonName)) {
                   button.attributes.push("isStagingOnly")
                   button.isStagingOnly = function () {
