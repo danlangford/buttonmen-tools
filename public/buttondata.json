@@ -935,7 +935,7 @@
       "buttonName": "Jolene",
       "recipe": "(6) (6) (10) (18) (Z)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2017 Rare \/ Promo",
+      "buttonSet": "2017 Rare / Promo",
       "dieTypes": [
         "Z Swing"
       ],
@@ -949,7 +949,7 @@
       "buttonName": "Mutton Ben",
       "recipe": "p(8) #(12) s(20) (X) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2017 Rare \/ Promo",
+      "buttonSet": "2017 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1343,7 +1343,7 @@
       "buttonName": "Carson (promo)",
       "recipe": "(4) (5) (6) (7) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "1999 Rare \/ Promo",
+      "buttonSet": "1999 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1357,7 +1357,7 @@
       "buttonName": "Eiko",
       "recipe": "(4) (6) (6) (12) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "1999 Rare \/ Promo",
+      "buttonSet": "1999 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1371,7 +1371,7 @@
       "buttonName": "Wu Lan",
       "recipe": "(4) (10) (20) (20) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "1999 Rare \/ Promo",
+      "buttonSet": "1999 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1385,7 +1385,7 @@
       "buttonName": "Zeppo",
       "recipe": "(4) (12) (20) (X)!",
       "hasUnimplementedSkill": false,
-      "buttonSet": "1999 Rare \/ Promo",
+      "buttonSet": "1999 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1917,7 +1917,7 @@
       "buttonName": "Gordo",
       "recipe": "(V) (W) (X) (Y) (Z)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2000 Rare \/ Promo",
+      "buttonSet": "2000 Rare / Promo",
       "dieTypes": [
         "V Swing",
         "W Swing",
@@ -1935,7 +1935,7 @@
       "buttonName": "Me am ORK!",
       "recipe": "(8) (8) (8) p(8) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2000 Rare \/ Promo",
+      "buttonSet": "2000 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -1951,7 +1951,7 @@
       "buttonName": "Rikachu",
       "recipe": "(1) (1) (1) (1) (Y)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2000 Rare \/ Promo",
+      "buttonSet": "2000 Rare / Promo",
       "dieTypes": [
         "Y Swing"
       ],
@@ -2755,7 +2755,7 @@
     {
       "buttonId": 32,
       "buttonName": "Social Class",
-      "recipe": "(4\/6) (6\/8) (8\/10) (10\/12) (12\/20)",
+      "recipe": "(4/6) (6/8) (8/10) (10/12) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Balticon 34",
       "dieTypes": [
@@ -2800,7 +2800,7 @@
     {
       "buttonId": 692,
       "buttonName": "Lady Luck",
-      "recipe": "(2) (7\/13) (7\/13) (7\/13) (7\/13)",
+      "recipe": "(2) (7/13) (7/13) (7/13) (7/13)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Las Vegas",
       "dieTypes": [
@@ -2886,7 +2886,7 @@
     {
       "buttonId": 115,
       "buttonName": "Aldric",
-      "recipe": "(8) (8) (4\/12) (8\/20) (12\/20)",
+      "recipe": "(8) (8) (4/12) (8/20) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2900,7 +2900,7 @@
     {
       "buttonId": 119,
       "buttonName": "Cesare",
-      "recipe": "(10) (4\/10) (6\/10) (10\/12) (10\/20)",
+      "recipe": "(10) (4/10) (6/10) (10/12) (10/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2914,7 +2914,7 @@
     {
       "buttonId": 114,
       "buttonName": "Chang",
-      "recipe": "(2\/20) (2\/20) (4\/20) (8\/20)",
+      "recipe": "(2/20) (2/20) (4/20) (8/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2942,7 +2942,7 @@
     {
       "buttonId": 116,
       "buttonName": "Elihu",
-      "recipe": "(4\/6) (4\/8) (6\/10) (6\/12) (8\/20)",
+      "recipe": "(4/6) (4/8) (6/10) (6/12) (8/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2956,7 +2956,7 @@
     {
       "buttonId": 117,
       "buttonName": "Farrell",
-      "recipe": "(10) (12) (6\/20) (6\/20) (8\/12)",
+      "recipe": "(10) (12) (6/20) (6/20) (8/12)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2970,7 +2970,7 @@
     {
       "buttonId": 110,
       "buttonName": "Frasquito",
-      "recipe": "(4) (6) (8) (12) (2\/20)",
+      "recipe": "(4) (6) (8) (12) (2/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2984,7 +2984,7 @@
     {
       "buttonId": 111,
       "buttonName": "Lark",
-      "recipe": "(6) (20) (2\/8) (4\/12) (6\/10)",
+      "recipe": "(6) (20) (2/8) (4/12) (6/10)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -2998,7 +2998,7 @@
     {
       "buttonId": 109,
       "buttonName": "Luce",
-      "recipe": "(8) (10) (20) (4\/20) (8\/20)",
+      "recipe": "(8) (10) (20) (4/20) (8/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -3012,7 +3012,7 @@
     {
       "buttonId": 113,
       "buttonName": "Mischa",
-      "recipe": "(10) (12) (12) (4\/12) (6\/12)",
+      "recipe": "(10) (12) (12) (4/12) (6/12)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -3026,7 +3026,7 @@
     {
       "buttonId": 118,
       "buttonName": "Nikolai",
-      "recipe": "(20) (4\/10) (4\/12) (6\/10) (6\/20)",
+      "recipe": "(20) (4/10) (4/12) (6/10) (6/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -3040,7 +3040,7 @@
     {
       "buttonId": 112,
       "buttonName": "Theophilus",
-      "recipe": "(8) (10) (12) (10\/20) (20\/30)",
+      "recipe": "(8) (10) (12) (10/20) (20/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -3054,7 +3054,7 @@
     {
       "buttonId": 120,
       "buttonName": "Vincent",
-      "recipe": "(30) (30) (30) (6\/30)",
+      "recipe": "(30) (30) (30) (6/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fantasy",
       "dieTypes": [
@@ -3102,7 +3102,7 @@
     {
       "buttonId": 227,
       "buttonName": "Bush",
-      "recipe": "(4) (20) (4\/8) (6\/12) (6\/20)",
+      "recipe": "(4) (20) (4/8) (6/12) (6/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Presidential",
       "dieTypes": [
@@ -3133,7 +3133,7 @@
     {
       "buttonId": 228,
       "buttonName": "Gore",
-      "recipe": "(4) (20) (4\/8) (6\/12) (6\/20)",
+      "recipe": "(4) (20) (4/8) (6/12) (6/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Presidential",
       "dieTypes": [
@@ -3203,7 +3203,7 @@
     {
       "buttonId": 294,
       "buttonName": "Alice",
-      "recipe": "(6) (8) (8) (10) (1\/30)!",
+      "recipe": "(6) (8) (8) (10) (1/30)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Wonderland",
       "dieTypes": [
@@ -3297,7 +3297,7 @@
     {
       "buttonId": 106,
       "buttonName": "Little Sven",
-      "recipe": "q(20) q(20) (8\/12) (6\/10) (4)",
+      "recipe": "q(20) q(20) (8/12) (6/10) (4)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fairies",
       "dieTypes": [
@@ -3313,7 +3313,7 @@
     {
       "buttonId": 107,
       "buttonName": "Sven",
-      "recipe": "q(20) q(20) (8\/12) (6\/12) (4)",
+      "recipe": "q(20) q(20) (8/12) (6/12) (4)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Fairies",
       "dieTypes": [
@@ -3978,7 +3978,7 @@
     {
       "buttonId": 250,
       "buttonName": "Aylee",
-      "recipe": "(8) (10\/20) (12) (12\/20) (20)",
+      "recipe": "(8) (10/20) (12) (12/20) (20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -3992,7 +3992,7 @@
     {
       "buttonId": 251,
       "buttonName": "Bun-Bun",
-      "recipe": "(4\/10) (4\/12) (6\/12) (20) (20)",
+      "recipe": "(4/10) (4/12) (6/12) (20) (20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -4006,7 +4006,7 @@
     {
       "buttonId": 252,
       "buttonName": "Kiki",
-      "recipe": "(3\/20) (4) (8\/12) (10) (10\/20)",
+      "recipe": "(3/20) (4) (8/12) (10) (10/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -4020,7 +4020,7 @@
     {
       "buttonId": 253,
       "buttonName": "Riff",
-      "recipe": "(4\/20) (6) (6\/8) (10\/12) (20)",
+      "recipe": "(4/20) (6) (6/8) (10/12) (20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -4034,7 +4034,7 @@
     {
       "buttonId": 254,
       "buttonName": "Torg",
-      "recipe": "(6) (6\/20) (8) (10\/12) (12\/20)",
+      "recipe": "(6) (6/20) (8) (10/12) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -4048,7 +4048,7 @@
     {
       "buttonId": 255,
       "buttonName": "Zoe",
-      "recipe": "(4\/12) (6\/10) (8) (10\/20) (12\/20)",
+      "recipe": "(4/12) (6/10) (8) (10/20) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Sluggy Freelance",
       "dieTypes": [
@@ -4265,7 +4265,7 @@
     {
       "buttonId": 91,
       "buttonName": "The Fictitious Alan Clark",
-      "recipe": "s(8) s(8) (3\/12) (20) (X)",
+      "recipe": "s(8) s(8) (3/12) (20) (X)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Demicon the 13th",
       "dieTypes": [
@@ -4282,7 +4282,7 @@
     {
       "buttonId": 248,
       "buttonName": "Assailer",
-      "recipe": "(12) (12) (20) (2\/20) (X)",
+      "recipe": "(12) (12) (20) (2/20) (X)",
       "hasUnimplementedSkill": false,
       "buttonSet": "SFR",
       "dieTypes": [
@@ -4297,7 +4297,7 @@
     {
       "buttonId": 249,
       "buttonName": "Harbinger",
-      "recipe": "(4) (4) (4\/12) (10\/20) (V)",
+      "recipe": "(4) (4) (4/12) (10/20) (V)",
       "hasUnimplementedSkill": false,
       "buttonSet": "SFR",
       "dieTypes": [
@@ -4312,7 +4312,7 @@
     {
       "buttonId": 10,
       "buttonName": "Apples",
-      "recipe": "(8) (8) (2\/12) (8\/16) (20\/24)",
+      "recipe": "(8) (8) (2/12) (8/16) (20/24)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Chicagoland Gamers Conclave",
       "dieTypes": [
@@ -4326,7 +4326,7 @@
     {
       "buttonId": 11,
       "buttonName": "Green Apple",
-      "recipe": "(8) (10) (1\/8) (6\/12) (12\/20)",
+      "recipe": "(8) (10) (1/8) (6/12) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Chicagoland Gamers Conclave",
       "dieTypes": [
@@ -4469,7 +4469,7 @@
     {
       "buttonId": 232,
       "buttonName": "Harry Pudding",
-      "recipe": "(4) (7) (2\/20) (2\/20) (10)",
+      "recipe": "(4) (7) (2/20) (2/20) (10)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Renaissance",
       "dieTypes": [
@@ -4530,7 +4530,7 @@
     {
       "buttonId": 33,
       "buttonName": "Bar Mitzvah Boy",
-      "recipe": "(6\/13) (8) (10) f(13) f(30)",
+      "recipe": "(6/13) (8) (10) f(13) f(30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Bar Mitzvah",
       "dieTypes": [
@@ -4566,7 +4566,7 @@
       "buttonName": "Abe Caine",
       "recipe": "p(4,4) p(8,8) (10) ps(24) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2003 Rare \/ Promo",
+      "buttonSet": "2003 Rare / Promo",
       "dieTypes": [
         "Twin",
         "X Swing"
@@ -4612,7 +4612,7 @@
     {
       "buttonId": 75,
       "buttonName": "Fan Chung Graham",
-      "recipe": "(4) k(6) (8) (10\/20) (X)?",
+      "recipe": "(4) k(6) (8) (10/20) (X)?",
       "hasUnimplementedSkill": false,
       "buttonSet": "Button Brains",
       "dieTypes": [
@@ -4758,7 +4758,7 @@
     {
       "buttonId": 15,
       "buttonName": "Captain Bingo",
-      "recipe": "(8) (6\/12) (6\/12) (12\/20) (X)",
+      "recipe": "(8) (6/12) (6/12) (12/20) (X)",
       "hasUnimplementedSkill": false,
       "buttonSet": "2004 Origins",
       "dieTypes": [
@@ -5001,7 +5001,7 @@
     {
       "buttonId": 66,
       "buttonName": "Nethershadow",
-      "recipe": "(6) (10) s(10) (10\/20) (6\/30)",
+      "recipe": "(6) (10) s(10) (10/20) (6/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Bridge and Tunnel",
       "dieTypes": [
@@ -5017,7 +5017,7 @@
     {
       "buttonId": 681,
       "buttonName": "Phantom Zero",
-      "recipe": "g(8) s(10) (12) (2\/12) (X)",
+      "recipe": "g(8) s(10) (12) (2/12) (X)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Bridge and Tunnel",
       "dieTypes": [
@@ -5079,7 +5079,7 @@
       "buttonName": "Kitty Cat Seven",
       "recipe": "(4) (6) (8) (10) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2005 Rare \/ Promo",
+      "buttonSet": "2005 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -5093,7 +5093,7 @@
       "buttonName": "Magical Witch Critical Miss",
       "recipe": "(6) (10) (10) (20) (X)?",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2005 Rare \/ Promo",
+      "buttonSet": "2005 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -5109,7 +5109,7 @@
       "buttonName": "Sylvia Branham",
       "recipe": "(6) (6) (6) (X) (X)",
       "hasUnimplementedSkill": false,
-      "buttonSet": "2005 Rare \/ Promo",
+      "buttonSet": "2005 Rare / Promo",
       "dieTypes": [
         "X Swing"
       ],
@@ -5402,7 +5402,7 @@
     {
       "buttonId": 314,
       "buttonName": "Chairman Kaga",
-      "recipe": "(5\/7) (7\/9) (9\/11) (11\/17) (17\/23)",
+      "recipe": "(5/7) (7/9) (9/11) (11/17) (17/23)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Iron Chef",
       "dieTypes": [
@@ -5416,7 +5416,7 @@
     {
       "buttonId": 315,
       "buttonName": "Iron Chef Chinese",
-      "recipe": "(7) (9) (11) (11) (13\/29)",
+      "recipe": "(7) (9) (11) (11) (13/29)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Iron Chef",
       "dieTypes": [
@@ -5430,7 +5430,7 @@
     {
       "buttonId": 316,
       "buttonName": "Iron Chef French",
-      "recipe": "(5\/27) (7) (13) (17) (23)",
+      "recipe": "(5/27) (7) (13) (17) (23)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Iron Chef",
       "dieTypes": [
@@ -5444,7 +5444,7 @@
     {
       "buttonId": 317,
       "buttonName": "Iron Chef Italian",
-      "recipe": "(3) (5) (9) (9) (11\/21)",
+      "recipe": "(3) (5) (9) (9) (11/21)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Iron Chef",
       "dieTypes": [
@@ -5458,7 +5458,7 @@
     {
       "buttonId": 318,
       "buttonName": "Iron Chef Japanese",
-      "recipe": "(9\/17) (17) (17) (21) (29)",
+      "recipe": "(9/17) (17) (17) (21) (29)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Iron Chef",
       "dieTypes": [
@@ -5472,7 +5472,7 @@
     {
       "buttonId": 319,
       "buttonName": "Anger",
-      "recipe": "(10) (10) (10) (12\/20) (20\/30)!",
+      "recipe": "(10) (10) (10) (12/20) (20/30)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "7 deadly sins",
       "dieTypes": [
@@ -5523,7 +5523,7 @@
     {
       "buttonId": 322,
       "buttonName": "Greed",
-      "recipe": "(8) (12) (12) z(12) z(4\/20)",
+      "recipe": "(8) (12) (12) z(12) z(4/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "7 deadly sins",
       "dieTypes": [
@@ -5588,7 +5588,7 @@
     {
       "buttonId": 326,
       "buttonName": "Audrey",
-      "recipe": "t(2) (3\/6) o(8) (12) (Y)",
+      "recipe": "t(2) (3/6) o(8) (12) (Y)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Chicago Crew",
       "dieTypes": [
@@ -6020,7 +6020,7 @@
     {
       "buttonId": 352,
       "buttonName": "Evil Robot Luke",
-      "recipe": "(4\/20) (6\/12) p(10) (12) (12\/20)",
+      "recipe": "(4/20) (6/12) p(10) (12) (12/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Hodge Podge",
       "dieTypes": [
@@ -6036,7 +6036,7 @@
     {
       "buttonId": 354,
       "buttonName": "Holiday",
-      "recipe": "(2\/14) (3\/17) (7\/4) (10\/31) (12\/25)",
+      "recipe": "(2/14) (3/17) (7/4) (10/31) (12/25)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Hodge Podge",
       "dieTypes": [
@@ -6172,7 +6172,7 @@
     {
       "buttonId": 363,
       "buttonName": "Thor",
-      "recipe": "G(6) G(10) G(12) G(6\/20)",
+      "recipe": "G(6) G(10) G(12) G(6/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Hodge Podge",
       "dieTypes": [
@@ -6504,7 +6504,7 @@
     {
       "buttonId": 595,
       "buttonName": "Georgia (US)",
-      "recipe": "oz(10) (4\/20) B(X) B(X) q(X)",
+      "recipe": "oz(10) (4/20) B(X) B(X) q(X)",
       "hasUnimplementedSkill": false,
       "buttonSet": "50 States",
       "dieTypes": [
@@ -6541,7 +6541,7 @@
     {
       "buttonId": 598,
       "buttonName": "Illinois",
-      "recipe": "(10\/20) G(12) (8,8) (R) rsd(4) rsd(6)",
+      "recipe": "(10/20) G(12) (8,8) (R) rsd(4) rsd(6)",
       "hasUnimplementedSkill": false,
       "buttonSet": "50 States",
       "dieTypes": [
@@ -6596,7 +6596,7 @@
     {
       "buttonId": 602,
       "buttonName": "Kentucky",
-      "recipe": "z(5) (1\/4) (9\/8) (20) (R)",
+      "recipe": "z(5) (1/4) (9/8) (20) (R)",
       "hasUnimplementedSkill": false,
       "buttonSet": "50 States",
       "dieTypes": [
@@ -7392,7 +7392,7 @@
     {
       "buttonId": 648,
       "buttonName": "Paris",
-      "recipe": "(4\/8)! (6) (10) (10) (12\/20)!",
+      "recipe": "(4/8)! (6) (10) (10) (12/20)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Blademasters: The Second Shot",
       "dieTypes": [
@@ -7626,7 +7626,7 @@
     {
       "buttonId": 672,
       "buttonName": "Erika",
-      "recipe": "z(10) z(12) z(12) z(4\/20)!",
+      "recipe": "z(10) z(12) z(12) z(4/20)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "MegaTokyo",
       "dieTypes": [
@@ -8020,7 +8020,7 @@
     {
       "buttonId": 711,
       "buttonName": "Peridot",
-      "recipe": "(4) (8) (8) (12) r(4\/6) r(8\/10) r(8\/12) r(12\/16)",
+      "recipe": "(4) (8) (8) (12) r(4/6) r(8/10) r(8/12) r(12/16)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Steven Universe",
       "dieTypes": [
@@ -8269,7 +8269,7 @@
     {
       "buttonId": 374,
       "buttonName": "Alljazzedup80",
-      "recipe": "z(8) B(8) p(10) %(12) (10\/20)",
+      "recipe": "z(8) B(8) p(10) %(12) (10/20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8417,7 +8417,7 @@
     {
       "buttonId": 384,
       "buttonName": "Binder",
-      "recipe": "(4\/12) (17) sp(4,20) (4\/30)",
+      "recipe": "(4/12) (17) sp(4,20) (4/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8435,7 +8435,7 @@
     {
       "buttonId": 385,
       "buttonName": "birdman",
-      "recipe": "z(3) (4\/30) (13) (13) (13)",
+      "recipe": "z(3) (4/30) (13) (13) (13)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8471,7 +8471,7 @@
     {
       "buttonId": 387,
       "buttonName": "bluebec",
-      "recipe": "t(7) z(13) (R)? g(4\/16) o(6,15) +(Y)",
+      "recipe": "t(7) z(13) (R)? g(4/16) o(6,15) +(Y)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8495,7 +8495,7 @@
     {
       "buttonId": 388,
       "buttonName": "bobby 5150",
-      "recipe": "^(3) fsp(R) ftz(14) tz!(1\/30) r^(4) rz(12) r!(1\/30)",
+      "recipe": "^(3) fsp(R) ftz(14) tz!(1/30) r^(4) rz(12) r!(1/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8613,7 +8613,7 @@
     {
       "buttonId": 396,
       "buttonName": "CactusJack",
-      "recipe": "z(8\/12) (4\/16) s(6\/10) z(X) s(U)",
+      "recipe": "z(8/12) (4/16) s(6/10) z(X) s(U)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8730,7 +8730,7 @@
     {
       "buttonId": 403,
       "buttonName": "Coyote",
-      "recipe": "f(1\/4) (4\/20) z(10,10) ^(U)? s(X)!",
+      "recipe": "f(1/4) (4/20) z(10,10) ^(U)? s(X)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -8754,7 +8754,7 @@
     {
       "buttonId": 404,
       "buttonName": "Cristofore",
-      "recipe": "^(9) f(12) g(12) z(20) (12\/30)! rf(12)",
+      "recipe": "^(9) f(12) g(12) z(20) (12/30)! rf(12)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9140,7 +9140,7 @@
     {
       "buttonId": 431,
       "buttonName": "GorgorBey",
-      "recipe": "ft(5) ds(1\/15) `G(5\/10) !p(Y) wHz(12)",
+      "recipe": "ft(5) ds(1/15) `G(5/10) !p(Y) wHz(12)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9367,7 +9367,7 @@
     {
       "buttonId": 443,
       "buttonName": "Heath",
-      "recipe": "(1\/13)! z(3,13) H(13) md(13) (X)!",
+      "recipe": "(1/13)! z(3,13) H(13) md(13) (X)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9479,7 +9479,7 @@
     {
       "buttonId": 448,
       "buttonName": "ifni",
-      "recipe": "oHz(Y) oHz(1\/2) oHz(2\/4) oHz(20\/30)",
+      "recipe": "oHz(Y) oHz(1/2) oHz(2/4) oHz(20/30)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9563,7 +9563,7 @@
     {
       "buttonId": 453,
       "buttonName": "jeffboyardy",
-      "recipe": "o(10) (6\/12) o(X)? (Y)? Bo(Z)?",
+      "recipe": "o(10) (6/12) o(X)? (Y)? Bo(Z)?",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9601,7 +9601,7 @@
     {
       "buttonId": 457,
       "buttonName": "Jordan",
-      "recipe": "oH(10) (1\/20)! (1\/20)! (20) o^(11)",
+      "recipe": "oH(10) (1/20)! (1/20)! (20) o^(11)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9620,7 +9620,7 @@
     {
       "buttonId": 458,
       "buttonName": "Jota",
-      "recipe": "F(4\/8) (6) (6\/10) s(8) (30) +(12)",
+      "recipe": "F(4/8) (6) (6/10) s(8) (30) +(12)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9724,7 +9724,7 @@
     {
       "buttonId": 465,
       "buttonName": "kestrel",
-      "recipe": "df(3) %q(7,7) zs(17) ^t(3\/23) p(Y)! rG(S) rg(U) r(V)",
+      "recipe": "df(3) %q(7,7) zs(17) ^t(3/23) p(Y)! rG(S) rg(U) r(V)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9781,7 +9781,7 @@
     {
       "buttonId": 467,
       "buttonName": "Kurosuke",
-      "recipe": "o(12,13) z(20,12) q(31) of(4\/22) oz(22)",
+      "recipe": "o(12,13) z(20,12) q(31) of(4/22) oz(22)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9860,7 +9860,7 @@
     {
       "buttonId": 471,
       "buttonName": "Linnea",
-      "recipe": "(4) B(8\/17) G(8) o(12) (U)?",
+      "recipe": "(4) B(8/17) G(8) o(12) (U)?",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -9894,7 +9894,7 @@
     {
       "buttonId": 474,
       "buttonName": "lunatic",
-      "recipe": "p(3) d(6) t(8\/12) (40) (40)",
+      "recipe": "p(3) d(6) t(8/12) (40) (40)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10126,7 +10126,7 @@
     {
       "buttonId": 489,
       "buttonName": "Noeh",
-      "recipe": "z(15,15) tg(6) n(Y) f(4\/20) sgv(17) `(1)",
+      "recipe": "z(15,15) tg(6) n(Y) f(4/20) sgv(17) `(1)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10176,7 +10176,7 @@
     {
       "buttonId": 491,
       "buttonName": "Notorious",
-      "recipe": "G(2\/12)! g(4\/16)! G(8\/20)! g(10\/24)! rH(7) rH(11) rh(13) rh(17)",
+      "recipe": "G(2/12)! g(4/16)! G(8/20)! g(10/24)! rH(7) rH(11) rh(13) rh(17)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10444,7 +10444,7 @@
     {
       "buttonId": 507,
       "buttonName": "SailorMur",
-      "recipe": "g(10) sp(12) t(4) (10\/20) ^(X)!",
+      "recipe": "g(10) sp(12) t(4) (10/20) ^(X)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10485,7 +10485,7 @@
     {
       "buttonId": 509,
       "buttonName": "santiago",
-      "recipe": "D(2) p(4\/14) t(5,5) zs(18) (6\/16)!",
+      "recipe": "D(2) p(4/14) t(5,5) zs(18) (6/16)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10507,7 +10507,7 @@
     {
       "buttonId": 510,
       "buttonName": "SC (The Deuce)",
-      "recipe": "z(4) t(6) p(8) s(10) (12\/16)! +(20)",
+      "recipe": "z(4) t(6) p(8) s(10) (12/16)! +(20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10673,7 +10673,7 @@
     {
       "buttonId": 519,
       "buttonName": "spindisc",
-      "recipe": "d(2) p(6\/20)! zp(12) n(T,T) B(X)? +(Y)",
+      "recipe": "d(2) p(6/20)! zp(12) n(T,T) B(X)? +(Y)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10782,7 +10782,7 @@
     {
       "buttonId": 526,
       "buttonName": "TheMachine",
-      "recipe": "dp(1) B(1\/30)! tD(4) q(7,11) rcz(20)",
+      "recipe": "dp(1) B(1/30)! tD(4) q(7,11) rcz(20)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -10846,7 +10846,7 @@
     {
       "buttonId": 529,
       "buttonName": "trifecta",
-      "recipe": "m(3) m(3) m(3) m(3) p(3\/33)! rn(3) rD(3)",
+      "recipe": "m(3) m(3) m(3) m(3) p(3/33)! rn(3) rD(3)",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -11063,7 +11063,7 @@
     {
       "buttonId": 545,
       "buttonName": "zaph",
-      "recipe": "(4) z(4,4) s(8,8) p(16) (1\/24)!",
+      "recipe": "(4) z(4,4) s(8,8) p(16) (1/24)!",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -11099,7 +11099,7 @@
     {
       "buttonId": 547,
       "buttonName": "Zomulgustar",
-      "recipe": "t(4) p(5\/23)! t(9) t(13) rdD(1) rsz(1) r^(1,1) rBqn(Z)?",
+      "recipe": "t(4) p(5/23)! t(9) t(13) rdD(1) rsz(1) r^(1,1) rBqn(Z)?",
       "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
@@ -11444,6 +11444,6 @@
       "tags": []
     }
   ],
-  "message": "Button data retrieved from prod 2021-04-29.",
+  "message": "Button data retrieved from prod 2021-07-09.",
   "status": "ok"
 }
