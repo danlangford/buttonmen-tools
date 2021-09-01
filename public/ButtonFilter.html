@@ -192,6 +192,11 @@
                   button.attributes.push("HitListAug'21")
                   button.events.push("HitListAug'21")
                 }
+                if (["Snuff", "mgatten", "Discordia", "skapheles", "gslamm", "nelde", "spindisc", "relsqui", "icarus", "bobby 5150", "kestrel", "Cristofore", "trifecta", "IIconfused", "Weylan", "Zotmeister", "fendrin", "Zegota", "Squiddhartha", "roujin27"].includes(button.buttonName)) {
+                  button.attributes.push("HitListSep'21")
+                  button.events.push("HitListSep'21")
+                }
+
                 if (!implName.includes(button.buttonName)) {
                   button.attributes.push("isStagingOnly")
                   button.isStagingOnly = function () {
