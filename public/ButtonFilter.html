@@ -196,6 +196,10 @@
                   button.attributes.push("HitListSep'21")
                   button.events.push("HitListSep'21")
                 }
+                if (["Vampyres", "Cowboy Bebop"].includes(button.buttonSet)) {
+                  button.attributes.push("HitListOct'21")
+                  button.events.push("HitListOct'21")
+                }
 
                 if (!implName.includes(button.buttonName)) {
                   button.attributes.push("isStagingOnly")
