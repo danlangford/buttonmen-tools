@@ -5029,7 +5029,7 @@
         "Stinger"
       ],
       "isTournamentLegal": false,
-      "artFilename": "BMdefaultRound.png",
+      "artFilename": "phantomzero.png",
       "tags": []
     },
     {
@@ -8218,6 +8218,554 @@
       "tags": []
     },
     {
+      "buttonId": 797,
+      "buttonName": "Andrew",
+      "recipe": "ks(6) fI(8) (12) (12) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Insult",
+        "Konstant",
+        "Shadow"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "andrew.png",
+      "tags": []
+    },
+    {
+      "buttonId": 798,
+      "buttonName": "Chad",
+      "recipe": "(4) ks(4) It(12) (20) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Insult",
+        "Konstant",
+        "Shadow",
+        "Trip"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "chad.png",
+      "tags": []
+    },
+    {
+      "buttonId": 799,
+      "buttonName": "Fiona",
+      "recipe": "st(4) fM(8) (12) (12) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Maximum",
+        "Shadow",
+        "Trip"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "fiona.png",
+      "tags": []
+    },
+    {
+      "buttonId": 800,
+      "buttonName": "Gavin",
+      "recipe": "fM(6) Is(8) (12) (20) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Insult",
+        "Maximum",
+        "Shadow"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "gavin.png",
+      "tags": []
+    },
+    {
+      "buttonId": 801,
+      "buttonName": "Isabel",
+      "recipe": "(6) It(8) fs(10) (12) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Insult",
+        "Shadow",
+        "Trip"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "isabel.png",
+      "tags": []
+    },
+    {
+      "buttonId": 802,
+      "buttonName": "Monique",
+      "recipe": "(8) kI(8) fs(12) (12) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Insult",
+        "Konstant",
+        "Shadow"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "monique.png",
+      "tags": []
+    },
+    {
+      "buttonId": 803,
+      "buttonName": "Nadia",
+      "recipe": "fI(6) st(10) (10) (12) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Insult",
+        "Shadow",
+        "Trip"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "nadia.png",
+      "tags": []
+    },
+    {
+      "buttonId": 804,
+      "buttonName": "Sachin",
+      "recipe": "(6) kt(6) Is(10) (20) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "CyberSuit Corp",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Insult",
+        "Konstant",
+        "Shadow",
+        "Trip"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "sachin.png",
+      "tags": []
+    },
+    {
+      "buttonId": 810,
+      "buttonName": "Anna Lee",
+      "recipe": "(8) (6,6) (20) p(30) (U)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "U Swing"
+      ],
+      "dieSkills": [
+        "Poison"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "annalee.png",
+      "tags": []
+    },
+    {
+      "buttonId": 812,
+      "buttonName": "Bishop",
+      "recipe": "(6) (20) (30) (X) `(8) `(12)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "bishop.png",
+      "tags": []
+    },
+    {
+      "buttonId": 813,
+      "buttonName": "Bozo",
+      "recipe": "p(8,8) p(12,12) p(20,20) p(30,30) p(X,X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Poison"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "bozo.png",
+      "tags": []
+    },
+    {
+      "buttonId": 814,
+      "buttonName": "Brad",
+      "recipe": "M(8) g(12) (20) (P)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "P Swing"
+      ],
+      "dieSkills": [
+        "Maximum",
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "brad.png",
+      "tags": []
+    },
+    {
+      "buttonId": 815,
+      "buttonName": "Brenda",
+      "recipe": "(1) (1) M(2) M(3) (V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Maximum"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "brenda.png",
+      "tags": []
+    },
+    {
+      "buttonId": 816,
+      "buttonName": "Brent",
+      "recipe": "g(4) (12) g(12) (20) (X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "brent.png",
+      "tags": []
+    },
+    {
+      "buttonId": 817,
+      "buttonName": "Cardie",
+      "recipe": "g(8) g(8) (8,8) (12) (X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "cardie.png",
+      "tags": []
+    },
+    {
+      "buttonId": 818,
+      "buttonName": "Cherry",
+      "recipe": "(6) (8) (T) M(T) `(4) `(8)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "T Swing"
+      ],
+      "dieSkills": [
+        "Maximum",
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "cherry.png",
+      "tags": []
+    },
+    {
+      "buttonId": 819,
+      "buttonName": "Chuck",
+      "recipe": "(6,6) g(12) (X) (X) (X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "chuck.png",
+      "tags": []
+    },
+    {
+      "buttonId": 820,
+      "buttonName": "Cuddy",
+      "recipe": "(4) (6) (8) (12) `(1) `(2)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [],
+      "dieSkills": [
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "cuddy.png",
+      "tags": []
+    },
+    {
+      "buttonId": 821,
+      "buttonName": "Dave",
+      "recipe": "(6) (8) g(8) (12,12) (X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "dave.png",
+      "tags": []
+    },
+    {
+      "buttonId": 822,
+      "buttonName": "Derks",
+      "recipe": "M(8) M(12) (20) (P)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "P Swing"
+      ],
+      "dieSkills": [
+        "Maximum"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "derks.png",
+      "tags": []
+    },
+    {
+      "buttonId": 823,
+      "buttonName": "Dickie",
+      "recipe": "(4,4) (6,6) (8,8) (Y,Y)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "Y Swing"
+      ],
+      "dieSkills": [],
+      "isTournamentLegal": false,
+      "artFilename": "dickie.png",
+      "tags": []
+    },
+    {
+      "buttonId": 824,
+      "buttonName": "Don",
+      "recipe": "g(4) (20) (X) (X) (X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "don.png",
+      "tags": []
+    },
+    {
+      "buttonId": 825,
+      "buttonName": "Gorman",
+      "recipe": "(4) (6) (12) (20) `(X) `(Y)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing",
+        "Y Swing"
+      ],
+      "dieSkills": [
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "gorman.png",
+      "tags": []
+    },
+    {
+      "buttonId": 826,
+      "buttonName": "Hedy",
+      "recipe": "(X) (X) p(Y) g(Y)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing",
+        "Y Swing"
+      ],
+      "dieSkills": [
+        "Poison",
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "hedy.png",
+      "tags": []
+    },
+    {
+      "buttonId": 827,
+      "buttonName": "Hunter",
+      "recipe": "(12) (8,8) p(30) p(30) g(X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Poison",
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "hunter.png",
+      "tags": []
+    },
+    {
+      "buttonId": 828,
+      "buttonName": "Jamie",
+      "recipe": "H(6) H(12) (20) (V,V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Mighty"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "jamie.png",
+      "tags": []
+    },
+    {
+      "buttonId": 829,
+      "buttonName": "Maggie",
+      "recipe": "(20) (20) (20) (30) (20/30)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Option"
+      ],
+      "dieSkills": [],
+      "isTournamentLegal": false,
+      "artFilename": "maggie.png",
+      "tags": []
+    },
+    {
+      "buttonId": 830,
+      "buttonName": "Matt Ron",
+      "recipe": "(12) (12) (20) (20) p(P)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "P Swing"
+      ],
+      "dieSkills": [
+        "Poison"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "mattron.png",
+      "tags": []
+    },
+    {
+      "buttonId": 833,
+      "buttonName": "Reilly",
+      "recipe": "g(4) H(6) (8) (V,V) `(4) `(6)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Mighty",
+        "Stinger",
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "reilly.png",
+      "tags": []
+    },
+    {
+      "buttonId": 834,
+      "buttonName": "Smoot",
+      "recipe": "(6) (12) g(12) (20) p(X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Poison",
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "smoot.png",
+      "tags": []
+    },
+    {
+      "buttonId": 835,
+      "buttonName": "Stamps",
+      "recipe": "(4) (6) (8,8) g(12) o(Y,Y)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "Twin",
+        "Y Swing"
+      ],
+      "dieSkills": [
+        "Ornery",
+        "Stinger"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "stamps.png",
+      "tags": []
+    },
+    {
+      "buttonId": 836,
+      "buttonName": "Zedna",
+      "recipe": "(8) (30) (30) (30) (U)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Durer Rawg",
+      "dieTypes": [
+        "U Swing"
+      ],
+      "dieSkills": [],
+      "isTournamentLegal": false,
+      "artFilename": "zedna.png",
+      "tags": []
+    },
+    {
       "buttonId": 372,
       "buttonName": "ABCGi",
       "recipe": "%Ho(1) pdw(7) mhv(13) zkt(23) (X,X)!",
@@ -11324,6 +11872,98 @@
       "tags": []
     },
     {
+      "buttonId": 805,
+      "buttonName": "Bosco312",
+      "recipe": "z^(20) z^(10) d(1) d(1)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "2021 Fanatics",
+      "dieTypes": [],
+      "dieSkills": [
+        "Speed",
+        "Stealth",
+        "TimeAndSpace"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "bosco312.png",
+      "tags": []
+    },
+    {
+      "buttonId": 806,
+      "buttonName": "Cycozar",
+      "recipe": "(T) (4)g (Y) o(U)rIt! ^%(3) c(Y) coz(4)r #(1)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "2021 Fanatics",
+      "dieTypes": [
+        "T Swing",
+        "Y Swing",
+        "U Swing"
+      ],
+      "dieSkills": [
+        "Chance",
+        "Insult",
+        "Ornery",
+        "Radioactive",
+        "Reserve",
+        "Rush",
+        "Speed",
+        "Stinger",
+        "TimeAndSpace",
+        "Trip",
+        "Turbo"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "cycozar.png",
+      "tags": []
+    },
+    {
+      "buttonId": 807,
+      "buttonName": "GamerXYZ",
+      "recipe": "Ho(4) dk(6) sz(X) qt(Y) `M(Z)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "2021 Fanatics",
+      "dieTypes": [
+        "X Swing",
+        "Y Swing",
+        "Z Swing"
+      ],
+      "dieSkills": [
+        "Konstant",
+        "Maximum",
+        "Mighty",
+        "Ornery",
+        "Queer",
+        "Shadow",
+        "Speed",
+        "Stealth",
+        "Trip",
+        "Warrior"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "gamerxyz.png",
+      "tags": []
+    },
+    {
+      "buttonId": 809,
+      "buttonName": "Scipio",
+      "recipe": "bt(1) s(8) (3/19)! (5/23)! #(X)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "2021 Fanatics",
+      "dieTypes": [
+        "Option",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Boom",
+        "Rush",
+        "Shadow",
+        "Trip",
+        "Turbo"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "scipio.png",
+      "tags": []
+    },
+    {
       "buttonId": 10001,
       "buttonName": "RandomBMVanilla",
       "recipe": "",
@@ -11444,6 +12084,6 @@
       "tags": []
     }
   ],
-  "message": "Button data retrieved from prod 2021-07-09.",
+  "message": "Button data retrieved from prod 2022-03-07.",
   "status": "ok"
 }
