@@ -2994,9 +2994,11 @@
       "buttonId": 186,
       "buttonName": "Wildcard",
       "recipe": "(C) (C) (C) (C) (C)",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Las Vegas",
-      "dieTypes": [],
+      "dieTypes": [
+        "Wildcard"
+      ],
       "dieSkills": [],
       "isTournamentLegal": false,
       "artFilename": "wildcard.png",
@@ -7675,9 +7677,10 @@
       "buttonId": 613,
       "buttonName": "Nevada",
       "recipe": "H(3) (C) (21) c(36) %(V)",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "50 States",
       "dieTypes": [
+        "Wildcard",
         "V Swing"
       ],
       "dieSkills": [
@@ -10446,16 +10449,19 @@
       "buttonId": 391,
       "buttonName": "Boot2daHead",
       "recipe": "d(1) Gz(Z) !p(V) !n(Y,Y) oF(C)",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
         "Z Swing",
         "V Swing",
         "Twin",
-        "Y Swing"
+        "Y Swing",
+        "Wildcard"
       ],
       "dieSkills": [
+        "Fire",
         "Null",
+        "Ornery",
         "Poison",
         "Rage",
         "Speed",
@@ -10804,14 +10810,16 @@
       "buttonId": 409,
       "buttonName": "dmm",
       "recipe": "(4) (6) z(C) (10,10) f(X)!",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
+        "Wildcard",
         "Twin",
         "X Swing"
       ],
       "dieSkills": [
         "Focus",
+        "Speed",
         "Turbo"
       ],
       "isTournamentLegal": false,
@@ -10896,6 +10904,7 @@
       "hasUnimplementedSkill": true,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
+        "Wildcard",
         "X Swing"
       ],
       "dieSkills": [
@@ -11040,9 +11049,10 @@
       "buttonId": 422,
       "buttonName": "flesh99",
       "recipe": "^(C) ^(C) zg(Z) p!(Y) z(W) gd(W)",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
+        "Wildcard",
         "Z Swing",
         "Y Swing",
         "W Swing"
@@ -11052,6 +11062,7 @@
         "Speed",
         "Stealth",
         "Stinger",
+        "TimeAndSpace",
         "Turbo"
       ],
       "isTournamentLegal": false,
@@ -12082,7 +12093,9 @@
       "recipe": "d(6) @(8) hz(12) c(20) (C)",
       "hasUnimplementedSkill": true,
       "buttonSet": "Classic Fanatics",
-      "dieTypes": [],
+      "dieTypes": [
+        "Wildcard"
+      ],
       "dieSkills": [
         "Chance",
         "Speed",
@@ -12254,11 +12267,12 @@
       "buttonId": 482,
       "buttonName": "moussambani",
       "recipe": "n(2) f(4) (5,6) (20) wh(Y) (C)",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
         "Twin",
-        "Y Swing"
+        "Y Swing",
+        "Wildcard"
       ],
       "dieSkills": [
         "Focus",
@@ -13341,9 +13355,10 @@
       "buttonId": 536,
       "buttonName": "vhoodoo",
       "recipe": "(5) ^s(9) (C) B(17) (Z)?",
-      "hasUnimplementedSkill": true,
+      "hasUnimplementedSkill": false,
       "buttonSet": "Classic Fanatics",
       "dieTypes": [
+        "Wildcard",
         "Z Swing"
       ],
       "dieSkills": [
@@ -14053,6 +14068,6 @@
       "tags": []
     }
   ],
-  "message": "Unimplemented/Staging Button data retrieved 2022-03-07",
+  "message": "Unimplemented/Staging Button data retrieved successfully 2023-05-03.",
   "status": "ok"
 }

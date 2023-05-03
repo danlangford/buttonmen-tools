@@ -2884,6 +2884,20 @@
       "tags": []
     },
     {
+      "buttonId": 186,
+      "buttonName": "Wildcard",
+      "recipe": "(C) (C) (C) (C) (C)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Las Vegas",
+      "dieTypes": [
+        "Wildcard"
+      ],
+      "dieSkills": [],
+      "isTournamentLegal": false,
+      "artFilename": "wildcard.png",
+      "tags": []
+    },
+    {
       "buttonId": 115,
       "buttonName": "Aldric",
       "recipe": "(8) (8) (4/12) (8/20) (12/20)",
@@ -6746,6 +6760,25 @@
       "tags": []
     },
     {
+      "buttonId": 613,
+      "buttonName": "Nevada",
+      "recipe": "H(3) (C) (21) c(36) %(V)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "50 States",
+      "dieTypes": [
+        "Wildcard",
+        "V Swing"
+      ],
+      "dieSkills": [
+        "Chance",
+        "Mighty",
+        "Radioactive"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "nevada.png",
+      "tags": []
+    },
+    {
       "buttonId": 614,
       "buttonName": "New Hampshire",
       "recipe": "f(4) os(6) Gh(9) (V) (W)?",
@@ -9096,6 +9129,33 @@
       "tags": []
     },
     {
+      "buttonId": 391,
+      "buttonName": "Boot2daHead",
+      "recipe": "d(1) Gz(Z) !p(V) !n(Y,Y) oF(C)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Classic Fanatics",
+      "dieTypes": [
+        "Z Swing",
+        "V Swing",
+        "Twin",
+        "Y Swing",
+        "Wildcard"
+      ],
+      "dieSkills": [
+        "Fire",
+        "Null",
+        "Ornery",
+        "Poison",
+        "Rage",
+        "Speed",
+        "Stealth",
+        "Turbo"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "boot2dahead.png",
+      "tags": []
+    },
+    {
       "buttonId": 392,
       "buttonName": "bowler190",
       "recipe": "z(4) z(4) z(20) z(20) z(20)",
@@ -9408,6 +9468,26 @@
       "tags": []
     },
     {
+      "buttonId": 409,
+      "buttonName": "dmm",
+      "recipe": "(4) (6) z(C) (10,10) f(X)!",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Classic Fanatics",
+      "dieTypes": [
+        "Wildcard",
+        "Twin",
+        "X Swing"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Speed",
+        "Turbo"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "dmm.png",
+      "tags": []
+    },
+    {
       "buttonId": 410,
       "buttonName": "DocBlue",
       "recipe": "d(4) s(20) ^(4) (20) Ho(4)",
@@ -9584,6 +9664,30 @@
       ],
       "isTournamentLegal": false,
       "artFilename": "finngall.png",
+      "tags": []
+    },
+    {
+      "buttonId": 422,
+      "buttonName": "flesh99",
+      "recipe": "^(C) ^(C) zg(Z) p!(Y) z(W) gd(W)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Classic Fanatics",
+      "dieTypes": [
+        "Wildcard",
+        "Z Swing",
+        "Y Swing",
+        "W Swing"
+      ],
+      "dieSkills": [
+        "Poison",
+        "Speed",
+        "Stealth",
+        "Stinger",
+        "TimeAndSpace",
+        "Turbo"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "flesh99.png",
       "tags": []
     },
     {
@@ -10597,6 +10701,27 @@
       "tags": []
     },
     {
+      "buttonId": 482,
+      "buttonName": "moussambani",
+      "recipe": "n(2) f(4) (5,6) (20) wh(Y) (C)",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Classic Fanatics",
+      "dieTypes": [
+        "Twin",
+        "Y Swing",
+        "Wildcard"
+      ],
+      "dieSkills": [
+        "Focus",
+        "Null",
+        "Slow",
+        "Weak"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "moussambani.png",
+      "tags": []
+    },
+    {
       "buttonId": 484,
       "buttonName": "Mushu",
       "recipe": "m(U) sH(U) po(R) k(10)",
@@ -11486,6 +11611,26 @@
       "tags": []
     },
     {
+      "buttonId": 536,
+      "buttonName": "vhoodoo",
+      "recipe": "(5) ^s(9) (C) B(17) (Z)?",
+      "hasUnimplementedSkill": false,
+      "buttonSet": "Classic Fanatics",
+      "dieTypes": [
+        "Wildcard",
+        "Z Swing"
+      ],
+      "dieSkills": [
+        "Berserk",
+        "Mood",
+        "Shadow",
+        "TimeAndSpace"
+      ],
+      "isTournamentLegal": false,
+      "artFilename": "vhoodoo.png",
+      "tags": []
+    },
+    {
       "buttonId": 537,
       "buttonName": "Vysion",
       "recipe": "o(9) p(9) s(9) z(9) (9,9) r^(9)",
@@ -12084,6 +12229,6 @@
       "tags": []
     }
   ],
-  "message": "Button data retrieved from prod 2022-03-07.",
+  "message": "Button data retrieved successfully from prod 2023-05-03.",
   "status": "ok"
 }
