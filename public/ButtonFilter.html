@@ -76,7 +76,7 @@
               <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
               <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
               <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
-              <span class="badge badge-secondary" ng-repeat="event in b.events">{{event}}</span>
+              <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
               <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i class="fas fa-dice"></i></a>
               <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span></p>
             </div>
@@ -136,6 +136,18 @@
         }
       })
       .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
+
+        bmaibagels_supported_button_name = []
+        bmaibagels_supported_die_deatures = [
+          "Auxiliary", "Berserk", "Chance", "Doppleganger", "Focus", "Konstant", "Mighty", "Mood",
+          "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Rage", "Reserve", "Shadow",
+          "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo", "Warrior", "Weak",
+          "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing", "X Swing",
+          "Y Swing", "Z Swing", "Twin", "Option", "Q Swing", "Unique"
+        ];
+        nala_supported_button_name = ["Giant","Echo"]
+        nala_supported_die_deatures = []
+
         buttonData.getData(function(body){
           buttonStats.getData(function(stats){
             buttonUnimpl.getData(function(unimpl){
@@ -157,72 +169,32 @@
                 button.attributes = _(button).pickBy(function (x) {
                   return x === true
                 }).keys().value();
-                button.events = []
-                // add a special flag to some buttons
-                if (["Balticon 34", "Polycon", "Demicon the 13th", "SydCon 10", "Geekz"].includes(
-                    button.buttonSet)) {
-                  button.attributes.push("TLOpen")
-                  button.events.push("TLOpen")
+                button.bots = []
+                // add a special bot flag to some buttons
+
+                let dieFeatures = button.dieSkills.concat(button.dieTypes)
+
+                if(bmaibagels_supported_button_name.includes(button.buttonName)) {
+                  button.attributes.push("BMAIBagels")
+                  button.bots.push("BMAIBagels")
+                } else {
+                  let bmaibagels_diff = dieFeatures.filter(
+                      x => !bmaibagels_supported_die_deatures.includes(x));
+                  if (bmaibagels_diff.length === 0) {
+                    button.attributes.push("BMAIBagels")
+                    button.bots.push("BMAIBagels")
+                  }
                 }
-                if (["Free Radicals", "Metamorphers", "Chicago Crew"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListFeb'21")
-                  button.events.push("HitListFeb'21")
-                }
-                if (["amica", "bigevildan", "Downen","Hooloovoo","Jasyeman","jgenzano","juelki","lunatic","moekon","perlmunkee","roujin27","sanny","Yagharek"].includes(button.buttonName)) {
-                  button.attributes.push("HitListMar'21")
-                  button.events.push("HitListMar'21")
-                }
-                if (["Vermont", "Washington", "Minnesota", "eon", "Famine", "Fuyuko", "Captain Bingo", "Johnny", "Phuong", "Calmon", "Bull", "Darrin", "opedog"].includes(button.buttonName)) {
-                  button.attributes.push("HitListApr'21")
-                  button.events.push("HitListApr'21")
-                }
-                if (["Peloton", "Diceland"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListMay'21")
-                  button.events.push("HitListMay'21")
-                }
-                if (["Studio Foglio", "Wonderland"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListJun'21")
-                  button.events.push("HitListJun'21")
-                }
-                if (["ABCGi", "CestWhat", "Heath", "Santiago", "fxdirect", "Notorious", "Zomulgustar", "Torch", "hansolav", "NoopMan", "barswanian", "Grivan", "GorgorBey", "TheMachine", "Darthcliff", "dexx", "wtrollkin"].includes(button.buttonName)) {
-                  button.attributes.push("HitListJul'21")
-                  button.events.push("HitListJul'21")
-                }
-                if (["Blademasters", "Uptown"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListAug'21")
-                  button.events.push("HitListAug'21")
-                }
-                if (["Snuff", "mgatten", "Discordia", "skapheles", "gslamm", "nelde", "spindisc", "relsqui", "icarus", "bobby 5150", "kestrel", "Cristofore", "trifecta", "IIconfused", "Weylan", "Zotmeister", "fendrin", "Zegota", "Squiddhartha", "roujin27"].includes(button.buttonName)) {
-                  button.attributes.push("HitListSep'21")
-                  button.events.push("HitListSep'21")
-                }
-                if (["Vampyres", "Cowboy Bebop"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListOct'21")
-                  button.events.push("HitListOct'21")
-                }
-                if (["Wastenott", "Max", "Rumbles", "Super Germ", "Synthia", "eon", "Invisible Man", "Mushu", "Golo", "Skomp", "Peace", "Montgomery", "Wyoming", "Trogdor", "Mister Peach", "Binder", "Limax", "stoooooooo", "gman97216", "Cthulhu"].includes(button.buttonName)) {
-                  button.attributes.push("HitListNov'21")
-                  button.events.push("HitListNov'21")
-                }
-                if (["Big Top", "Renaissance"].includes(button.buttonSet)) {
-                  button.attributes.push("HitListDec'21")
-                  button.events.push("HitListDec'21")
-                }
-                if ("CyberSuit Corp"===button.buttonSet) {
-                  button.attributes.push("HitListJan'22")
-                  button.events.push("HitListJan'22")
-                }
-                if ("2021 Fanatics"===button.buttonSet) {
-                  button.attributes.push("HitListFeb'22")
-                  button.events.push("HitListFeb'22")
-                }
-                if ("Durer Rawg"===button.buttonSet) {
-                  button.attributes.push("HitListMar'22")
-                  button.events.push("HitListMar'22")
-                }
-                if (["Alaska", "CestWhat", "Cherry", "Craptacualr", "Cycozar", "Delaware", "Frankie", "Hooloovoo", "Hrodgar", "Jose", "LadyJ", "Limax", "Loki", "Lola", "Magician", "Monkeys", "Pjack", "Rumbles", "spindisc", "Synthia", "Tweedledum+dee", "Twenty-One", "Ulthar"].includes(button.buttonName)) {
-                  button.attributes.push("HitListApr'22")
-                  button.events.push("HitListApr'22")
+
+                if(nala_supported_button_name.includes(button.buttonName)) {
+                  button.attributes.push("Nala")
+                  button.bots.push("Nala")
+                } else {
+                  let nala_diff = dieFeatures.filter(x => !nala_supported_die_deatures.includes(x));
+                  if (nala_diff.length===0){
+                    button.attributes.push("Nala")
+                    button.bots.push("Nala")
+                  }
                 }
 
                 if (!implName.includes(button.buttonName)) {
