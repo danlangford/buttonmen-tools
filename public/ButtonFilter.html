@@ -138,7 +138,9 @@
       .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
 
         bmaibagels_supported_button_name = []
-        bmaibagels_supported_die_deatures = [
+        bmaibagels_unsupported_button_name = ["Echo"]
+        bmaibagels_unsupported_button_set = ["Japanese Beetle"]
+        bmaibagels_supported_die_features = [
           "Auxiliary", "Berserk", "Chance", "Doppleganger", "Focus", "Konstant", "Mighty", "Mood",
           "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Rage", "Reserve", "Shadow",
           "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo", "Warrior", "Weak",
@@ -146,7 +148,15 @@
           "Y Swing", "Z Swing", "Twin", "Option", "Q Swing", "Unique"
         ];
         nala_supported_button_name = ["Giant","Echo"]
-        nala_supported_die_deatures = []
+        nala_unsupported_button_name = []
+        nala_unsupported_button_set = ["Japanese Beetle"]
+        nala_supported_die_features = [
+          "Auxiliary", "Berserk", "Boom", "Chance", "Doppleganger", "Focus", "Insult", "Konstant", "Mad",
+          "Maximum", "Mighty", "Mood", "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive",
+          "Rage", "Reserve", "Shadow", "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip",
+          "Value", "Weak", "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing",
+          "X Swing", "Y Swing", "Z Swing", "Twin", "Option"
+        ]
 
         buttonData.getData(function(body){
           buttonStats.getData(function(stats){
@@ -169,29 +179,31 @@
                 button.attributes = _(button).pickBy(function (x) {
                   return x === true
                 }).keys().value();
-                button.bots = []
-                // add a special bot flag to some buttons
 
+                // add a special bot flag to some buttons
+                button.bots = []
                 let dieFeatures = button.dieSkills.concat(button.dieTypes)
 
-                if(bmaibagels_supported_button_name.includes(button.buttonName)) {
+                if (bmaibagels_supported_button_name.includes(button.buttonName)) {
                   button.attributes.push("BMAIBagels")
                   button.bots.push("BMAIBagels")
-                } else {
+                } else if (!bmaibagels_unsupported_button_name.includes(button.buttonName)
+                    && !bmaibagels_unsupported_button_set.includes(button.buttonSet)) {
                   let bmaibagels_diff = dieFeatures.filter(
-                      x => !bmaibagels_supported_die_deatures.includes(x));
+                      x => !bmaibagels_supported_die_features.includes(x));
                   if (bmaibagels_diff.length === 0) {
                     button.attributes.push("BMAIBagels")
                     button.bots.push("BMAIBagels")
                   }
                 }
 
-                if(nala_supported_button_name.includes(button.buttonName)) {
+                if (nala_supported_button_name.includes(button.buttonName)) {
                   button.attributes.push("Nala")
                   button.bots.push("Nala")
-                } else {
-                  let nala_diff = dieFeatures.filter(x => !nala_supported_die_deatures.includes(x));
-                  if (nala_diff.length===0){
+                } else if (!nala_unsupported_button_name.includes(button.buttonName)
+                    && !nala_unsupported_button_set.includes(button.buttonSet)) {
+                  let nala_diff = dieFeatures.filter(x => !nala_supported_die_features.includes(x));
+                  if (nala_diff.length === 0) {
                     button.attributes.push("Nala")
                     button.bots.push("Nala")
                   }
