@@ -13663,15 +13663,18 @@
       "buttonSet": "2020 Fanatics",
       "dieTypes": [
         "T Swing",
+        "Option",
         "Twin"
       ],
       "dieSkills": [
         "Berserk",
+        "Boom",
         "Doppelganger",
         "Fire",
         "Focus",
         "Konstant",
         "Mad",
+        "Mighty",
         "Morphing",
         "Null",
         "Radioactive",
@@ -14068,6 +14071,6 @@
       "tags": []
     }
   ],
-  "message": "Unimplemented/Staging Button data retrieved successfully 2023-05-03.",
+  "message": "Unimplemented/Staging Button data retrieved successfully on 2024-09-24.",
   "status": "ok"
 }
