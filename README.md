@@ -28,6 +28,6 @@ dont forget to install the python requirements
 python3 -m pip install -r requirements.txt
 python3 statslurp.py
 ```
-
+// TODO consider if using this JSON is possible http://stats.dev.buttonweavers.com/ui/stats/win_percentage_stats.json
 
 
