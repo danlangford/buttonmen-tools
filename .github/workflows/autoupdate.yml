@@ -1,4 +1,4 @@
-name: run statslurp
+name: run autoupdate
 
 on:
   workflow_dispatch:
@@ -13,13 +13,14 @@ jobs:
           python-version: '3.x'
 
       - run: python3 -m pip install -r requirements.txt
-      - run: python3 statslurp.py
+        
+      - run: python3 autoupdate.py
 
       - run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m 'automated execution of statslurp'
+          git commit -m 'automated execution of autoupdate.py'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
