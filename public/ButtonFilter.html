@@ -2,251 +2,265 @@
 <html lang="en" ng-app="myApp">
 
 <head>
-  <title>Button Filter</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="viewport" content="width=device-width">
-  <meta name="theme-color" content="#000000">
-  <meta name="msapplication-navbutton-color" content="#000000">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/css/halfmoon.min.css"
-    integrity="sha512-Kaju/JzlErKhC47smofkXAdSkvILovmvh2nnok6rgN79oB3Co/T7Pm7Ns8dcpNEN3VTVZDw2ilrUDByzInEabg=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <title>Button Filter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/css/halfmoon.min.css"
+          integrity="sha512-Kaju/JzlErKhC47smofkXAdSkvILovmvh2nnok6rgN79oB3Co/T7Pm7Ns8dcpNEN3VTVZDw2ilrUDByzInEabg=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="page-wrapper with-navbar" ng-controller="PlebController" ng-init="start">
+<div class="page-wrapper with-navbar" ng-controller="PlebController" ng-init="start">
 
     <nav class="navbar">
 
-      <form class="form-inline" role="search">
-        <input type="text" class="form-control" placeholder="Filter" ng-model="filterPhrase"
-          ng-model-options="{debounce: 300}" ng-change="randomPick()" ng-init="filterPhrase='!staging'"/>
-      </form>
+        <form class="form-inline" role="search">
+            <input type="text" class="form-control" placeholder="Filter" ng-model="filterPhrase"
+                   ng-model-options="{debounce: 300}" ng-change="randomPick()" ng-init="filterPhrase='!staging'"/>
+        </form>
 
-      <p class="navbar-text">Showing {{filteredButtons.length}} / {{buttons.length}} buttons.</p>
+        <p class="navbar-text">Showing {{filteredButtons.length}} / {{buttons.length}} buttons.</p>
 
-      <div class="navbar-content">
-        <button class="btn btn-info" ng-click="randomPick()">Random</button>
-      </div>
+        <div class="navbar-content">
+            <button class="btn btn-info" ng-click="randomPick()">Random</button>
+        </div>
 
-      <p class="navbar-text" ng-init="randomPick()">
-        <b>{{random.buttonName}}</b>&nbsp;{{random.recipe}} <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{random.buttonName}}"><i class="fas fa-dice"></i></a>
-      </p>
+        <p class="navbar-text" ng-init="randomPick()">
+            <b>{{random.buttonName}}</b>&nbsp;{{random.recipe}} <a
+                href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{random.buttonName}}"><i
+                class="fas fa-dice"></i></a>
+        </p>
 
-      <div class="navbar-content ml-auto">
-        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
-          <i class="far fa-moon" aria-hidden="true"></i>
-          <span class="sr-only">Toggle dark mode</span>
-        </button>
-      </div>
+        <div class="navbar-content ml-auto">
+            <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+                <i class="far fa-moon" aria-hidden="true"></i>
+                <span class="sr-only">Toggle dark mode</span>
+            </button>
+        </div>
 
     </nav>
 
     <div class="content-wrapper">
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row"
-          ng-repeat="b in filteredButtons = (buttons | multiWordFilter:filterPhrase:'AND' | orderBy:'buttonName') ">
-          <div class="col-lg-2">
-            <img class="img-fluid" src="https://www.buttonweavers.com/ui/images/button/{{b.artFilename}}"
-              alt="{{b.artFilename}}" />
-          </div>
-          <div class="col-lg-5">
-            <div class=content>
-              <h2 class=content-title>{{b.buttonName}}</h2>
-              <p>{{b.buttonSet}} Set<br />
-                {{b.recipe}}</p>
+            <div class="row"
+                 ng-repeat="b in filteredButtons = (buttons | multiWordFilter:filterPhrase:'AND' | orderBy:'buttonName') ">
+                <div class="col-lg-2">
+                    <img class="img-fluid" src="https://www.buttonweavers.com/ui/images/button/{{b.artFilename}}"
+                         alt="{{b.artFilename}}"/>
+                </div>
+                <div class="col-lg-5">
+                    <div class=content>
+                        <h2 class=content-title>{{b.buttonName}}</h2>
+                        <p>{{b.buttonSet}} Set<br/>
+                            {{b.recipe}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="content">
+                        <span class="badge badge-default">#{{b.buttonId}}</span>
+                        <span class="badge badge-success" ng-show="b.isTournamentLegal">Tournament Legal</span>
+                        <span class="badge badge-danger" ng-show="b.hasUnimplementedSkill">Unimplemented Skill</span>
+                        <span class="badge badge-danger" ng-show="b.isStagingOnly">Staging Only</span>
+                        <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
+                        <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
+                        <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
+                        <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
+                        <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i
+                                class="fas fa-dice"></i></a>
+                        <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="content">
-              <span class="badge badge-default">#{{b.buttonId}}</span>
-              <span class="badge badge-success" ng-show="b.isTournamentLegal">Tournament Legal</span>
-              <span class="badge badge-danger" ng-show="b.hasUnimplementedSkill">Unimplemented Skill</span>
-              <span class="badge badge-danger" ng-show="b.isStagingOnly">Staging Only</span>
-              <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
-              <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
-              <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
-              <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
-              <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i class="fas fa-dice"></i></a>
-              <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span></p>
-            </div>
-          </div>
+
         </div>
 
-      </div>
-
-      <div class="card">  {{buttonDataDate}} {{buttonUnimplDate}} {{buttonStatsDate}}      </div>
+        <div class="card"> {{buttonDataDate}} <br/> {{buttonUnimplDate}} <br/> {{buttonStatsDate}}</div>
     </div>
-  </div>
+</div>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/js/halfmoon.min.js"
-    integrity="sha512-8fN/MQrHBCMmkx2t4QwGODGHwQf8VxCeNwNkJz0gjt5JrlUfJ5zNlMr9lrzhnl7DSN+5E16YmMHnfomnQmvSoA=="
-    crossorigin="anonymous"></script>
-  <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+        integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Halfmoon/1.1.1/js/halfmoon.min.js"
+        integrity="sha512-8fN/MQrHBCMmkx2t4QwGODGHwQf8VxCeNwNkJz0gjt5JrlUfJ5zNlMr9lrzhnl7DSN+5E16YmMHnfomnQmvSoA=="
+        crossorigin="anonymous"></script>
+<script>
     angular.module('myApp', [])
-      .service('buttonData',
-        function() {  
-              // reminder to future self: data observed from "Create game" page
-          this.getData = function(cb) {
-            fetch("/buttondata.json").then(function(response){response.json().then(cb)})
-          }
-          
-        }
-      )
-      .service('buttonStats',
-        function() {  
-              // reminder to future self: this is from http://stats.dev.buttonweavers.com/ui/stats/
-          this.getData = function(cb) {
-            fetch("/buttonstats.json").then(function(response){response.json().then(cb)})
-          }
-          
-        }
-      )
-      .service('buttonUnimpl',
-          function() {
-            // reminder to future self: data observed from "Create game" page ON STAGING
-            this.getData = function(cb) {
-              fetch("/buttonunimpl.json").then(function(response){response.json().then(cb)})
+        .service('buttonData',
+            function () {
+                // reminder to future self: data observed from "Create game" page
+                this.getData = function (cb) {
+                    fetch("/buttondata.json").then(function (response) {
+                        response.json().then(cb)
+                    })
+                }
+
             }
-
-          }
-      )
-      .filter('multiWordFilter', function ($filter) {
-        return function (inputArray, searchText) {
-          var wordArray = searchText ? searchText.toLowerCase().split(/\s+/) : [];
-          var wordCount = wordArray.length;
-          // each word filters over the results of the last
-          for (var i in wordArray) {
-            inputArray = $filter('filter')(inputArray, wordArray[i]);
-          }
-          return inputArray;
-        }
-      })
-      .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
-
-        bmaibagels_supported_button_name = []
-        bmaibagels_unsupported_button_name = ["Echo"]
-        bmaibagels_unsupported_button_set = ["Japanese Beetle"]
-        bmaibagels_supported_die_features = [
-          "Berserk", "Chance", "Doppleganger", "Focus", "Insult", "Maximum", "Mighty", "Mood",
-          "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Reserve", "Shadow",
-          "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo", "Value", "Warrior", "Weak",
-          "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing", "X Swing",
-          "Y Swing", "Z Swing", "Twin", "Option", "Q Swing", "Unique"
-        ];
-        nala_supported_button_name = ["Giant","Echo"]
-        nala_unsupported_button_name = []
-        nala_unsupported_button_set = ["Japanese Beetle"]
-        nala_supported_die_features = [
-          "Auxiliary", "Berserk", "Boom", "Chance", "Doppleganger", "Focus", "Insult", "Konstant", "Mad",
-          "Maximum", "Mighty", "Mood", "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive",
-          "Rage", "Reserve", "Shadow", "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip",
-          "Value", "Weak", "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing",
-          "X Swing", "Y Swing", "Z Swing", "Twin", "Option"
-        ]
-
-        buttonData.getData(function(body){
-          buttonStats.getData(function(stats){
-            buttonUnimpl.getData(function(unimpl){
-
-              $scope.buttonStatsDate = stats.message;
-              $scope.buttonUnimplDate = unimpl.message;
-              $scope.buttonDataDate = body.message;
-              $scope.buttonsImpl = body.data;
-              $scope.buttonsUnimpl = unimpl.data;
-              $scope.buttons = _.unionWith($scope.buttonsImpl, $scope.buttonsUnimpl, _.isEqual);
-
-              implName = $scope.buttonsImpl.map(bimpl=>bimpl.buttonName)
-              unimplName = $scope.buttonsUnimpl.map(bunimpl=>bunimpl.buttonName)
-
-              for (var b in $scope.buttons) {
-                var button = $scope.buttons[b];
-
-                // get isTournamentLegal and other bools into .attributes so they are searchable
-                button.attributes = _(button).pickBy(function (x) {
-                  return x === true
-                }).keys().value();
-
-                // add a special bot flag to some buttons
-                button.bots = []
-                let dieFeatures = button.dieSkills.concat(button.dieTypes)
-
-                if (bmaibagels_supported_button_name.includes(button.buttonName)) {
-                  button.attributes.push("BMAIBagels")
-                  button.bots.push("BMAIBagels")
-                } else if (!bmaibagels_unsupported_button_name.includes(button.buttonName)
-                    && !bmaibagels_unsupported_button_set.includes(button.buttonSet)) {
-                  let bmaibagels_diff = dieFeatures.filter(
-                      x => !bmaibagels_supported_die_features.includes(x));
-                  if (bmaibagels_diff.length === 0) {
-                    button.attributes.push("BMAIBagels")
-                    button.bots.push("BMAIBagels")
-                  }
+        )
+        .service('buttonStats',
+            function () {
+                // reminder to future self: this is from http://stats.dev.buttonweavers.com/ui/stats/
+                this.getData = function (cb) {
+                    fetch("/buttonstats.json").then(function (response) {
+                        response.json().then(cb)
+                    })
                 }
 
-                if (nala_supported_button_name.includes(button.buttonName)) {
-                  button.attributes.push("Nala")
-                  button.bots.push("Nala")
-                } else if (!nala_unsupported_button_name.includes(button.buttonName)
-                    && !nala_unsupported_button_set.includes(button.buttonSet)) {
-                  let nala_diff = dieFeatures.filter(x => !nala_supported_die_features.includes(x));
-                  if (nala_diff.length === 0) {
-                    button.attributes.push("Nala")
-                    button.bots.push("Nala")
-                  }
+            }
+        )
+        .service('buttonUnimpl',
+            function () {
+                // reminder to future self: data observed from "Create game" page ON STAGING
+                this.getData = function (cb) {
+                    fetch("/buttonunimpl.json").then(function (response) {
+                        response.json().then(cb)
+                    })
                 }
 
-                if (!implName.includes(button.buttonName)) {
-                  button.attributes.push("isStagingOnly")
-                  button.isStagingOnly = function () {
-                    return true
-                  }
+            }
+        )
+        .filter('multiWordFilter', function ($filter) {
+            return function (inputArray, searchText) {
+                var wordArray = searchText ? searchText.toLowerCase().split(/\s+/) : [];
+                var wordCount = wordArray.length;
+                // each word filters over the results of the last
+                for (var i in wordArray) {
+                    inputArray = $filter('filter')(inputArray, wordArray[i]);
                 }
-                for (var t in button.dieTypes) {
-                  button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
-                }
-                if (stats.data[button.buttonName]) {
-                  button.rate = stats.data[button.buttonName].rate
-                  button.attributes.push("winrate=" + button.rate)
-                  button.count = stats.data[button.buttonName].count
-                  button.attributes.push("games=" + button.count)
-                }
-
-              }
-
-              randInt = function (min, max) {
-                return Math.floor(Math.random() * (max - min)) + min;
-              }
-
-              $scope.randomPick = function () {
-                $timeout(function () {
-                  $scope.random = $scope.filteredButtons[randInt(0, $scope.filteredButtons.length)]
-                }, 10)
-              }
-
-              $scope.$apply();
-
-
-            })
-          })
+                return inputArray;
+            }
         })
+        .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
+
+            bmaibagels_supported_button_name = []
+            bmaibagels_unsupported_button_name = ["Echo"]
+            bmaibagels_unsupported_button_set = ["Japanese Beetle"]
+            bmaibagels_supported_die_features = [
+                "Berserk", "Chance", "Doppleganger", "Focus", "Insult", "Maximum", "Mighty", "Mood",
+                "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Reserve", "Shadow",
+                "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo", "Value", "Warrior", "Weak",
+                "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing", "X Swing",
+                "Y Swing", "Z Swing", "Twin", "Option", "Q Swing", "Unique"
+            ];
+            nala_supported_button_name = ["Giant", "Echo"]
+            nala_unsupported_button_name = []
+            nala_unsupported_button_set = ["Japanese Beetle"]
+            nala_supported_die_features = [
+                "Auxiliary", "Berserk", "Boom", "Chance", "Doppleganger", "Focus", "Insult", "Konstant", "Mad",
+                "Maximum", "Mighty", "Mood", "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive",
+                "Rage", "Reserve", "Shadow", "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip",
+                "Value", "Weak", "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing",
+                "X Swing", "Y Swing", "Z Swing", "Twin", "Option"
+            ]
+
+            buttonData.getData(function (body) {
+                buttonStats.getData(function (stats) {
+                    buttonUnimpl.getData(function (unimpl) {
+
+                        $scope.buttonStatsDate = stats.message;
+                        $scope.buttonUnimplDate = unimpl.message;
+                        $scope.buttonDataDate = body.message;
+                        $scope.buttonsImpl = body.data;
+                        $scope.buttonsUnimpl = unimpl.data;
+                        $scope.buttons = _.unionWith($scope.buttonsImpl, $scope.buttonsUnimpl, _.isEqual);
+
+                        implName = $scope.buttonsImpl.map(bimpl => bimpl.buttonName)
+                        unimplName = $scope.buttonsUnimpl.map(bunimpl => bunimpl.buttonName)
+
+                        for (var b in $scope.buttons) {
+                            var button = $scope.buttons[b];
+
+                            // get isTournamentLegal and other bools into .attributes so they are searchable
+                            button.attributes = _(button).pickBy(function (x) {
+                                return x === true
+                            }).keys().value();
+
+                            // add a special bot flag to some buttons
+                            button.bots = []
+                            let dieFeatures = button.dieSkills.concat(button.dieTypes)
+
+                            if (bmaibagels_supported_button_name.includes(button.buttonName)) {
+                                button.attributes.push("BMAIBagels")
+                                button.bots.push("BMAIBagels")
+                            } else if (!bmaibagels_unsupported_button_name.includes(button.buttonName)
+                                && !bmaibagels_unsupported_button_set.includes(button.buttonSet)) {
+                                let bmaibagels_diff = dieFeatures.filter(
+                                    x => !bmaibagels_supported_die_features.includes(x));
+                                if (bmaibagels_diff.length === 0) {
+                                    button.attributes.push("BMAIBagels")
+                                    button.bots.push("BMAIBagels")
+                                }
+                            }
+
+                            if (nala_supported_button_name.includes(button.buttonName)) {
+                                button.attributes.push("Nala")
+                                button.bots.push("Nala")
+                            } else if (!nala_unsupported_button_name.includes(button.buttonName)
+                                && !nala_unsupported_button_set.includes(button.buttonSet)) {
+                                let nala_diff = dieFeatures.filter(x => !nala_supported_die_features.includes(x));
+                                if (nala_diff.length === 0) {
+                                    button.attributes.push("Nala")
+                                    button.bots.push("Nala")
+                                }
+                            }
+
+                            if (!implName.includes(button.buttonName)) {
+                                button.attributes.push("isStagingOnly")
+                                button.isStagingOnly = function () {
+                                    return true
+                                }
+                            }
+                            for (var t in button.dieTypes) {
+                                button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
+                            }
+                            if (stats.data[button.buttonName]) {
+                                button.rate = stats.data[button.buttonName].rate
+                                button.attributes.push("winrate=" + button.rate)
+                                button.count = stats.data[button.buttonName].count
+                                button.attributes.push("games=" + button.count)
+                            }
+
+                        }
+
+                        randInt = function (min, max) {
+                            return Math.floor(Math.random() * (max - min)) + min;
+                        }
+
+                        $scope.randomPick = function () {
+                            $timeout(function () {
+                                $scope.random = $scope.filteredButtons[randInt(0, $scope.filteredButtons.length)]
+                            }, 10)
+                        }
+
+                        $scope.$apply();
 
 
-      })
-  </script>
+                    })
+                })
+            })
+
+
+        })
+</script>
 </body>
 
 </html>
