@@ -14096,7 +14096,7 @@
             "buttonName": "AnnoDomini",
             "recipe": "(W) (4) (R) s(4) (W)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "W Swing",
                 "R Swing"
@@ -14113,7 +14113,7 @@
             "buttonName": "blackshadowshade",
             "recipe": "mkht(T)! Bt(T)& `fg(4) bHt^(0/10) F%(1,10) rbHt^(0/10) rnDt^(1,8)",
             "hasUnimplementedSkill": true,
-            "buttonSet": "2020 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "T Swing",
                 "Option",
@@ -14148,7 +14148,7 @@
             "buttonName": "Blargh",
             "recipe": "Hop(4) hop(10) Mh(8) Mf(8) MF(13)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [],
             "dieSkills": [
                 "Fire",
@@ -14164,134 +14164,11 @@
             "tags": []
         },
         {
-            "buttonId": 791,
-            "buttonName": "devious",
-            "recipe": "dv(S) (16) (16) pqr(S,S) Jm`(0) Jm`(0) Jm`(0)",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [
-                "S Swing",
-                "Twin"
-            ],
-            "dieSkills": [
-                "Jolt",
-                "Morphing",
-                "Poison",
-                "Queer",
-                "Reserve",
-                "Stealth",
-                "Value",
-                "Warrior"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "devious.png",
-            "tags": []
-        },
-        {
-            "buttonId": 792,
-            "buttonName": "jimmosk",
-            "recipe": "(4) %(8) g(12) JIMmo(S) k(2)",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [
-                "S Swing"
-            ],
-            "dieSkills": [
-                "Insult",
-                "Jolt",
-                "Konstant",
-                "Maximum",
-                "Morphing",
-                "Ornery",
-                "Radioactive",
-                "Stinger"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "jimmosk.png",
-            "tags": []
-        },
-        {
-            "buttonId": 793,
-            "buttonName": "jl8e",
-            "recipe": "f(7) f(7) p(16) (16) ^#(R,R)",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [
-                "Twin",
-                "R Swing"
-            ],
-            "dieSkills": [
-                "Focus",
-                "Poison",
-                "Rush",
-                "TimeAndSpace"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "jl8e.png",
-            "tags": []
-        },
-        {
-            "buttonId": 794,
-            "buttonName": "Nala",
-            "recipe": "Mkw(1) Mk(1) Mk(3) Mk(9) Mk(27)",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [],
-            "dieSkills": [
-                "Konstant",
-                "Maximum",
-                "Slow"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "nala.png",
-            "tags": []
-        },
-        {
-            "buttonId": 795,
-            "buttonName": "Nonce Equitaur",
-            "recipe": "(S) (3)q (U)It (U) (R)!",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [
-                "S Swing",
-                "U Swing",
-                "R Swing"
-            ],
-            "dieSkills": [
-                "Insult",
-                "Queer",
-                "Trip",
-                "Turbo"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "nonceequitaur.png",
-            "tags": []
-        },
-        {
-            "buttonId": 796,
-            "buttonName": "tavella",
-            "recipe": "(5)t^ (23)v# (19)I (6)I^ (7)!",
-            "hasUnimplementedSkill": false,
-            "buttonSet": "2020 Fanatics",
-            "dieTypes": [],
-            "dieSkills": [
-                "Insult",
-                "Rush",
-                "TimeAndSpace",
-                "Trip",
-                "Turbo",
-                "Value"
-            ],
-            "isTournamentLegal": false,
-            "artFilename": "tavella.png",
-            "tags": []
-        },
-        {
             "buttonId": 805,
             "buttonName": "Bosco312",
             "recipe": "z^(20) z^(10) d(1) d(1)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2021 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [],
             "dieSkills": [
                 "Speed",
@@ -14307,7 +14184,7 @@
             "buttonName": "Cycozar",
             "recipe": "(T) (4)g (Y) o(U)rIt! ^%(3) c(Y) coz(4)r #(1)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2021 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "T Swing",
                 "Y Swing",
@@ -14331,11 +14208,35 @@
             "tags": []
         },
         {
+            "buttonId": 791,
+            "buttonName": "devious",
+            "recipe": "dv(S) (16) (16) pqr(S,S) Jm`(0) Jm`(0) Jm`(0)",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [
+                "S Swing",
+                "Twin"
+            ],
+            "dieSkills": [
+                "Jolt",
+                "Morphing",
+                "Poison",
+                "Queer",
+                "Reserve",
+                "Stealth",
+                "Value",
+                "Warrior"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "devious.png",
+            "tags": []
+        },
+        {
             "buttonId": 807,
             "buttonName": "GamerXYZ",
             "recipe": "Ho(4) dk(6) sz(X) qt(Y) `M(Z)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2021 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "X Swing",
                 "Y Swing",
@@ -14362,7 +14263,7 @@
             "buttonName": "irilyth",
             "recipe": "Gg(8) Gg(16) Gg(32) `sptH(1) `sptH(2) `sptH(3) `sptH(5) `sptH(8) spohr(4,9) spohr(9,16) spohr(16,25)",
             "hasUnimplementedSkill": true,
-            "buttonSet": "2021 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "Twin"
             ],
@@ -14383,11 +14284,107 @@
             "tags": []
         },
         {
+            "buttonId": 792,
+            "buttonName": "jimmosk",
+            "recipe": "(4) %(8) g(12) JIMmo(S) k(2)",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [
+                "S Swing"
+            ],
+            "dieSkills": [
+                "Insult",
+                "Jolt",
+                "Konstant",
+                "Maximum",
+                "Morphing",
+                "Ornery",
+                "Radioactive",
+                "Stinger"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "jimmosk.png",
+            "tags": []
+        },
+        {
+            "buttonId": 793,
+            "buttonName": "jl8e",
+            "recipe": "f(7) f(7) p(16) (16) ^#(R,R)",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [
+                "Twin",
+                "R Swing"
+            ],
+            "dieSkills": [
+                "Focus",
+                "Poison",
+                "Rush",
+                "TimeAndSpace"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "jl8e.png",
+            "tags": []
+        },
+        {
+            "buttonId": 794,
+            "buttonName": "Nala",
+            "recipe": "Mkw(1) Mk(1) Mk(3) Mk(9) Mk(27)",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [],
+            "dieSkills": [
+                "Konstant",
+                "Maximum",
+                "Slow"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "nala.png",
+            "tags": []
+        },
+        {
+            "buttonId": 795,
+            "buttonName": "Nonce Equitaur",
+            "recipe": "(S) (3)q (U)It (U) (R)!",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [
+                "S Swing",
+                "U Swing",
+                "R Swing"
+            ],
+            "dieSkills": [
+                "Insult",
+                "Queer",
+                "Trip",
+                "Turbo"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "nonceequitaur.png",
+            "tags": []
+        },
+        {
+            "buttonId": 867,
+            "buttonName": "nycavri",
+            "recipe": "(1) (3) (5) (14) Hs^(14)",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [],
+            "dieSkills": [
+                "Mighty",
+                "Shadow",
+                "TimeAndSpace"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "nycavri.png",
+            "tags": []
+        },
+        {
             "buttonId": 809,
             "buttonName": "Scipio",
             "recipe": "bt(1) s(8) (3/19)! (5/23)! #(X)",
             "hasUnimplementedSkill": false,
-            "buttonSet": "2021 Fanatics",
+            "buttonSet": "Modern Fanatics",
             "dieTypes": [
                 "Option",
                 "X Swing"
@@ -14401,6 +14398,25 @@
             ],
             "isTournamentLegal": false,
             "artFilename": "scipio.png",
+            "tags": []
+        },
+        {
+            "buttonId": 796,
+            "buttonName": "tavella",
+            "recipe": "(5)t^ (23)v# (19)I (6)I^ (7)!",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [],
+            "dieSkills": [
+                "Insult",
+                "Rush",
+                "TimeAndSpace",
+                "Trip",
+                "Turbo",
+                "Value"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "tavella.png",
             "tags": []
         },
         {
@@ -14524,6 +14540,6 @@
             "tags": []
         }
     ],
-    "message": "STAGING Button data retrieved successfully. 2025-03-11",
+    "message": "STAGING Button data retrieved successfully. 2025-06-20",
     "status": "ok"
 }
