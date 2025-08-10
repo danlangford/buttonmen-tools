@@ -14420,6 +14420,24 @@
             "tags": []
         },
         {
+            "buttonId": 868,
+            "buttonName": "xmbrst",
+            "recipe": "dk(1) dk(2) (13) (R) (R)!",
+            "hasUnimplementedSkill": false,
+            "buttonSet": "Modern Fanatics",
+            "dieTypes": [
+                "R Swing"
+            ],
+            "dieSkills": [
+                "Konstant",
+                "Stealth",
+                "Turbo"
+            ],
+            "isTournamentLegal": false,
+            "artFilename": "xmbrst.png",
+            "tags": []
+        },
+        {
             "buttonId": 10001,
             "buttonName": "RandomBMVanilla",
             "recipe": "",
@@ -14540,6 +14558,6 @@
             "tags": []
         }
     ],
-    "message": "STAGING Button data retrieved successfully. 2025-06-20",
+    "message": "STAGING Button data retrieved successfully. 2025-08-10",
     "status": "ok"
 }
