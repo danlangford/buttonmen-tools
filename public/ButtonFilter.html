@@ -154,18 +154,23 @@
             bmaibagels_supported_button_name = []
             bmaibagels_unsupported_button_name = ["Echo"]
             bmaibagels_unsupported_button_set = ["Japanese Beetle"]
+            // die features bmair (bmai in rust) reports via "capabilities", both implemented and
+            // parsing-only. Names match https://buttonweavers.com/ui/skills.html where one exists;
+            // "Unique" and "Q Swing" have no buttonweavers equivalent so they never match a button,
+            // but are kept here so this list mirrors bmair capabilities one for one.
             bmaibagels_supported_die_features = [
-                "Berserk", "Chance", "Doppleganger", "Focus", "Insult", "Maximum", "Mighty", "Mood",
-                "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Reserve", "Shadow",
-                "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo", "Value", "Warrior", "Weak",
-                "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing", "X Swing",
-                "Y Swing", "Z Swing", "Twin", "Option", "Q Swing", "Unique"
+                "Auxiliary", "Berserk", "Chance", "Doppelganger", "Focus", "Insult", "Konstant", "Maximum",
+                "Mighty", "Mood", "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive", "Rage",
+                "Reserve", "Shadow", "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip", "Turbo",
+                "Unique", "Value", "Warrior", "Weak",
+                "P Swing", "Q Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing",
+                "X Swing", "Y Swing", "Z Swing", "Twin", "Option"
             ];
             nala_supported_button_name = ["Giant", "Echo"]
             nala_unsupported_button_name = []
             nala_unsupported_button_set = ["Japanese Beetle"]
             nala_supported_die_features = [
-                "Auxiliary", "Berserk", "Boom", "Chance", "Doppleganger", "Focus", "Insult", "Konstant", "Mad",
+                "Auxiliary", "Berserk", "Boom", "Chance", "Doppelganger", "Focus", "Insult", "Konstant", "Mad",
                 "Maximum", "Mighty", "Mood", "Morphing", "Null", "Ornery", "Poison", "Queer", "Radioactive",
                 "Rage", "Reserve", "Shadow", "Slow", "Speed", "Stealth", "Stinger", "TimeAndSpace", "Trip",
                 "Value", "Weak", "P Swing", "R Swing", "S Swing", "T Swing", "U Swing", "V Swing", "W Swing",
