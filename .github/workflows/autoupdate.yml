@@ -3,28 +3,42 @@ name: run autoupdate
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: autoupdate
+  cancel-in-progress: false
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
-      - uses: actions/checkout@master
-        with:
-            persist-credentials: false  # Avoid using the default GitHub token
-            
-      - uses: actions/setup-python@master
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
+          cache: pip
 
-      - run: python3 -m pip install -r requirements.txt
+      - name: install dependencies
+        run: python3 -m pip install -r requirements.txt
 
-      - run: python3 autoupdate.py
+      - name: run autoupdate.py
+        run: python3 autoupdate.py
         env:
           BUTTONWEAVERS_PW: ${{ secrets.BUTTONWEAVERS_PW }}
 
-      - run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: commit and push any changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
+          if git diff --cached --quiet; then
+            echo 'no changes to commit' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
           git commit -m 'automated execution of autoupdate.py'
-          git push "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
-
+          git push
