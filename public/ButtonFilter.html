@@ -79,6 +79,7 @@
                         <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
                         <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
                         <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
+                        <span class="badge badge-success" ng-repeat="tournament in b.tournaments">{{tournament}}</span>
                         <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i
                                 class="fas fa-dice"></i></a>
                         <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span>
@@ -201,6 +202,7 @@
 
                             // add a special bot flag to some buttons
                             button.bots = []
+                            button.tournaments = []
                             let dieFeatures = button.dieSkills.concat(button.dieTypes)
 
                             if (bmaibagels_supported_button_name.includes(button.buttonName)) {
@@ -242,6 +244,14 @@
                                 button.attributes.push("winrate=" + button.rate)
                                 button.count = stats.data[button.buttonName].count
                                 button.attributes.push("games=" + button.count)
+                            }
+
+                            // Operation Looking Glass accepts BMAIBagels-compatible
+                            // buttons with a published win rate in [45%, 55%).
+                            if (button.bots.includes("BMAIBagels")
+                                && button.rate >= 45 && button.rate < 55) {
+                                button.attributes.push("OP:LOOKGLASS")
+                                button.tournaments.push("OP:LOOKGLASS")
                             }
 
                         }
