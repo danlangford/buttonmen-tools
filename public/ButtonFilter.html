@@ -153,7 +153,15 @@
         .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
 
             bmaibagels_supported_button_name = []
-            bmaibagels_unsupported_button_name = ["Echo"]
+            bmaibagels_unsupported_button_name = [
+                "Echo",
+                "RandomBMMixed",
+                "RandomBMMonoskill",
+                "RandomBMDuoskill",
+                "RandomBMTriskill",
+                "RandomBMTetraskill",
+                "RandomBMPentaskill"
+            ]
             bmaibagels_unsupported_button_set = ["Japanese Beetle"]
             // die features bmair (bmai in rust) reports via "capabilities", both implemented and
             // parsing-only. Names match https://buttonweavers.com/ui/skills.html where one exists;
