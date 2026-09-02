@@ -255,8 +255,9 @@
                             }
 
                             // Operation Looking Glass accepts BMAIBagels-compatible
-                            // buttons with a published win rate below 60%.
-                            if (button.bots.includes("BMAIBagels")
+                            // buttons plus its safe Echo exception, below 60%.
+                            if ((button.bots.includes("BMAIBagels")
+                                    || button.buttonName === "Echo")
                                 && button.rate < 60) {
                                 button.attributes.push("OP:LOOKGLASS")
                                 button.tournaments.push("OP:LOOKGLASS")
