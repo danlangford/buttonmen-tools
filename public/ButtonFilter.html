@@ -80,6 +80,8 @@
                         <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
                         <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
                         <span class="badge badge-success" ng-repeat="tournament in b.tournaments">{{tournament}}</span>
+                        <a class="badge badge-success" ng-repeat="operation in b.operations"
+                           ng-href="{{operation.url}}">{{operation.label}}</a>
                         <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i
                                 class="fas fa-dice"></i></a>
                         <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span>
@@ -152,9 +154,8 @@
         })
         .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
 
-            bmaibagels_supported_button_name = []
+            bmaibagels_supported_button_name = ["Echo", "Zero"]
             bmaibagels_unsupported_button_name = [
-                "Echo",
                 "RandomBMMixed",
                 "RandomBMMonoskill",
                 "RandomBMDuoskill",
@@ -211,6 +212,7 @@
                             // add a special bot flag to some buttons
                             button.bots = []
                             button.tournaments = []
+                            button.operations = []
                             let dieFeatures = button.dieSkills.concat(button.dieTypes)
 
                             if (bmaibagels_supported_button_name.includes(button.buttonName)) {
@@ -254,13 +256,19 @@
                                 button.attributes.push("games=" + button.count)
                             }
 
-                            // Operation Looking Glass accepts BMAIBagels-compatible
-                            // buttons plus its safe Echo exception, below 60%.
-                            if ((button.bots.includes("BMAIBagels")
-                                    || button.buttonName === "Echo")
-                                && button.rate < 60) {
+                            // Both operations accept every generally compatible button below 60%.
+                            if (button.bots.includes("BMAIBagels") && button.rate < 60) {
                                 button.attributes.push("OP:LOOKGLASS")
                                 button.tournaments.push("OP:LOOKGLASS")
+
+                                let ozLabel = "OP:OZ 🌪️👠🌈"
+                                button.attributes.push(ozLabel)
+                                button.operations.push({
+                                    label: ozLabel,
+                                    url: "http://buttonweavers.com/ui/create_game.html?playerButton="
+                                        + encodeURIComponent(button.buttonName)
+                                        + "&opponent=BMAIBagels&opponentButton=Pythagoras&maxWins=3"
+                                })
                             }
 
                         }
