@@ -81,7 +81,7 @@
                         <span class="badge badge-secondary" ng-repeat="bot in b.bots">{{bot}}</span>
                         <span class="badge badge-success" ng-repeat="tournament in b.tournaments">{{tournament}}</span>
                         <a class="badge badge-success" ng-repeat="operation in b.operations"
-                           ng-href="{{operation.url}}">{{operation.label}}</a>
+                           target="_blank" ng-href="{{operation.url}}">{{operation.label}}</a>
                         <a href="https://www.buttonweavers.com/ui/create_game.html?playerButton={{b.buttonName}}"><i
                                 class="fas fa-dice"></i></a>
                         <p><span class=".font-size-12" ng-if="b.count>1">winrate={{b.rate}}% games={{b.count}}</span>
@@ -265,7 +265,7 @@
                                 button.attributes.push(ozLabel)
                                 button.operations.push({
                                     label: ozLabel,
-                                    url: "http://buttonweavers.com/ui/create_game.html?playerButton="
+                                    url: "https://www.buttonweavers.com/ui/create_game.html?playerButton="
                                         + encodeURIComponent(button.buttonName)
                                         + "&opponent=BMAIBagels&opponentButton=Pythagoras&maxWins=3"
                                 })
