@@ -141,14 +141,45 @@
 
             }
         )
-        .filter('multiWordFilter', function ($filter) {
+        .filter('multiWordFilter', function () {
+            function searchableValues(value, propertyName, values) {
+                if (propertyName && /^(href|url)$/i.test(propertyName)) {
+                    return values;
+                }
+                if (value === null || value === undefined || typeof value === 'function') {
+                    return values;
+                }
+                if (Array.isArray(value)) {
+                    value.forEach(function (item) {
+                        searchableValues(item, null, values);
+                    });
+                } else if (typeof value === 'object') {
+                    Object.keys(value).forEach(function (key) {
+                        searchableValues(value[key], key, values);
+                    });
+                } else {
+                    values.push(String(value).toLowerCase());
+                }
+                return values;
+            }
+
+            function matchesWord(button, word) {
+                var exclude = word.startsWith('!');
+                var needle = exclude ? word.substring(1) : word;
+                var found = searchableValues(button, null, []).some(function (value) {
+                    return value.includes(needle);
+                });
+                return exclude ? !found : found;
+            }
+
             return function (inputArray, searchText) {
                 var wordArray = searchText ? searchText.toLowerCase().split(/\s+/) : [];
-                var wordCount = wordArray.length;
                 // each word filters over the results of the last
-                for (var i in wordArray) {
-                    inputArray = $filter('filter')(inputArray, wordArray[i]);
-                }
+                wordArray.forEach(function (word) {
+                    inputArray = inputArray.filter(function (button) {
+                        return matchesWord(button, word);
+                    });
+                });
                 return inputArray;
             }
         })
