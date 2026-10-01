@@ -748,6 +748,12 @@
                 "Zoe",
                 "Zoycite"
 ]
+            completed_game_operations = [
+                {label: "OP:OZ 🌪️👠🌈", opponentButton: "Pythagoras"},
+                {label: "OP:DRAGONSTORM 🐉", opponentButton: "Trogdor"},
+                {label: "OP:YETI 🏔️", opponentButton: "Lark"},
+                {label: "OP:PETTINGZOO 🐾", opponentButton: "Cheese Weasel"}
+            ]
             // Keep this list aligned with all implemented and parsing-only BMAIR capabilities.
             bmaibagels_supported_die_features = [
                 "Auxiliary", "Berserk", "Chance", "Doppelganger", "Fire", "Focus", "Insult", "Jolt", "Konstant", "Maximum",
@@ -845,14 +851,17 @@
                                 button.attributes.push("OP:LOOKGLASS")
                                 button.tournaments.push("OP:LOOKGLASS")
 
-                                let ozLabel = "OP:OZ 🌪️👠🌈"
-                                button.attributes.push(ozLabel)
-                                button.operations.push({
-                                    label: ozLabel,
-                                    $url: "https://www.buttonweavers.com/ui/create_game.html?playerButton="
-                                        + encodeURIComponent(button.buttonName)
-                                        + "&opponent=BMAIBagels&opponentButton=Pythagoras&maxWins=3"
-                                })
+                                for (let operation of completed_game_operations) {
+                                    button.attributes.push(operation.label)
+                                    button.operations.push({
+                                        label: operation.label,
+                                        $url: "https://www.buttonweavers.com/ui/create_game.html?playerButton="
+                                            + encodeURIComponent(button.buttonName)
+                                            + "&opponent=BMAIBagels&opponentButton="
+                                            + encodeURIComponent(operation.opponentButton)
+                                            + "&maxWins=3"
+                                    })
+                                }
                             }
 
                         }

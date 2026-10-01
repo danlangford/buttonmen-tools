@@ -9,6 +9,24 @@ import autoupdate
 
 class TestOperationAllowlists(unittest.TestCase):
 
+    def test_filter_defines_each_completed_game_operation_entry_point(self):
+        html = Path("public/ButtonFilter.html").read_text(encoding="utf-8")
+
+        self.assertIn(
+            '{label: "OP:OZ 🌪️👠🌈", opponentButton: "Pythagoras"}',
+            html)
+        self.assertIn(
+            '{label: "OP:DRAGONSTORM 🐉", opponentButton: "Trogdor"}',
+            html)
+        self.assertIn(
+            '{label: "OP:YETI 🏔️", opponentButton: "Lark"}',
+            html)
+        self.assertIn(
+            '{label: "OP:PETTINGZOO 🐾", opponentButton: "Cheese Weasel"}',
+            html)
+        self.assertIn("encodeURIComponent(operation.opponentButton)", html)
+        self.assertIn('"&maxWins=3"', html)
+
     def test_update_adds_qualifiers_without_removing_existing_buttons(self):
         with tempfile.TemporaryDirectory() as directory:
             public = Path(directory)
