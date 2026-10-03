@@ -155,14 +155,8 @@
         .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
 
             bmaibagels_supported_button_name = ["Echo", "Zero"]
-            bmaibagels_unsupported_button_name = [
-                "RandomBMMixed",
-                "RandomBMMonoskill",
-                "RandomBMDuoskill",
-                "RandomBMTriskill",
-                "RandomBMTetraskill",
-                "RandomBMPentaskill"
-            ]
+            // RandomBM buttons draw only from skills BMAIR 0.17.0 supports.
+            bmaibagels_unsupported_button_name = []
             bmaibagels_unsupported_button_set = []
             operation_looking_glass_oz_button_name = [
                 "Abe Caine",
