@@ -1,0 +1,97 @@
+version = 1
+
+[adventure]
+slug = "operation-oz"
+name = "OPERATION OZ"
+thread_id = 1372
+bot_player = "BMAIBagels"
+# Each player may send a particular button only once. Other players may use it.
+button_uniqueness = "player"
+
+[entry]
+# A completed game against BMAIBagels playing Pythagoras is both the entry and
+# fight 1. The first game ID for a player/button pair is authoritative.
+mode = "completed_game"
+games_created_after = "2026-09-10"
+target_wins = 3
+show_ineligible_games = true
+
+[eligibility]
+# No lower limit. The upper boundary is exclusive.
+maximum_win_rate = 60.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+win_rate_allowlist = "operation_looking_glass_oz_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[forum]
+# Informational only; the watcher never edits the announcement.
+announcement_post_id = 34258
+
+[leaderboard]
+enabled = true
+post_id = 34259
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Pythagoras"
+label = "Pythagoras"
+emoji = "🌾"
+description = "Release the Scarecrow and escape the apple trees."
+
+[[fights]]
+opponent_button = "Smith"
+label = "Smith"
+emoji = "🪓"
+description = "Free the Tin Man and navigate the dark forest full of lions and tigers and bears (oh my!)."
+
+[[fights]]
+opponent_button = "Lion (SU)"
+label = "Lion (SU)"
+emoji = "🦁"
+description = "Pacify the Lion and do not succumb to the poppies."
+
+[[fights]]
+opponent_button = "Monkeys"
+label = "Monkeys"
+emoji = "🐒"
+description = "Keep your eyes on the skies and watch out for flying monkeys."
+
+[[fights]]
+opponent_button = "Chrysalis"
+label = "Chrysalis"
+emoji = "🧙‍♀️"
+description = "Defeat the Wicked Witch of the West."
+
+[[fights]]
+opponent_button = "Magician"
+label = "Magician"
+emoji = "🎭"
+description = "Expose the Wizard and convince him to help get you home."
+
+[[fights]]
+opponent_button = "Totoro"
+label = "Totoro"
+emoji = "🐕"
+description = "Toto has escaped! Can you find your little dog and still get home somehow?"
+
+[templates]
+# Continuation games carry the entry game ID and copy chat from the prior game.
+game_description = "OPERATION OZ FIGHT {fight_number}/{fight_count} | ENTRY GAME {entry_game_id}"
+leaderboard_title = "[b]OPERATION OZ 🌪️👠🌈 — COMMUNITY LEADERBOARD[/b]"
+leaderboard_intro = "Columns: opponents defeated / rounds lost / points scored. Ranked by opponents defeated, then fewest rounds lost, then most points scored. Entry begins by completing a first-to-3 game against BMAIBagels playing Pythagoras."
+leaderboard_empty = "No eligible missions have completed the Pythagoras entry game yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"
+leaderboard_ineligible_title = "[b]INELIGIBLE ENTRY GAMES[/b]"
+leaderboard_ineligible_entry = "[game={game_id}] {player} — {button} — {reason}"

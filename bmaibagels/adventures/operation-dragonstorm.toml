@@ -1,0 +1,76 @@
+version = 1
+
+[adventure]
+slug = "operation-dragonstorm"
+name = "OPERATION DRAGONSTORM"
+thread_id = 1374
+bot_player = "BMAIBagels"
+button_uniqueness = "player"
+
+[entry]
+mode = "completed_game"
+games_created_after = "2026-10-01"
+target_wins = 3
+show_ineligible_games = true
+
+[eligibility]
+maximum_win_rate = 60.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+win_rate_allowlist = "operation_looking_glass_oz_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[leaderboard]
+enabled = true
+post_id = 34585
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Trogdor"
+label = "Trogdor"
+emoji = "🔥"
+description = "Follow the smoke into the burninated foothills."
+
+[[fights]]
+opponent_button = "Wumpus"
+label = "Wumpus"
+emoji = "🐲"
+description = "Hunt the seldom-seen dragon through its subterranean lair."
+
+[[fights]]
+opponent_button = "Fingle"
+label = "Fingle"
+emoji = "🐉"
+description = "Cross the high crags claimed by Fingle."
+
+[[fights]]
+opponent_button = "Poly"
+label = "Poly"
+emoji = "🐉"
+description = "Survive the guardian of the storm-wracked pass."
+
+[[fights]]
+opponent_button = "Vincent"
+label = "Vincent"
+emoji = "🐉"
+description = "Face the ancient dragon at the eye of the storm."
+
+[templates]
+game_description = "OPERATION DRAGONSTORM FIGHT {fight_number}/{fight_count} | ENTRY GAME {entry_game_id}"
+leaderboard_title = "[b]OPERATION DRAGONSTORM 🐉 — COMMUNITY LEADERBOARD[/b]"
+leaderboard_intro = "Columns: dragons defeated / rounds lost / points scored. Ranked by dragons defeated, then fewest rounds lost, then most points scored. Entry begins by completing a first-to-3 game against BMAIBagels playing Trogdor."
+leaderboard_empty = "No eligible missions have completed the Trogdor entry game yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"
+leaderboard_ineligible_title = "[b]INELIGIBLE ENTRY GAMES[/b]"
+leaderboard_ineligible_entry = "[game={game_id}] {player} — {button} — {reason}"

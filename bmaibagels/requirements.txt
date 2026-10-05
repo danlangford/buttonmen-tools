@@ -1,0 +1,11 @@
+future
+requests
+configparser
+PyYAML
+beautifulsoup4==4.11.1
+trueskill
+requests==2.28.1
+fortune
+pychallonge
+func-timeout
+mpmath
