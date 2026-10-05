@@ -34,17 +34,6 @@ class TestSomeUtils(unittest.TestCase):
 
 class TestBMAIBagels(unittest.TestCase):
 
-  def test_moves_get_a_sixty_second_budget_by_default(self):
-    self.assertEqual(60, parse_args([]).time_limit)
-    self.assertEqual(0, parse_args(["--time-limit", "0"]).time_limit)
-
-  def test_time_limit_is_sent_only_to_binaries_that_advertise_it(self):
-    newer = {"engines": [{"name": "montecarlo", "settings": ["ply", "time_limit"]}]}
-    older = {"engines": [{"name": "montecarlo", "settings": ["ply"]}]}
-    self.assertTrue(bmaibagels_module.supports_time_limit(newer))
-    self.assertFalse(bmaibagels_module.supports_time_limit(older))
-    self.assertFalse(bmaibagels_module.supports_time_limit({}))
-
   def test_default_search_depth_uses_parallelism_friendly_ply_three(self):
     self.assertEqual(3, parse_args([]).ply)
 
@@ -382,27 +371,6 @@ class TestBMAIBagels(unittest.TestCase):
   @patch("bmaibagels.game_data.GameData")
   @patch("bmaibagels.monitor.Monitor")
   @patch("bmaibagels.check_output")
-  def test_only_binaries_with_time_limit_are_sent_one(self, capabilities, *_):
-    def limit_for(settings):
-      capabilities.return_value = json.dumps(
-          {"engines": [{"name": "montecarlo", "settings": settings}]})
-      return BMAIBagels(SimpleNamespace(client=Mock()), ply=2, binary="bmair",
-                        time_limit=45).time_limit
-    self.assertEqual(45, limit_for(["ply", "time_limit"]))
-    self.assertEqual(0, limit_for(["ply"]))
-
-  def test_time_limit_must_be_a_non_negative_number(self):
-    for bad in ("-5", "inf", "1e20", "soon"):
-      with self.assertRaises(SystemExit), patch("sys.stderr"):
-        parse_args(["--time-limit", bad])
-
-  def test_reporting_odds_splits_the_move_time_limit(self):
-    self.assertEqual(bmaibagels_module.move_time_limit(60, 0), 60)
-    self.assertEqual(bmaibagels_module.move_time_limit(60, 1000), 30)
-
-  @patch("bmaibagels.game_data.GameData")
-  @patch("bmaibagels.monitor.Monitor")
-  @patch("bmaibagels.check_output")
   def test_rush_challenge_follows_the_bmair_binary(self, capabilities, *_):
     def bagels_for(capability_json):
       capabilities.return_value = capability_json
@@ -454,8 +422,6 @@ class TestBMAIBagels(unittest.TestCase):
     with_specials = bmai.dump(game, ply=1, specials=True)
     self.assertIn("special 0 unique_sizes\nspecial 1 skill_immune\nply 1\n", with_specials)
     self.assertNotIn("special", bmai.dump(game, ply=1))
-    self.assertIn("maxbranch 400\ntime_limit 60\n", bmai.dump(game, ply=1, time_limit=60))
-    self.assertNotIn("time_limit", bmai.dump(game, ply=1))
 
   def test_rush_recipe_keeps_the_bmair_rush_token(self):
     self.assertEqual("#10:4", bmai.recipe({

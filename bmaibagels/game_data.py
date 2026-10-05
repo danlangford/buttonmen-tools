@@ -74,7 +74,7 @@ class bmai(object):
 
     return r
 
-  def dump(game, ply=3, report_sims=0, specials=False, time_limit=0):
+  def dump(game, ply=3, report_sims=0, specials=False):
     retval = "mode native\nworkers auto\nfire_overshooting on\n"
     retval += f"game {game['maxWins']}\n"
     if game["gameState"] == "START_TURN":
@@ -113,8 +113,6 @@ class bmai(object):
         if names:
           retval += f"special {idx} {' '.join(names)}\n"
     retval += f"ply {ply}\nmax_sims 100\nmin_sims 5\nmaxbranch 400\n"
-    if time_limit:
-      retval += f"time_limit {time_limit:g}\n"
     if report_sims:
       retval += f"report_sims {report_sims}\n"
     retval += "surrender off\n"
