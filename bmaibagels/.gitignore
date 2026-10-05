@@ -1,0 +1,12 @@
+# Logins and session cookies.
+.bmrc
+.bmcookies*
+# Downloaded BMAIR builds, API cache and run state.
+.bmair/
+bmcache/
+game-debug/
+.adventure-state/
+*.lock
+venv/
+__pycache__/
+*.pyc

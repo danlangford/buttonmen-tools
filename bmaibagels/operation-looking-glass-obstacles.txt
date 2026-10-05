@@ -1,0 +1,7 @@
+// OPERATION LOOKING GLASS opponents, in mission order
+Tweedledum+dee: (2,2) (4,4) (6,6) (10,10) (T,T)
+Mad Hatter: q(6) q(6) q(10) q(20) q(X)
+White Rabbit: (4) (6) (8) (12) (X)
+Queen Of Hearts: (6) (8) p(16) (20) (X)
+The Jabberwock: (20) (20) (30) ng(30) (U)
+Alice: (6) (8) (8) (10) (1/30)!

@@ -1,0 +1,82 @@
+version = 1
+
+# Copy this file, give the adventure a unique slug, and replace the thread ID.
+[adventure]
+slug = "clockwork-gauntlet"
+name = "THE CLOCKWORK GAUNTLET"
+thread_id = 9999
+bot_player = "BMAIBagels"
+acceptance_command = "I accept"
+button_uniqueness = "global"
+
+[eligibility]
+# Minimum is inclusive and maximum is exclusive: this accepts 45.0 <= x < 55.0.
+minimum_win_rate = 45.0
+maximum_win_rate = 55.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+# Optional: name of a JavaScript button-name array in ButtonFilter.html. A
+# listed button bypasses only the win-rate limits, never bot compatibility.
+# win_rate_allowlist = "operation_example_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[leaderboard]
+# To enable this, reserve a post in the adventure thread and add post_id = 12345.
+enabled = false
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Avis"
+label = "the Gatekeeper"
+description = "Cross the first threshold."
+
+[[fights]]
+opponent_button = "Aylee"
+label = "the Clockwork Knight"
+description = "Pass the knight who guards the inner mechanism."
+
+[[fights]]
+opponent_button = "Sailor Moon"
+label = "the Final Guardian"
+description = "Face the guardian at the heart of the machine."
+
+[templates]
+mission_header = "[GAUNTLET: {player} - {button}]"
+journey_title = "{player}'s journey through THE CLOCKWORK GAUNTLET"
+champion_line = "Entrant: {button}"
+accepted_from_line = "Challenge accepted from: {source_post_link}"
+fight_line = "Trial {fight_number}/{fight_count} — {opponent}: [game={game_id}] — {fight_result_display}"
+creating_conclusion = "The gears are turning. Trial 1/{fight_count} is being prepared."
+active_conclusion = "The gauntlet continues."
+survived_conclusion = "The entrant conquered THE CLOCKWORK GAUNTLET."
+failed_conclusion = "The entrant was stopped by {defeated_by}. The run is over."
+game_description = "CLOCKWORK GAUNTLET TRIAL {fight_number}/{fight_count} | MISSION {source_post_id}"
+rejection_post = """
+{player}, your Clockwork Gauntlet entry was not accepted.
+
+{reason}.
+
+Original entry: {source_post_link}
+
+Enter with an exact button name:
+[code]{acceptance_command} [button=Aylee][/code]
+
+Eligible buttons are listed here:
+
+{button_filter_url}
+"""
+leaderboard_title = "[b]THE CLOCKWORK GAUNTLET — LEADERBOARD[/b]"
+leaderboard_intro = "Columns: opponents defeated / rounds lost / points scored. Ranked by opponents defeated, then fewest rounds lost, then most points scored."
+leaderboard_empty = "No completed runs yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"

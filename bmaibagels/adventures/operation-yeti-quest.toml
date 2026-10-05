@@ -1,0 +1,82 @@
+version = 1
+
+[adventure]
+slug = "operation-yeti-quest"
+name = "OPERATION YETI QUEST"
+thread_id = 1375
+bot_player = "BMAIBagels"
+button_uniqueness = "player"
+
+[entry]
+mode = "completed_game"
+games_created_after = "2026-10-01"
+target_wins = 3
+show_ineligible_games = true
+
+[eligibility]
+maximum_win_rate = 60.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+win_rate_allowlist = "operation_looking_glass_oz_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[leaderboard]
+enabled = true
+post_id = 34586
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Lark"
+label = "Lark"
+emoji = "🪶"
+description = "Accept the bird-folk guide's challenge and enter the wildwood."
+
+[[fights]]
+opponent_button = "Farrell"
+label = "Farrell"
+emoji = "🌲"
+description = "Defeat the beast stalking the darkened forest."
+
+[[fights]]
+opponent_button = "Me am ORK!"
+label = "Me am ORK!"
+emoji = "⚔️"
+description = "Break through the ork-held bridge."
+
+[[fights]]
+opponent_button = "Gripen"
+label = "Gripen"
+emoji = "🐦‍⬛"
+description = "Answer the raven herald's challenge."
+
+[[fights]]
+opponent_button = "Talus"
+label = "Talus"
+emoji = "🦎"
+description = "Pass the lizard guardian at the frozen gate."
+
+[[fights]]
+opponent_button = "Yeti"
+label = "Yeti"
+emoji = "🏔️"
+description = "Confront the great monster at the mountain's summit."
+
+[templates]
+game_description = "OPERATION YETI QUEST FIGHT {fight_number}/{fight_count} | ENTRY GAME {entry_game_id}"
+leaderboard_title = "[b]OPERATION YETI QUEST 🏔️ — COMMUNITY LEADERBOARD[/b]"
+leaderboard_intro = "Columns: creatures defeated / rounds lost / points scored. Ranked by creatures defeated, then fewest rounds lost, then most points scored. Entry begins by completing a first-to-3 game against BMAIBagels playing Lark."
+leaderboard_empty = "No eligible missions have completed the Lark entry game yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"
+leaderboard_ineligible_title = "[b]INELIGIBLE ENTRY GAMES[/b]"
+leaderboard_ineligible_entry = "[game={game_id}] {player} — {button} — {reason}"

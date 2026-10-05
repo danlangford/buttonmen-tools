@@ -33,3 +33,7 @@ python3 autoupdate.py
 // TODO consider if using this JSON is possible http://stats.dev.buttonweavers.com/ui/stats/win_percentage_stats.json
 
 
+
+## [bmaibagels](bmaibagels)
+
+The BMAIBagels bot and its adventure watchers.

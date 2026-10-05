@@ -1,0 +1,88 @@
+version = 1
+
+[adventure]
+slug = "operation-petting-zoo"
+name = "OPERATION PETTING ZOO"
+thread_id = 1376
+bot_player = "BMAIBagels"
+button_uniqueness = "player"
+
+[entry]
+mode = "completed_game"
+games_created_after = "2026-10-01"
+target_wins = 3
+show_ineligible_games = true
+
+[eligibility]
+maximum_win_rate = 60.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+win_rate_allowlist = "operation_looking_glass_oz_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[leaderboard]
+enabled = true
+post_id = 34587
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Cheese Weasel"
+label = "Cheese Weasel"
+emoji = "🧀"
+description = "The gates slam shut. Cheese Weasel lunges from the dark. Run."
+
+[[fights]]
+opponent_button = "Craptacualr"
+label = "Craptacualr"
+emoji = "🐻"
+description = "Craptacualr tears through the enclosure. Survive the charge."
+
+[[fights]]
+opponent_button = "Captain Bingo"
+label = "Captain Bingo"
+emoji = "🦍"
+description = "Captain Bingo rips open the cages. Get past him before the whole zoo breaks loose."
+
+[[fights]]
+opponent_button = "Monty Brown"
+label = "Monty Brown"
+emoji = "🐈"
+description = "Monty Brown stalks you through the moonlit paths. Do not let the large cat corner you."
+
+[[fights]]
+opponent_button = "White Tiger"
+label = "White Tiger"
+emoji = "🐅"
+description = "White Tiger is loose and hunting. Sprint for the next gate."
+
+[[fights]]
+opponent_button = "Bunnies"
+label = "Bunnies"
+emoji = "🐇"
+description = "The Bunnies swarm from every direction. Fight through before they drag you down."
+
+[[fights]]
+opponent_button = "Ein"
+label = "Ein"
+emoji = "🐕"
+description = "Ein waits between you and the exit. Escape before the full moon claims you too."
+
+[templates]
+game_description = "OPERATION PETTING ZOO FIGHT {fight_number}/{fight_count} | ENTRY GAME {entry_game_id}"
+leaderboard_title = "[b]OPERATION PETTING ZOO 🐾 — COMMUNITY LEADERBOARD[/b]"
+leaderboard_intro = "Columns: animals recovered / rounds lost / points scored. Ranked by animals recovered, then fewest rounds lost, then most points scored. Entry begins by completing a first-to-3 game against BMAIBagels playing Cheese Weasel."
+leaderboard_empty = "No eligible missions have completed the Cheese Weasel entry game yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"
+leaderboard_ineligible_title = "[b]INELIGIBLE ENTRY GAMES[/b]"
+leaderboard_ineligible_entry = "[game={game_id}] {player} — {button} — {reason}"
