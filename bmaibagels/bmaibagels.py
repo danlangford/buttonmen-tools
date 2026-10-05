@@ -59,13 +59,6 @@ def supports_selected_move_reporting(binary, capabilities=None):
   return "report_sims" in capabilities.get("commands", [])
 
 
-def supports_time_limit(capabilities):
-  """Return whether this BMAIR's Monte Carlo engine takes time_limit (0.21.0+)."""
-  return any(
-      engine.get("name") == "montecarlo" and "time_limit" in engine.get("settings", [])
-      for engine in capabilities.get("engines", []))
-
-
 def advertised_specials(capabilities):
   """Return the button special IDs this BMAIR binary can apply."""
   if "special" not in capabilities.get("commands", []):
@@ -85,18 +78,6 @@ def supported_skills(capabilities):
   accepted = bmai_supported_skills | (BMAIR_CAPABILITY_GATED_SKILLS & advertised)
   return accepted - parsing_only
 
-
-def move_time_limit(time_limit, report_sims):
-  """BMAIR gives the odds report its own time_limit, so split the move's budget."""
-  return time_limit / 2 if report_sims else time_limit
-
-
-def seconds(value):
-  """Parse --time-limit: zero for none, or up to a day of seconds."""
-  limit = float(value)
-  if not 0 <= limit <= 86400:
-    raise argparse.ArgumentTypeError(f"{value} must be 0 (no limit) to 86400 seconds")
-  return limit
 
 
 def parse_args(argv=None):
@@ -155,12 +136,6 @@ def parse_args(argv=None):
       choices=[1, 2, 3, 4, 5],
   )
   parser.add_argument(
-      "--time-limit",
-      help="seconds BMAIR may think per move, or 0 for no limit",
-      type=seconds,
-      default=60,
-  )
-  parser.add_argument(
       "--zzz",
       help="fallback sleep time after the faster polling sequence",
       type=int,
@@ -184,8 +159,7 @@ class BMAIBagels(object):
                filter="all",
                sort="asc",
                count=-1,
-               sleep_sec=120,
-               time_limit=60):
+               sleep_sec=120):
     self.client = client
     self.monitor = monitor.Monitor(
         self.client,
@@ -208,8 +182,6 @@ class BMAIBagels(object):
         binary, capabilities)
     self.supported_skills = supported_skills(capabilities)
     self.specials = advertised_specials(capabilities)
-    # Older BMAIR rejects time_limit, so those binaries keep the ply fallback alone.
-    self.time_limit = time_limit if supports_time_limit(capabilities) else 0
     self.count = count
 
   def start_monitor(self):
@@ -401,8 +373,7 @@ class BMAIBagels(object):
           self.should_report_odds(game, calc_other_side) else 0)
       bmai_input = game_data.bmai.dump(
           game, ply=ply, report_sims=report_sims,
-          specials=bool(getattr(self, "specials", frozenset())),
-          time_limit=move_time_limit(getattr(self, "time_limit", 0), report_sims))
+          specials=bool(getattr(self, "specials", frozenset())))
       try:
         can_check_other_odds = self.exec_bmai(
             bmai_input,
@@ -911,7 +882,6 @@ if __name__ == "__main__":
     binary=binary,
     count=args.count,
     sleep_sec=args.zzz,
-    time_limit=args.time_limit,
   )
   if args.gameid:
     bmaibagels.monitor_handler({"gameId": args.gameid})
