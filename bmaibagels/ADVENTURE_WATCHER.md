@@ -88,7 +88,17 @@ history window. Once the cutoff has passed and neither an accepted mission nor
 an opening game remains active, the watcher logs a completion message and exits
 cleanly. Removing the setting before that point reopens submissions.
 
-This mode creates no acceptance or rejection posts. Ineligible entry games may
+A forum-post adventure can close the same way:
+
+```toml
+[entry]
+submissions_close_at = "2026-11-01T00:00:00Z"
+```
+
+An `I accept` posted at or after the cutoff is ignored, with no reply.
+Missions accepted earlier keep playing, and the watcher keeps running.
+
+The completed-game mode creates no acceptance or rejection posts. Ineligible entry games may
 be listed at the bottom of the leaderboard with
 `show_ineligible_games = true`. It rebuilds mission state from completed game
 history, generated game descriptions, and `previousGameId` links. The forum
