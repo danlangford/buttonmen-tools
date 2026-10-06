@@ -67,6 +67,7 @@
                         <h2 class=content-title>{{b.buttonName}}</h2>
                         <p>{{b.buttonSet}} Set<br/>
                             {{b.recipe}}</p>
+                        <p ng-if="b.special"><em>Special: {{b.special}}</em></p>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -75,6 +76,7 @@
                         <span class="badge badge-success" ng-show="b.isTournamentLegal">Tournament Legal</span>
                         <span class="badge badge-danger" ng-show="b.hasUnimplementedSkill">Unimplemented Skill</span>
                         <span class="badge badge-danger" ng-show="b.isStagingOnly">Staging Only</span>
+                        <span class="badge badge-warning" ng-show="b.special" title="{{b.special}}">Special</span>
                         <span class="badge badge-primary" ng-repeat="skill in b.dieSkills">{{skill}}</span>
                         <span class="badge badge-default" ng-repeat="type in b.dieTypes">{{type}}</span>
                         <span class="badge badge-secondary" ng-repeat="tag in b.tags">{{tag}}</span>
@@ -92,7 +94,7 @@
 
         </div>
 
-        <div class="card"> {{buttonDataDate}} 🔵 {{buttonUnimplDate}} 🔵 {{buttonStatsDate}}</div>
+        <div class="card"> {{buttonDataDate}} 🔵 {{buttonUnimplDate}} 🔵 {{buttonStatsDate}} 🔵 {{buttonSpecialsDate}}</div>
     </div>
 </div>
 
@@ -141,6 +143,17 @@
 
             }
         )
+        .service('buttonSpecials',
+            function () {
+                // specialText, which ButtonWeavers' full button list omits
+                this.getData = function (cb) {
+                    fetch("/buttonspecials.json").then(function (response) {
+                        response.json().then(cb)
+                    })
+                }
+
+            }
+        )
         .filter('multiWordFilter', function ($filter) {
             return function (inputArray, searchText) {
                 var wordArray = searchText ? searchText.toLowerCase().split(/\s+/) : [];
@@ -152,7 +165,7 @@
                 return inputArray;
             }
         })
-        .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, $filter, $timeout) {
+        .controller('PlebController', function ($scope, buttonData, buttonStats, buttonUnimpl, buttonSpecials, $filter, $timeout) {
 
             bmaibagels_supported_button_name = ["Echo", "Zero"]
             // RandomBM buttons draw only from skills BMAIR 0.17.0 supports.
@@ -771,7 +784,9 @@
             buttonData.getData(function (body) {
                 buttonStats.getData(function (stats) {
                     buttonUnimpl.getData(function (unimpl) {
+                    buttonSpecials.getData(function (specials) {
 
+                        $scope.buttonSpecialsDate = specials.message;
                         $scope.buttonStatsDate = stats.message;
                         $scope.buttonUnimplDate = unimpl.message;
                         $scope.buttonDataDate = body.message;
@@ -827,6 +842,10 @@
                                     return true
                                 }
                             }
+                            if (specials.data[button.buttonName]) {
+                                button.special = specials.data[button.buttonName]
+                                button.attributes.push("Special")
+                            }
                             for (var t in button.dieTypes) {
                                 button.dieTypes[t] = button.dieTypes[t].replace(' ', '-');
                             }
@@ -873,6 +892,7 @@
                         $scope.$apply();
 
 
+                    })
                     })
                 })
             })

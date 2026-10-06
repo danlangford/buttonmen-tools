@@ -11,6 +11,15 @@ from pathlib import Path
 OPERATION_ALLOWLISTS = {
     "operation_looking_glass_oz_button_name": 60.0,
 }
+# Buttons whose button special ButtonWeavers implements. Its full button
+# list omits specialText, so each is loaded on its own.
+SPECIAL_BUTTONS = (
+    "Echo", "Giant", "Gordo", "Guillermo", "Largo", "Oregon",
+    "The Flying Squirrel", "The Japanese Beetle", "Zero",
+    "RandomBMAnime", "RandomBMDuoskill", "RandomBMFixed", "RandomBMMixed",
+    "RandomBMMonoskill", "RandomBMPentaskill", "RandomBMSoldiers",
+    "RandomBMTetraskill", "RandomBMTriskill", "RandomBMVanilla",
+)
 CAPABILITY_NAMES = (
     "bmaibagels_supported_button_name",
     "bmaibagels_unsupported_button_name",
@@ -58,7 +67,7 @@ def buttonstats():
                   f, ensure_ascii=False, indent=4)
 
 
-def fetch_button_data(site):
+def logged_in_session(site):
     import requests
 
     session = requests.Session()
@@ -68,26 +77,48 @@ def fetch_button_data(site):
               "doStayLoggedIn": False},
         headers={"Content-Type": "application/x-www-form-urlencoded"}
     )
-    if login_response.json()['status'] == 'ok':
-        print("Login successful")
+    if login_response.json()['status'] != 'ok':
+        print("Login failed")
+        return None
+    print("Login successful")
+    return session
 
-        response = session.post(
-            f"https://{site}.buttonweavers.com/api/responder",
-            json={"type": "loadButtonData", "automatedApiCall": False},
-            headers={"Content-Type": "application/x-www-form-urlencoded"}).json()
+
+def load_button_data(session, site, **request):
+    return session.post(
+        f"https://{site}.buttonweavers.com/api/responder",
+        json={"type": "loadButtonData", "automatedApiCall": False, **request},
+        headers={"Content-Type": "application/x-www-form-urlencoded"}).json()
+
+
+def fetch_button_data(site):
+    session = logged_in_session(site)
+    if session:
+        response = load_button_data(session, site)
         now = datetime.now()
         response['message'] = f"{site.upper()} {response['message']} {now.strftime("%Y-%m-%d")}"
         return response
-
-    else:
-        print("Login failed")
-        return None
+    return None
 
 
 def buttondata():
     response = fetch_button_data("www")
     with open('public/buttondata.json', 'w', encoding='utf-8') as f:
         json.dump(response, f, ensure_ascii=False, indent=4)
+
+
+def buttonspecials(site="www"):
+    session = logged_in_session(site)
+    if not session:
+        return
+    specials = {}
+    for name in SPECIAL_BUTTONS:
+        button = load_button_data(session, site, buttonName=name)["data"][0]
+        if button.get("specialText"):
+            specials[name] = button["specialText"]
+    message = f"{site.upper()} button specials {datetime.now().strftime('%Y-%m-%d')}"
+    with open('public/buttonspecials.json', 'w', encoding='utf-8') as f:
+        json.dump({"data": specials, "message": message}, f, ensure_ascii=False, indent=4)
 
 
 def buttonunimpl():
@@ -155,5 +186,7 @@ if __name__ == '__main__':
     buttonunimpl()
     print("Updating button stats…")
     buttonstats()
+    print("Updating button specials…")
+    buttonspecials()
     print("Adding newly eligible operation buttons…")
     update_operation_allowlists()
