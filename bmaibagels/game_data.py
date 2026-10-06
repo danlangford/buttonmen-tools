@@ -123,6 +123,9 @@ class bmai(object):
           retval += f"special {idx} {' '.join(names)}\n"
     max_sims, min_sims, maxbranch = SEARCH_SETTINGS.get(ply, SEARCH_SETTINGS[2])
     retval += f"ply {ply}\nmax_sims {max_sims}\nmin_sims {min_sims}\nmaxbranch {maxbranch}\n"
+    retval += "cull on\nplayout quick\nturbo_accuracy 1\n"
+    # BMAIR copies the search settings when it reads `ai`, so it comes last.
+    retval += "ai 0 montecarlo\n"
     if report_sims:
       retval += f"report_sims {report_sims}\n"
     retval += "surrender off\n"
