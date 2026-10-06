@@ -432,7 +432,8 @@ class TestBMAIBagels(unittest.TestCase):
         "opponent": {"waitingOnAction": False, "roundScore": 0, "activeDieArray": [],
                      "button": {"name": "Hammer"}},
     }
-    self.assertIn("ply 1\nmax_sims 4000\nmin_sims 200\nmaxbranch 16000\n",
+    self.assertIn("ply 1\nmax_sims 4000\nmin_sims 200\nmaxbranch 16000\n"
+                  "cull on\nplayout quick\nturbo_accuracy 1\nai 0 montecarlo\n",
                   bmai.dump(game, ply=1))
     self.assertIn("ply 2\nmax_sims 100\nmin_sims 5\nmaxbranch 400\n",
                   bmai.dump(game, ply=2))
