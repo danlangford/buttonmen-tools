@@ -423,6 +423,21 @@ class TestBMAIBagels(unittest.TestCase):
     self.assertIn("special 0 unique_sizes\nspecial 1 skill_immune\nply 1\n", with_specials)
     self.assertNotIn("special", bmai.dump(game, ply=1))
 
+  def test_endgame_is_sent_only_to_binaries_that_list_it(self):
+    newer = {"engines": [{"name": "montecarlo", "settings": ["ply", "endgame"]}]}
+    older = {"engines": [{"name": "montecarlo", "settings": ["ply"]}]}
+    self.assertTrue(bmaibagels_module.supports_montecarlo_setting(newer, "endgame"))
+    self.assertFalse(bmaibagels_module.supports_montecarlo_setting(older, "endgame"))
+    game = {
+        "maxWins": 3, "gameState": "START_TURN",
+        "player": {"waitingOnAction": True, "roundScore": 0, "activeDieArray": [],
+                   "button": {"name": "Avis"}},
+        "opponent": {"waitingOnAction": False, "roundScore": 0, "activeDieArray": [],
+                     "button": {"name": "Hammer"}},
+    }
+    self.assertIn("endgame 4\n", bmai.dump(game, ply=1, endgame=True))
+    self.assertNotIn("endgame", bmai.dump(game, ply=1))
+
   def test_ply_one_searches_wider_than_deeper_plies(self):
     game = {
         "maxWins": 3,
