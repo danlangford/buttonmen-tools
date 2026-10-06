@@ -34,8 +34,8 @@ class TestSomeUtils(unittest.TestCase):
 
 class TestBMAIBagels(unittest.TestCase):
 
-  def test_default_search_depth_uses_parallelism_friendly_ply_three(self):
-    self.assertEqual(3, parse_args([]).ply)
+  def test_default_search_depth_is_ply_one(self):
+    self.assertEqual(1, parse_args([]).ply)
 
   def test_search_depth_can_still_be_overridden(self):
     self.assertEqual(2, parse_args(["--ply", "2"]).ply)
@@ -422,6 +422,22 @@ class TestBMAIBagels(unittest.TestCase):
     with_specials = bmai.dump(game, ply=1, specials=True)
     self.assertIn("special 0 unique_sizes\nspecial 1 skill_immune\nply 1\n", with_specials)
     self.assertNotIn("special", bmai.dump(game, ply=1))
+
+  def test_ply_one_searches_wider_than_deeper_plies(self):
+    game = {
+        "maxWins": 3,
+        "gameState": "START_TURN",
+        "player": {"waitingOnAction": True, "roundScore": 0, "activeDieArray": [],
+                   "button": {"name": "Avis"}},
+        "opponent": {"waitingOnAction": False, "roundScore": 0, "activeDieArray": [],
+                     "button": {"name": "Hammer"}},
+    }
+    self.assertIn("ply 1\nmax_sims 4000\nmin_sims 200\nmaxbranch 16000\n",
+                  bmai.dump(game, ply=1))
+    self.assertIn("ply 2\nmax_sims 100\nmin_sims 5\nmaxbranch 400\n",
+                  bmai.dump(game, ply=2))
+    self.assertIn("ply 3\nmax_sims 100\nmin_sims 5\nmaxbranch 400\n",
+                  bmai.dump(game, ply=3))
 
   def test_rush_recipe_keeps_the_bmair_rush_token(self):
     self.assertEqual("#10:4", bmai.recipe({

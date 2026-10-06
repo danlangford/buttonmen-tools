@@ -132,7 +132,7 @@ def parse_args(argv=None):
       "--ply",
       help="set AI ply (lookahead)",
       type=int,
-      default=3,
+      default=game_data.DEFAULT_PLY,
       choices=[1, 2, 3, 4, 5],
   )
   parser.add_argument(

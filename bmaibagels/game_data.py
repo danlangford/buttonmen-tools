@@ -49,6 +49,15 @@ class NoAliasDumper(yaml.SafeDumper):
     return True
 
 
+# Ply 1 with 40x the simulations tied ply 2 on classic buttons and beat it on
+# Turbo, Fire and Poison buttons, in a quarter of the time (BMAIR STRENGTH.md).
+DEFAULT_PLY = 1
+SEARCH_SETTINGS = {
+    1: (4000, 200, 16000),
+    2: (100, 5, 400),
+}
+
+
 class bmai(object):
 
   def recipe(d):
@@ -112,7 +121,8 @@ class bmai(object):
         names = BUTTON_SPECIALS.get(player["button"]["name"])
         if names:
           retval += f"special {idx} {' '.join(names)}\n"
-    retval += f"ply {ply}\nmax_sims 100\nmin_sims 5\nmaxbranch 400\n"
+    max_sims, min_sims, maxbranch = SEARCH_SETTINGS.get(ply, SEARCH_SETTINGS[2])
+    retval += f"ply {ply}\nmax_sims {max_sims}\nmin_sims {min_sims}\nmaxbranch {maxbranch}\n"
     if report_sims:
       retval += f"report_sims {report_sims}\n"
     retval += "surrender off\n"
