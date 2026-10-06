@@ -67,6 +67,13 @@ def advertised_specials(capabilities):
       special.get("id") for special in capabilities.get("button_specials", []))
 
 
+def supports_montecarlo_setting(capabilities, name):
+  """Return whether this BMAIR's Monte Carlo engine takes the setting."""
+  return any(
+      engine.get("name") == "montecarlo" and name in engine.get("settings", [])
+      for engine in capabilities.get("engines", []))
+
+
 def supported_skills(capabilities):
   """Return the skills BMAIBagels accepts with this BMAIR capability set.
 
@@ -182,6 +189,8 @@ class BMAIBagels(object):
         binary, capabilities)
     self.supported_skills = supported_skills(capabilities)
     self.specials = advertised_specials(capabilities)
+    # Older BMAIR rejects endgame, so only binaries that list it receive it.
+    self.endgame = supports_montecarlo_setting(capabilities, "endgame")
     self.count = count
 
   def start_monitor(self):
@@ -373,7 +382,8 @@ class BMAIBagels(object):
           self.should_report_odds(game, calc_other_side) else 0)
       bmai_input = game_data.bmai.dump(
           game, ply=ply, report_sims=report_sims,
-          specials=bool(getattr(self, "specials", frozenset())))
+          specials=bool(getattr(self, "specials", frozenset())),
+          endgame=getattr(self, "endgame", False))
       try:
         can_check_other_odds = self.exec_bmai(
             bmai_input,

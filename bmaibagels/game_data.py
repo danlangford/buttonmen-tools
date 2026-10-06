@@ -52,6 +52,8 @@ class NoAliasDumper(yaml.SafeDumper):
 # Ply 1 with 40x the simulations tied ply 2 on classic buttons and beat it on
 # Turbo, Fire and Poison buttons, in a quarter of the time (BMAIR STRENGTH.md).
 DEFAULT_PLY = 1
+# Exact play from this many dice in total; more costs too much time (STRENGTH.md).
+ENDGAME_DICE = 4
 SEARCH_SETTINGS = {
     1: (4000, 200, 16000),
     2: (100, 5, 400),
@@ -83,7 +85,7 @@ class bmai(object):
 
     return r
 
-  def dump(game, ply=3, report_sims=0, specials=False):
+  def dump(game, ply=3, report_sims=0, specials=False, endgame=False):
     retval = "mode native\nworkers auto\nfire_overshooting on\n"
     retval += f"game {game['maxWins']}\n"
     if game["gameState"] == "START_TURN":
@@ -123,6 +125,11 @@ class bmai(object):
           retval += f"special {idx} {' '.join(names)}\n"
     max_sims, min_sims, maxbranch = SEARCH_SETTINGS.get(ply, SEARCH_SETTINGS[2])
     retval += f"ply {ply}\nmax_sims {max_sims}\nmin_sims {min_sims}\nmaxbranch {maxbranch}\n"
+    retval += "cull on\nplayout quick\nturbo_accuracy 1\n"
+    if endgame:
+      retval += f"endgame {ENDGAME_DICE}\n"
+    # BMAIR copies the search settings when it reads `ai`, so it comes last.
+    retval += "ai 0 montecarlo\n"
     if report_sims:
       retval += f"report_sims {report_sims}\n"
     retval += "surrender off\n"
