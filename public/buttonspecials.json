@@ -1,0 +1,24 @@
+{
+    "data": {
+        "Echo": "Copies the opponent's button recipe.",
+        "Giant": "Cannot win initiative.",
+        "Gordo": "None of Gordo's dice can be the same size. Note that a player playing Gordo is required to decline an auxiliary die that would force two of Gordo's dice to be the same size",
+        "Guillermo": "Different swing types must be assigned unique values",
+        "Largo": "Cannot perform skill attacks.",
+        "Oregon": "Different swing types must be assigned unique values",
+        "The Flying Squirrel": "Cannot perform skill attacks.",
+        "The Japanese Beetle": "Cannot be attacked by skill attacks.",
+        "Zero": "Copies the opponent's button recipe.",
+        "RandomBMAnime": "4 normal dice and 4 reserve dice, chosen from standard die sizes.",
+        "RandomBMDuoskill": "Four regular dice and one swing die, and 2 skills each appearing a total of 2 times on various dice.",
+        "RandomBMFixed": "5 dice, no swing dice, two of them having a single skill chosen from c, f, and d (the same skill on both).",
+        "RandomBMMixed": "5 dice, no swing dice, three skills chosen from all existing skills except !%+DF`mrw, with each skill dealt out twice randomly and independently over all dice.",
+        "RandomBMMonoskill": "Four regular dice and one swing die, and 1 skill appearing a total of 2 times on various dice.",
+        "RandomBMPentaskill": "Four regular dice and one swing die, and 5 skills each appearing a total of 2 times on various dice.",
+        "RandomBMSoldiers": "A recipe similar to the Soldiers set: Four regular dice and one X swing die, no skills.",
+        "RandomBMTetraskill": "Four regular dice and one swing die, and 4 skills each appearing a total of 2 times on various dice.",
+        "RandomBMTriskill": "Four regular dice and one swing die, and 3 skills each appearing a total of 2 times on various dice.",
+        "RandomBMVanilla": "5 dice, no swing dice, no skills."
+    },
+    "message": "WWW button specials 2026-10-06"
+}
