@@ -15,7 +15,7 @@ cp .bmrc.example .bmrc   # then fill in the logins
 ## Run
 
 ```shell
-./venv/bin/python ./bmaibagels.py --site bmaibagels --count 1 --ply 2
+./venv/bin/python ./bmaibagels.py --site bmaibagels --count 1
 ```
 
 The adventure and wonderland watchers are described in
