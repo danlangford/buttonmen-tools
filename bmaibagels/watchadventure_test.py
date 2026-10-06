@@ -8,6 +8,7 @@ from unittest.mock import Mock
 import bmutils
 
 from watchadventure import (
+    posted_after_intake_closed,
     Acceptance,
     AdventureMonitor,
     ButtonEligibility,
@@ -180,6 +181,20 @@ class TestAdventureRules(unittest.TestCase):
     self.logs = [QuestLog(
         20, 10, "Alice", "Aylee", "active",
         (FightLog(1, 123, "the Gatekeeper", "active"),))]
+
+  def test_closed_intake_skips_only_acceptances_posted_after_it(self):
+    closed = replace(self.config, submissions_close_at=1000)
+    self.assertFalse(posted_after_intake_closed(
+        Acceptance(1, "Alice", "Aylee", 999), closed))
+    self.assertTrue(posted_after_intake_closed(
+        Acceptance(2, "Alice", "Aylee", 1000), closed))
+    self.assertFalse(posted_after_intake_closed(
+        Acceptance(3, "Alice", "Aylee", 5000), self.config))
+
+  def test_forum_adventures_may_close_intake(self):
+    config = load_config(LOOKING_GLASS)
+    self.assertEqual("forum_post", config.entry_mode)
+    self.assertIsNotNone(config.submissions_close_at)
 
   def test_global_player_and_none_uniqueness_are_distinct(self):
     bob = Acceptance(11, "Bob", "Aylee")

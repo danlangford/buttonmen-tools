@@ -11,6 +11,10 @@ acceptance_command = "I accept"
 # none: no button-history restriction
 button_uniqueness = "player"
 
+[entry]
+# Closed to new assignments; missions already accepted play on.
+submissions_close_at = "2026-10-06T18:13:00Z"
+
 [eligibility]
 # The lower boundary is inclusive; the upper boundary is exclusive.
 # minimum_win_rate is intentionally omitted: very weak buttons are welcome.

@@ -114,6 +114,7 @@ class Acceptance:
   post_id: int
   player: str
   button: str
+  posted_at: int = 0
 
 
 @dataclass(frozen=True)
@@ -224,10 +225,7 @@ def load_config(path):
   if entry_mode == "completed_game" and games_created_after is None:
     raise ValueError(
         "[entry] completed_game mode requires games_created_after")
-  if submissions_close_at is not None and entry_mode != "completed_game":
-    raise ValueError(
-        "[entry] submissions_close_at requires mode = \"completed_game\"")
-  if (submissions_close_at is not None and
+  if (submissions_close_at is not None and games_created_after is not None and
       submissions_close_at <= games_created_after):
     raise ValueError(
         "[entry] submissions_close_at must be after games_created_after")
@@ -498,7 +496,8 @@ def parse_acceptance(post, config):
     if button.startswith("["):
       button = ""
   return Acceptance(
-      int(post["postId"]), post["posterName"].strip(), button.strip())
+      int(post["postId"]), post["posterName"].strip(), button.strip(),
+      int(post.get("creationTime") or 0))
 
 
 def _record_json(body, prefix):
@@ -597,6 +596,13 @@ def parse_rejected_source_posts(posts, config):
     if config.import_looking_glass_v2:
       rejected.update(int(value) for value in legacy_re.findall(body))
   return rejected
+
+
+def posted_after_intake_closed(acceptance, config):
+  """Acceptances posted once intake closed get no reply; missions already
+  begun play on."""
+  close = config.submissions_close_at
+  return close is not None and acceptance.posted_at >= close
 
 
 def duplicate_rejection_reason(acceptance, logs, config):
@@ -1164,6 +1170,8 @@ class AdventureMonitor:
         continue
       if (acceptance.post_id in rejected or
           any(log.source_post_id == acceptance.post_id for log in logs)):
+        continue
+      if posted_after_intake_closed(acceptance, self.config):
         continue
       reason = duplicate_rejection_reason(acceptance, logs, self.config)
       if reason:
