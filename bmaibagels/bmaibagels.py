@@ -13,6 +13,7 @@ import fortune
 from func_timeout import func_set_timeout, FunctionTimedOut
 
 import pathlib
+from datetime import datetime, timezone
 
 import bmutils
 import game_data
@@ -154,7 +155,38 @@ def parse_args(argv=None):
       type=int,
       default=-1,
   )
+  parser.add_argument(
+      "--decision-log",
+      help="directory to save every BMAIR input and output in, one pair per decision",
+      type=pathlib.Path,
+      default=None,
+  )
   return parser.parse_args(argv)
+
+
+class TranscriptReader:
+  """Reads a stream while keeping every line read from it."""
+
+  def __init__(self, stream):
+    self.stream = stream
+    self.lines = []
+
+  def readline(self):
+    line = self.stream.readline()
+    self.lines.append(line)
+    return line
+
+  def __iter__(self):
+    return self
+
+  def __next__(self):
+    line = self.readline()
+    if not line:
+      raise StopIteration
+    return line
+
+  def text(self):
+    return "".join(self.lines)
 
 
 class BMAIBagels(object):
@@ -166,7 +198,8 @@ class BMAIBagels(object):
                filter="all",
                sort="asc",
                count=-1,
-               sleep_sec=120):
+               sleep_sec=120,
+               decision_log=None):
     self.client = client
     self.monitor = monitor.Monitor(
         self.client,
@@ -192,6 +225,7 @@ class BMAIBagels(object):
     # Older BMAIR rejects endgame, so only binaries that list it receive it.
     self.endgame = supports_montecarlo_setting(capabilities, "endgame")
     self.count = count
+    self.decision_log = decision_log
 
   def start_monitor(self):
     self.monitor.start(
@@ -424,15 +458,23 @@ class BMAIBagels(object):
 
   @func_set_timeout(60 * 60)  #
   def exec_bmai(self, input, game, state, other_odds=False):
+    log_prefix = self.log_decision_input(game["gameId"], input)
     bmai = Popen([self.binary],
                  stdin=PIPE,
                  stdout=PIPE,
                  stderr=PIPE,
                  universal_newlines=True)
+    output = TranscriptReader(bmai.stdout)
+    try:
+      return self._exec_bmai(bmai, output, input, game, state, other_odds)
+    finally:
+      self.log_decision_output(log_prefix, output.text())
+
+  def _exec_bmai(self, bmai, output, input, game, state, other_odds):
     bmai.stdin.write(input)
     bmai.stdin.flush()
 
-    banner = self.read_bmair_banner(bmai.stdout)
+    banner = self.read_bmair_banner(output)
 
     acted = False
     printed = False
@@ -441,7 +483,7 @@ class BMAIBagels(object):
     stats = None
     problem = None
 
-    for line in bmai.stdout:
+    for line in output:
       if (" p0 best move " in line or
           " p0 selected move report " in line) and "%" in line:
         win_odds = line.split("%")[0].split()[-1]
@@ -459,7 +501,7 @@ class BMAIBagels(object):
           swing_select = []
           opt_select = []
           for s in range(swings + opts):
-            l = bmai.stdout.readline().strip()
+            l = output.readline().strip()
             if l.startswith("swing"):
               swing_select.append(l)
             elif l.startswith("option"):
@@ -467,20 +509,20 @@ class BMAIBagels(object):
           acted = self.submit_swings(game, swing_select, opt_select)
           continue
         elif state == "CHOOSE_RESERVE_DICE":
-          l = bmai.stdout.readline().strip()
+          l = output.readline().strip()
           acted = self.submit_reserve(game, l)
           continue
         elif state == "CHOOSE_AUXILIARY_DICE":
-          l = bmai.stdout.readline().strip()
+          l = output.readline().strip()
           acted = self.submit_auxiliary(game, l)
           continue
         elif state == "START_TURN":
-          atk_type = bmai.stdout.readline().strip()
-          source_dice = bmai.stdout.readline().strip()
-          target_dice = bmai.stdout.readline().strip()
+          atk_type = output.readline().strip()
+          source_dice = output.readline().strip()
+          target_dice = output.readline().strip()
           turbos = self.attacking_turbos(game, source_dice)
           turbo_select, fire_select = self.attack_adjustments(
-              bmai.stdout, game, turbos)
+              output, game, turbos)
           (isok, can_check_other_odds, atk_resp) = self.submit_attack(
               game,
               atk_type,
@@ -499,7 +541,7 @@ class BMAIBagels(object):
             print(problem)
           continue
         elif state == "REACT_TO_INITIATIVE":
-          action = bmai.stdout.readline().strip()
+          action = output.readline().strip()
           acted = self.react_initiative(game, action)
           continue
     if printed:
@@ -848,6 +890,32 @@ class BMAIBagels(object):
               opponent_name in always_odds)
     return opponent_name in always_odds
 
+  def log_decision_input(self, game_id, game_input):
+    """Save BMAIR's input when --decision-log is on; return the file prefix."""
+    if self.decision_log is None:
+      return None
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
+    prefix = self.decision_log / f"{game_id}-{stamp}"
+    try:
+      self.decision_log.mkdir(parents=True, exist_ok=True)
+      prefix.with_name(prefix.name + "-input.txt").write_text(
+          game_input, encoding="utf-8")
+    except OSError as e:
+      # A full or broken log disk must never stop the bot from playing.
+      print(f"decision log failed: {e}")
+      return None
+    return prefix
+
+  @staticmethod
+  def log_decision_output(prefix, output):
+    if prefix is None:
+      return
+    try:
+      prefix.with_name(prefix.name + "-output.txt").write_text(
+          output, encoding="utf-8")
+    except OSError as e:
+      print(f"decision log failed: {e}")
+
   def bad_game(self, game_id, game_input, info=None):
     self.bad_games.append(game_id)
     GAME_DEBUG_DIR.mkdir(parents=True, exist_ok=True)
@@ -892,6 +960,7 @@ if __name__ == "__main__":
     binary=binary,
     count=args.count,
     sleep_sec=args.zzz,
+    decision_log=args.decision_log,
   )
   if args.gameid:
     bmaibagels.monitor_handler({"gameId": args.gameid})

@@ -18,6 +18,11 @@ cp .bmrc.example .bmrc   # then fill in the logins
 ./venv/bin/python ./bmaibagels.py --site bmaibagels --count 1
 ```
 
+`--decision-log DIR` saves what BMAIR is sent and says for every decision, as
+`DIR/{game_id}-{UTC time}-input.txt` and `-output.txt`. It is off by default
+and never trims itself; on the live host a systemd timer from home-ansible
+keeps the directory under its size cap.
+
 The adventure and wonderland watchers are described in
 [ADVENTURE_WATCHER.md](ADVENTURE_WATCHER.md); the simulation tools in
 [SIMULATION_TOOLS.md](SIMULATION_TOOLS.md). They read the ButtonFilter data
