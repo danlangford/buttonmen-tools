@@ -592,6 +592,94 @@ class TestBMAIBagels(unittest.TestCase):
           (Path(directory) / "game-debug/42-output.txt").read_text())
       self.assertEqual([42], bagels.bad_games)
 
+  BMAIR_REACTION = (
+      "BMAIR: the Button Men AI in Rust\n"
+      "Rust port Copyright 2026 Dan Langford.\n"
+      "Original BMAI Copyright 2001-2026 Denis Papp.\n"
+      "Version: 0.5.0\n"
+      "stats sims=1000\n"
+      "action\n"
+      "pass\n"
+  )
+
+  def fake_bmair(self, output):
+    return Mock(return_value=SimpleNamespace(
+        stdin=StringIO(), stdout=StringIO(output), stderr=StringIO()))
+
+  def run_decision(self, decision_log, output=BMAIR_REACTION,
+                   state="REACT_TO_INITIATIVE"):
+    bagels = self.make_bagels()
+    bagels.binary = "bmair"
+    bagels.decision_log = decision_log
+    bagels.react_initiative = Mock(return_value=True)
+    with patch("bmaibagels.Popen", self.fake_bmair(output)):
+      bagels.exec_bmai("game 42 input\n", {"gameId": 42}, state)
+    return bagels
+
+  def test_decision_log_is_off_by_default(self):
+    self.assertIsNone(parse_args([]).decision_log)
+    self.assertEqual(Path("/var/log/decisions"),
+                     parse_args(["--decision-log", "/var/log/decisions"]).decision_log)
+
+  def test_no_decision_files_without_decision_log(self):
+    with TemporaryDirectory() as directory, patch.object(
+        bmaibagels_module, "GAME_DEBUG_DIR", Path(directory) / "game-debug"):
+      bagels = self.run_decision(None)
+
+      bagels.react_initiative.assert_called_once_with({"gameId": 42}, "pass")
+      self.assertEqual([], list(Path(directory).iterdir()))
+
+  def test_decision_log_saves_bmair_input_and_whole_output(self):
+    with TemporaryDirectory() as directory:
+      log = Path(directory) / "decisions"
+      self.run_decision(log)
+
+      inputs = sorted(log.glob("*-input.txt"))
+      outputs = sorted(log.glob("*-output.txt"))
+      self.assertEqual(1, len(inputs))
+      self.assertEqual(1, len(outputs))
+      self.assertRegex(inputs[0].name, r"^42-\d{8}T\d{6}\.\d{6}Z-input\.txt$")
+      self.assertEqual(inputs[0].name.replace("-input", "-output"),
+                       outputs[0].name)
+      self.assertEqual("game 42 input\n", inputs[0].read_text())
+      self.assertEqual(self.BMAIR_REACTION, outputs[0].read_text())
+
+  def test_decision_log_keeps_one_pair_per_decision(self):
+    with TemporaryDirectory() as directory:
+      log = Path(directory) / "decisions"
+      self.run_decision(log)
+      self.run_decision(log)
+
+      self.assertEqual(2, len(list(log.glob("42-*-input.txt"))))
+      self.assertEqual(2, len(list(log.glob("42-*-output.txt"))))
+
+  def test_decision_log_keeps_output_that_the_bot_could_not_use(self):
+    unusable = (self.BMAIR_REACTION.replace("pass\n", "") +
+                "power\n\n\nwarning: odd line\n")
+    with TemporaryDirectory() as directory:
+      log = Path(directory) / "decisions"
+      bagels = self.make_bagels()
+      bagels.binary = "bmair"
+      bagels.decision_log = log
+      bagels.submit_attack = Mock()
+      game = {"gameId": 42,
+              "player": {"activeDieArray": [], "turboSizeArray": {}}}
+      with patch("bmaibagels.Popen", self.fake_bmair(unusable)):
+        with self.assertRaisesRegex(ValueError, "Unexpected BMAIR attack output"):
+          bagels.exec_bmai("game 42 input\n", game, "START_TURN")
+
+      bagels.submit_attack.assert_not_called()
+      [output] = log.glob("*-output.txt")
+      self.assertEqual(unusable, output.read_text())
+
+  def test_unwritable_decision_log_does_not_stop_play(self):
+    with TemporaryDirectory() as directory:
+      log = Path(directory) / "not-a-directory"
+      log.write_text("")
+      bagels = self.run_decision(log)
+
+      bagels.react_initiative.assert_called_once_with({"gameId": 42}, "pass")
+
   def test_network_error_loading_game_does_not_mark_it_bad(self):
     bagels = self.make_bagels()
     bagels.bad_games = []
