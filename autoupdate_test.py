@@ -20,7 +20,8 @@ class TestOperationAllowlists(unittest.TestCase):
             html)
         # Closed operations no longer offer entry-game links.
         for label in (
-                "OP:OZ", "OP:DRAGONSTORM", "OP:YETI", "OP:PETTINGZOO"):
+                "OP:LOOKGLASS", "OP:OZ", "OP:DRAGONSTORM", "OP:YETI",
+                "OP:PETTINGZOO"):
             self.assertNotIn(label, html)
         self.assertIn("encodeURIComponent(operation.opponentButton)", html)
         self.assertIn('"&maxWins=3"', html)

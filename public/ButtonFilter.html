@@ -859,9 +859,6 @@
                             if (button.bots.includes("BMAIBagels") &&
                                 (button.rate < 60 ||
                                     operation_looking_glass_oz_button_name.includes(button.buttonName))) {
-                                button.attributes.push("OP:LOOKGLASS")
-                                button.tournaments.push("OP:LOOKGLASS")
-
                                 for (let operation of completed_game_operations) {
                                     button.attributes.push(operation.label)
                                     button.operations.push({
