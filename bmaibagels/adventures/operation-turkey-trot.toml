@@ -5,8 +5,7 @@ version = 1
 [adventure]
 slug = "operation-turkey-trot"
 name = "OPERATION TURKEY TROT"
-# TODO: replace with the real forum thread ID before starting the watcher.
-thread_id = 9999
+thread_id = 1384
 bot_player = "BMAIBagels"
 button_uniqueness = "player"
 
@@ -34,9 +33,8 @@ state_directory = "../.adventure-state"
 sleep_seconds = 120
 
 [leaderboard]
-# TODO: replace with the reserved leaderboard post ID in the thread.
 enabled = true
-post_id = 99999
+post_id = 34822
 group_by_opponent = true
 
 [compatibility]
@@ -52,7 +50,7 @@ description = "Over the river and through the woods, with a sheep behind the whe
 opponent_button = "Holiday"
 label = "Holiday"
 emoji = "👪"
-description = "Family fights are the best fights. The relatives forgot it's Thanksgiving, but not that they're hungry."
+description = "Family is Family. They own too much wicker and drink too much liquor. FIGHT!"
 
 [[fights]]
 opponent_button = "Chairman Kaga"

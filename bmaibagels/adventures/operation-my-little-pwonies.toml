@@ -5,8 +5,7 @@ version = 1
 [adventure]
 slug = "operation-my-little-pwonies"
 name = "OPERATION MY LITTLE PWON-IES"
-# TODO: replace with the real forum thread ID before starting the watcher.
-thread_id = 9998
+thread_id = 1385
 bot_player = "BMAIBagels"
 button_uniqueness = "player"
 
@@ -34,9 +33,8 @@ state_directory = "../.adventure-state"
 sleep_seconds = 120
 
 [leaderboard]
-# TODO: replace with the reserved leaderboard post ID in the thread.
 enabled = true
-post_id = 99998
+post_id = 34824
 group_by_opponent = true
 
 [compatibility]

@@ -72,6 +72,8 @@ class TestAdventureConfig(unittest.TestCase):
     config = load_config(TURKEY_TROT)
 
     self.assertEqual("operation-turkey-trot", config.slug)
+    self.assertEqual((1384, 34822),
+                     (config.thread_id, config.leaderboard_post_id))
     self.assertEqual("completed_game", config.entry_mode)
     self.assertEqual("player", config.button_uniqueness)
     self.assertEqual(60.0, config.maximum_win_rate)
@@ -95,6 +97,8 @@ class TestAdventureConfig(unittest.TestCase):
     config = load_config(PWONIES)
 
     self.assertEqual("operation-my-little-pwonies", config.slug)
+    self.assertEqual((1385, 34824),
+                     (config.thread_id, config.leaderboard_post_id))
     self.assertEqual("completed_game", config.entry_mode)
     self.assertEqual(
         ["Rainbow Dash", "Rarity", "Pinkie Pie", "Parasprites", "Chrysalis",
