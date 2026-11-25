@@ -18,6 +18,9 @@ class TestOperationAllowlists(unittest.TestCase):
         self.assertIn(
             '{label: "OP:TURKEYTROT 🦃", opponentButton: "Mutton Ben"}',
             html)
+        self.assertIn(
+            '{label: "OP:PWONIES 🦄", opponentButton: "Rainbow Dash"}',
+            html)
         # Closed operations no longer offer entry-game links.
         for label in ("OP:DRAGONSTORM", "OP:YETI", "OP:PETTINGZOO"):
             self.assertNotIn(label, html)
