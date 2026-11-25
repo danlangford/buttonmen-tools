@@ -39,6 +39,7 @@ OZ = PROJECT / "adventures/operation-oz.toml"
 DRAGONSTORM = PROJECT / "adventures/operation-dragonstorm.toml"
 YETI_QUEST = PROJECT / "adventures/operation-yeti-quest.toml"
 PETTING_ZOO = PROJECT / "adventures/operation-petting-zoo.toml"
+TURKEY_TROT = PROJECT / "adventures/operation-turkey-trot.toml"
 
 
 class TestAdventureConfig(unittest.TestCase):
@@ -57,6 +58,37 @@ class TestAdventureConfig(unittest.TestCase):
     self.assertEqual(3, len({config.slug for config in configs}))
     self.assertTrue(all(
         config.entry_mode == "completed_game" for config in configs))
+
+  def test_dragonstorm_yeti_and_petting_zoo_are_closed_to_new_entries(self):
+    configs = [load_config(path) for path in (
+        DRAGONSTORM, YETI_QUEST, PETTING_ZOO)]
+
+    self.assertEqual(
+        [1795651200] * 3,
+        [config.submissions_close_at for config in configs])
+
+  def test_turkey_trot_config_describes_thanksgiving_adventure(self):
+    config = load_config(TURKEY_TROT)
+
+    self.assertEqual("operation-turkey-trot", config.slug)
+    self.assertEqual("completed_game", config.entry_mode)
+    self.assertEqual("player", config.button_uniqueness)
+    self.assertEqual(60.0, config.maximum_win_rate)
+    self.assertIsNone(config.submissions_close_at)
+    self.assertEqual(
+        ["Mutton Ben", "Holiday", "Chairman Kaga", "Gluttony", "Apples",
+         "Sloth", "Abe Caine"],
+        [fight.opponent_button for fight in config.fights])
+    self.assertEqual(
+        ["🚗", "👪", "👨‍🍳", "🍗", "🥧", "🏈", "🎩"],
+        [fight.emoji for fight in config.fights])
+
+  def test_turkey_trot_game_descriptions_fit_button_men_limit(self):
+    config = load_config(TURKEY_TROT)
+
+    for number in range(1, config.fight_count + 1):
+      description = mission_game_description(config, number, 99999999)
+      self.assertLessEqual(len(description.encode("utf-8")), 255)
 
   def test_looking_glass_config_describes_current_adventure(self):
     config = load_config(LOOKING_GLASS)
