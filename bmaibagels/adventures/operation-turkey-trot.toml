@@ -1,0 +1,92 @@
+version = 1
+
+# Pick your turkey and survive the Thanksgiving holiday.
+
+[adventure]
+slug = "operation-turkey-trot"
+name = "OPERATION TURKEY TROT"
+thread_id = 1384
+bot_player = "BMAIBagels"
+button_uniqueness = "player"
+
+[entry]
+# A completed game against BMAIBagels playing Mutton Ben is both the entry and
+# fight 1.
+mode = "completed_game"
+games_created_after = "2026-11-24"
+target_wins = 3
+show_ineligible_games = true
+
+[eligibility]
+maximum_win_rate = 60.0
+require_published_win_rate = true
+require_bot_readable = true
+supported_button_exceptions = []
+win_rate_allowlist = "operation_looking_glass_oz_button_name"
+button_filter_url = "http://buttonmen.s3-website-us-east-1.amazonaws.com/ButtonFilter.html"
+
+[runtime]
+credentials_file = "../.bmrc"
+credentials_site = "bmaibagels"
+buttonmen_tools_dir = "../.."
+state_directory = "../.adventure-state"
+sleep_seconds = 120
+
+[leaderboard]
+enabled = true
+post_id = 34822
+group_by_opponent = true
+
+[compatibility]
+import_looking_glass_v2 = false
+
+[[fights]]
+opponent_button = "Mutton Ben"
+label = "Mutton Ben"
+emoji = "🚗"
+description = "Over the river and through the woods, with a sheep behind the wheel. Can you survive the drive to Grandma's?"
+
+[[fights]]
+opponent_button = "Holiday"
+label = "Holiday"
+emoji = "👪"
+description = "Family is Family. They own too much wicker and drink too much liquor. FIGHT!"
+
+[[fights]]
+opponent_button = "Chairman Kaga"
+label = "Chairman Kaga"
+emoji = "👨‍🍳"
+description = "Allez cuisine! The Chairman has revealed today's theme ingredient, and it's you."
+
+[[fights]]
+opponent_button = "Gluttony"
+label = "Gluttony"
+emoji = "🍗"
+description = "Gluttony has mastered Double-Drumstick Fu. Those used to be somebody's legs. Keep yours."
+
+[[fights]]
+opponent_button = "Apples"
+label = "Apples"
+emoji = "🥧"
+description = "Dessert fights back. Don't let this apple bake you into the pie."
+
+[[fights]]
+opponent_button = "Sloth"
+label = "Sloth"
+emoji = "🏈"
+description = "Football's on, the yams are loud, and the food coma takes everyone. Stay awake long enough to win."
+
+[[fights]]
+opponent_button = "Abe Caine"
+label = "Abe Caine"
+emoji = "🎩"
+description = "One bird stands before the President and begs for mercy. Win the presidential pardon and gobble another year."
+
+[templates]
+game_description = "OPERATION TURKEY TROT FIGHT {fight_number}/{fight_count} | ENTRY GAME {entry_game_id}"
+leaderboard_title = "[b]OPERATION TURKEY TROT 🦃 — COMMUNITY LEADERBOARD[/b]"
+leaderboard_intro = "Columns: courses survived / rounds lost / points scored. Ranked by courses survived, then fewest rounds lost, then most points scored. Entry begins by completing a first-to-3 game against BMAIBagels playing Mutton Ben."
+leaderboard_empty = "No eligible missions have completed the Mutton Ben entry game yet."
+leaderboard_entry = "{rank}. {player} — {button} — {opponents_defeated}F/{rounds_lost}L/{points_scored:g}pts — {outcome}"
+leaderboard_ineligible_title = "[b]INELIGIBLE ENTRY GAMES[/b]"
+leaderboard_ineligible_entry = "[game={game_id}] {player} — {button} — {reason}"

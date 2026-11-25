@@ -10,6 +10,9 @@ button_uniqueness = "player"
 [entry]
 mode = "completed_game"
 games_created_after = "2026-10-01"
+# Closed to new entries. Entry games started before this cutoff still count,
+# and accepted missions keep playing until they finish.
+submissions_close_at = "2026-11-26T00:00:00Z"
 target_wins = 3
 show_ineligible_games = true
 

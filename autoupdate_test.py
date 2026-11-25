@@ -13,17 +13,15 @@ class TestOperationAllowlists(unittest.TestCase):
         html = Path("public/ButtonFilter.html").read_text(encoding="utf-8")
 
         self.assertIn(
-            '{label: "OP:OZ 🌪️👠🌈", opponentButton: "Pythagoras"}',
+            '{label: "OP:TURKEYTROT 🦃", opponentButton: "Mutton Ben"}',
             html)
         self.assertIn(
-            '{label: "OP:DRAGONSTORM 🐉", opponentButton: "Trogdor"}',
+            '{label: "OP:PWONIES 🦄", opponentButton: "Rainbow Dash"}',
             html)
-        self.assertIn(
-            '{label: "OP:YETI 🏔️", opponentButton: "Lark"}',
-            html)
-        self.assertIn(
-            '{label: "OP:PETTINGZOO 🐾", opponentButton: "Cheese Weasel"}',
-            html)
+        # Closed operations no longer offer entry-game links.
+        for label in (
+                "OP:OZ", "OP:DRAGONSTORM", "OP:YETI", "OP:PETTINGZOO"):
+            self.assertNotIn(label, html)
         self.assertIn("encodeURIComponent(operation.opponentButton)", html)
         self.assertIn('"&maxWins=3"', html)
 
