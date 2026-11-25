@@ -40,6 +40,7 @@ DRAGONSTORM = PROJECT / "adventures/operation-dragonstorm.toml"
 YETI_QUEST = PROJECT / "adventures/operation-yeti-quest.toml"
 PETTING_ZOO = PROJECT / "adventures/operation-petting-zoo.toml"
 TURKEY_TROT = PROJECT / "adventures/operation-turkey-trot.toml"
+PWONIES = PROJECT / "adventures/operation-my-little-pwonies.toml"
 
 
 class TestAdventureConfig(unittest.TestCase):
@@ -86,6 +87,19 @@ class TestAdventureConfig(unittest.TestCase):
   def test_turkey_trot_game_descriptions_fit_button_men_limit(self):
     config = load_config(TURKEY_TROT)
 
+    for number in range(1, config.fight_count + 1):
+      description = mission_game_description(config, number, 99999999)
+      self.assertLessEqual(len(description.encode("utf-8")), 255)
+
+  def test_my_little_pwonies_config_follows_theorggs_ladder(self):
+    config = load_config(PWONIES)
+
+    self.assertEqual("operation-my-little-pwonies", config.slug)
+    self.assertEqual("completed_game", config.entry_mode)
+    self.assertEqual(
+        ["Rainbow Dash", "Rarity", "Pinkie Pie", "Parasprites", "Chrysalis",
+         "Changeling (BP)", "Angel (BP)", "Applejack"],
+        [fight.opponent_button for fight in config.fights])
     for number in range(1, config.fight_count + 1):
       description = mission_game_description(config, number, 99999999)
       self.assertLessEqual(len(description.encode("utf-8")), 255)
